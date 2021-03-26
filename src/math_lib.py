@@ -1,11 +1,11 @@
-
 '''
     @package
 
     Contains all mathematic operations
 '''
 
-def plus(self, summmand1, summand2):
+
+def plus(summmand1, summand2):
     '''
     Addition
     :param self:
@@ -16,7 +16,7 @@ def plus(self, summmand1, summand2):
     return summmand1 + summand2
 
 
-def nth_root(self, root, base):
+def nth_root(root, base):
     '''
     Returns N-th root of base.
     In case that root is negative or equal to zero, ValueError will be raised
@@ -25,6 +25,9 @@ def nth_root(self, root, base):
     :param base:
     :return (base)^(1/root):
     '''
+
+    # In case od even roots the base cannot be negative
+    # Also 0th root is a invalid input
     if base % 2 == 0 and root < 0 or root == 0:
         show_error()
         raise ValueError
@@ -32,10 +35,8 @@ def nth_root(self, root, base):
         return base ** (1 / root)
 
 
-def show_error(self):
+def show_error():
     '''
     Whenever error occurs, show error will print on stdout the error
-    :param self:
-    :return:
     '''
     print("MATH ERROR")
