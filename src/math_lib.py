@@ -62,6 +62,25 @@ def absolute_value(value):
         return -value
 
 
+def nth_power(base, exponent):
+    '''
+    :param self:
+    :param base: 
+    :param exponent: 
+    :return: round((base ** exponent), 2)
+    '''
+    return base ** exponent
+
+
+def subtraction(minuend, subtrahend):
+    '''
+    :param minuend: 
+    :param subtrahend: 
+    :return: minuend - subtrahend
+    '''
+    return minuend - subtrahend
+
+
 def show_error():
     '''
     Whenever error occurs, show error will print on stdout the error

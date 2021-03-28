@@ -48,3 +48,26 @@ def test_divide(x, y, result):
 ])
 def test_absolute_value(x, result):
     assert math_lib.absolute_value(x) == result
+
+
+@pytest.mark.parametrize("x, y, result", [
+    (5, 2, 25),
+    (-5, 6, 15625),
+    (-5, 3, -125),
+    (5, -1, 0.2),
+    (2, 1.5, 2.8284271247461903)
+])
+def test_n_power(x, y, result):
+    assert math_lib.nth_power(x, y) == result
+
+
+@pytest.mark.parametrize("x, y, result", [
+    (10, 5, 5),
+    (369, 125, 244),
+    (-10, 22, -32)
+])
+def test_subtraction(x, y, result):
+    assert math_lib.subtraction(x, y) == result
+
+
+
