@@ -23,3 +23,28 @@ def test_nth_root(root, base, result):
         math_lib.nth_root(0, 3)
     assert math_lib.nth_root(100, 1000) >= 1.07
     assert math_lib.nth_root(2, 20) == 2 * (math_lib.nth_root(2, 5))
+
+
+@pytest.mark.parametrize("x , y , result", [
+    (10, 2, 5),
+    (15, -5, -3),
+    (-15, 3, -5),
+    (-15, 7, -2.142857142857143),
+    (0, 5, 0),
+])
+def test_divide(x, y, result):
+    with pytest.raises(Exception):
+        assert math_lib.divide(1, 0)
+        assert math_lib.divide(-50, 0)
+    assert math_lib.divide(x, y) == result
+
+
+@pytest.mark.parametrize("x , result", [
+    (5, 5),
+    (-4, 4),
+    (0, 0),
+    (-123645789, 123645789),
+    (-1.2548, 12548)
+])
+def test_absolute_value(x, result):
+    assert math_lib.absolute_value(x) == result

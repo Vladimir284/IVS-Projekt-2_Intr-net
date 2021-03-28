@@ -35,6 +35,33 @@ def nth_root(root, base):
         return base ** (1 / root)
 
 
+def divide(dividend, divisor):
+    '''
+    Return divident divided by divisor.
+    If divisor is equal to zero, Value error is raised
+    :param self:
+    :param dividend:
+    :param divisor:
+    '''
+    if divisor == 0:
+        show_error()
+        raise ValueError
+    else:
+        return dividend / divisor
+
+
+def absolute_value(value):
+    '''
+    Returns absolute value of value.
+    :param self:
+    :param value:
+    '''
+    if value >= 0:
+        return value
+    else:
+        return -value
+
+
 def show_error():
     '''
     Whenever error occurs, show error will print on stdout the error
