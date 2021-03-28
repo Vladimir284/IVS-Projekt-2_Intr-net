@@ -44,7 +44,7 @@ def test_divide(x, y, result):
     (-4, 4),
     (0, 0),
     (-123645789, 123645789),
-    (-1.2548, 12548)
+    (-1.2548, 1.2548)
 ])
 def test_absolute_value(x, result):
     assert math_lib.absolute_value(x) == result
