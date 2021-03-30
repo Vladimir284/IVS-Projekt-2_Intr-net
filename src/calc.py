@@ -2,7 +2,7 @@ import tkinter as tk
 
 calc = tk.Tk()
 calc.title("Calculator")
-calc.minsize(300, 200)
+calc.minsize(400, 200)
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
 for i in range(5):
@@ -15,6 +15,20 @@ display.config(justify="right")
 
 def string_button_click(number):
     display.insert("insert", number)
+
+
+def all_clear_click():
+    display.delete(0, "end")
+    # TODO: delete memory
+
+
+def clear_click():
+    display.delete(0, "end")
+
+
+def calculate():
+    display.delete(0, "end")
+    display.insert("insert", "random")
 
 
 # buttons def
@@ -32,22 +46,28 @@ n_root = tk.Button(calc, text="x^1/n")
 n_power = tk.Button(calc, text="x^n")
 absolute_value = tk.Button(calc, text="|x|")
 factorial = tk.Button(calc, text="x!")
-all_clear = tk.Button(calc, text="AC")
-clear = tk.Button(calc, text="C")
+all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
+clear = tk.Button(calc, text="C", command=lambda: clear_click())
 l_bracket = tk.Button(calc, text="(", command=lambda: string_button_click("("))
 r_bracket = tk.Button(calc, text=")", command=lambda: string_button_click(")"))
 plus = tk.Button(calc, text="+", command=lambda: string_button_click("+"))
 minus = tk.Button(calc, text="-", command=lambda: string_button_click("-"))
 times = tk.Button(calc, text="*", command=lambda: string_button_click("*"))
 divide = tk.Button(calc, text="/", command=lambda: string_button_click("/"))
-result = tk.Button(calc, text="=",)
+result = tk.Button(calc, text="=", command=lambda: calculate())
 dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 ans = tk.Button(calc, text="ANS")
 
+# buttons position using grid
 buttons_array = [l_bracket, r_bracket, n_power, n_root, all_clear, num_7, num_8, num_9, divide, clear, num_4, num_5,
                  num_6, times, factorial, num_1, num_2, num_3, minus, absolute_value, num_0, dot, result, plus, ans]
 for i in range(1, 26):
     buttons_array[i - 1].grid(row=int(i / 5 if i % 5 == 0 else i / 5 + 1), column=int(i % 5 - 1 if i % 5 != 0 else 4),
                               sticky="nesw")
+
+# keyboard events
+calc.bind('<Return>', lambda e: calculate())
+calc.bind('<Escape>', lambda e: exit(0))
+# TODO: help(f1) and more
 
 calc.mainloop()
