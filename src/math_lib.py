@@ -5,15 +5,23 @@
 '''
 
 
-def plus(summmand1, summand2):
+def absolute_value(value):
     '''
-    Addition
+    Returns absolute value of value.
     :param self:
-    :param summmand1:
-    :param summand2:
-    :return summand1 + summand2:
+    :param value:
     '''
-    return summmand1 + summand2
+    if value >= 0:
+        return value
+    else:
+        return -value
+
+
+def factorial():
+    # TODO
+    # Since I needed to enumerate the functions, function base is prepared
+    # Please implement it
+    pass
 
 
 def nth_root(root, base):
@@ -35,6 +43,26 @@ def nth_root(root, base):
         return base ** (1 / root)
 
 
+def plus(summmand1, summand2):
+    '''
+    Addition
+    :param self:
+    :param summmand1:
+    :param summand2:
+    :return summand1 + summand2:
+    '''
+    return summmand1 + summand2
+
+
+def subtraction(minuend, subtrahend):
+    '''
+    :param minuend:
+    :param subtrahend:
+    :return: minuend - subtrahend
+    '''
+    return minuend - subtrahend
+
+
 def divide(dividend, divisor):
     '''
     Return divident divided by divisor.
@@ -50,16 +78,11 @@ def divide(dividend, divisor):
         return dividend / divisor
 
 
-def absolute_value(value):
-    '''
-    Returns absolute value of value.
-    :param self:
-    :param value:
-    '''
-    if value >= 0:
-        return value
-    else:
-        return -value
+def multiplication():
+    # TODO
+    # Since I needed to enumerate the functions, function base is prepared
+    # Please implement it
+    pass
 
 
 def nth_power(base, exponent):
@@ -70,15 +93,6 @@ def nth_power(base, exponent):
     :return: round((base ** exponent), 2)
     '''
     return base ** exponent
-
-
-def subtraction(minuend, subtrahend):
-    '''
-    :param minuend: 
-    :param subtrahend: 
-    :return: minuend - subtrahend
-    '''
-    return minuend - subtrahend
 
 
 def show_error():
