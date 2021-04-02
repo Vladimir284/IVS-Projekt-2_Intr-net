@@ -52,5 +52,9 @@ class Calculator:
         '''
         pass
 
-# TO-DO
-# Enumeration of operations
+
+# TODO
+# Depends on memory_operation implements
+# Implementation might be needed in module memory_operation - Discuss
+Operations = ["absolute_value", "factorial", "nth_root", "summary", "substraction", "division", "multiplication",
+              "nth_power", "memory_recall", "display_clear", "ans", "memory_clear", "hint"]
