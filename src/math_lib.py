@@ -43,7 +43,7 @@ def nth_root(root, base):
         return base ** (1 / root)
 
 
-def plus(summmand1, summand2):
+def summary(summmand1, summand2):
     '''
     Addition
     :param self:
@@ -63,7 +63,7 @@ def subtraction(minuend, subtrahend):
     return minuend - subtrahend
 
 
-def divide(dividend, divisor):
+def division(dividend, divisor):
     '''
     Return divident divided by divisor.
     If divisor is equal to zero, Value error is raised
