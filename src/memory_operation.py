@@ -4,7 +4,9 @@
 '''
 
 
-def memory_Recall():
+def memory_recall():
+    # TODO Discuss
+    # Function is intended to print result ?
     pass
 
 
@@ -15,7 +17,7 @@ def display_clear():
 
 def ans():
     # TODO Discuss
-    # Discus what the function is intended to do
+    # Function is intended to set new ans ?
     pass
 
 
