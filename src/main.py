@@ -54,20 +54,20 @@ class Calculator:
         if self.ID_Operation == 0:
             print(self.value2, self.value1)
             return math_lib.summary(self.value1, self.value2)
-        elif ID_Operation == 1:
-            return math_lib.subtraction(self)
-        elif ID_Operation == 2:
-            return math_lib.division(self)
-        elif ID_Operation == 3:
-            return math_lib.multiplication(self)
-        elif ID_Operation == 4:
-            return math_lib.nth_power(self)
-        elif ID_Operation == 5:
-            return math_lib.nth_root(self)
-        elif ID_Operation == 6:
-            return math_lib.absolute_value(self)
-        elif ID_Operation == 7:
-            return math_lib.factorial(self)
+        elif self.ID_Operation == 1:
+            return math_lib.subtraction(self.value1, self.value2)
+        elif self.ID_Operation == 2:
+            return math_lib.division(self.value1, self.value2)
+        elif self.ID_Operation == 3:
+            return math_lib.multiplication(self.value1, self.value2)
+        elif self.ID_Operation == 4:
+            return math_lib.nth_power(self.value1, self.value2)
+        elif self.ID_Operation == 5:
+            return math_lib.nth_root(self.value1, self.value2)
+        elif self.ID_Operation == 6:
+            return math_lib.absolute_value(self.value1)
+        elif self.ID_Operation == 7:
+            return math_lib.factorial(self.value1)
 
 
 pass
