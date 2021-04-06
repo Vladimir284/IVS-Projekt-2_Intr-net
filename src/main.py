@@ -19,41 +19,32 @@ class Calculator:
     def getMemory(self):
         '''
         Return values currently stored on memory
-        :return:
+        @return Last saved answr
         '''
         pass
 
     def setMemory(self):
         '''
         Set memory on current value
-        :return:
         '''
         pass
 
     def getOperand(self):
         '''
         Read from In.
-        :return:
         '''
         pass
 
     def setOperand(self):
         '''
         Set ID of next operation depending on opration entered
-        :return:
         '''
         pass
 
     def executeOpration(self, ID_Operation):
         '''
-        Executes operation depending on param.
-        :param ID_Operation:
-        :return:
+        @brief Executes operation depending on ID of operation
+        @param ID_Operation:
+        @return Result of operation
         '''
         pass
-
-
-# Enummaration based on amount of arguments
-# Depends on memory_operation implements
-Operations = ["absolute_value", "factorial", "nth_root", "summary", "substraction", "division", "multiplication",
-              "nth_power", "memory_recall", "display_clear", "ans", "memory_clear", "hint"]
