@@ -66,6 +66,7 @@ for i in range(1, 26):
                                   column=int(i % 5 - 1 if i % 5 != 0 else 4),
                                   sticky="nesw")
 
+num_0.grid(row=5, column=1, columnspan=2)
 # keyboard events
 calc.bind('<Return>', lambda e: calculate())
 calc.bind('<Escape>', lambda e: exit(0))
