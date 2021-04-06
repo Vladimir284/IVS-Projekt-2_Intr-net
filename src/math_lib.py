@@ -78,11 +78,14 @@ def division(dividend, divisor):
         return dividend / divisor
 
 
-def multiplication():
-    # TODO
-    # Since I needed to enumerate the functions, function base is prepared
-    # Please implement it
-    pass
+def multiplication(multiplicand, multiplier):
+    '''
+    Return multiplicand * multiplier
+    :param multiplicand:
+    :param multiplier:
+    :return:
+    '''
+    return multiplicand * multiplier
 
 
 def nth_power(base, exponent):
