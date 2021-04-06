@@ -1,5 +1,4 @@
 import tkinter as tk
-import math_lib
 from main import Calculator as c
 
 calc = tk.Tk()
@@ -31,14 +30,20 @@ def clear():
 def calculate():
     c.value2 = float(display.get())
     display.delete(0, "end")
-    print(c.executeOperation(c))
     display.insert("insert", c.executeOperation(c))
 
 
 def operation(x):
-    c.value1 = float(display.get())
-    c.ID_Operation = x
-    clear()
+    if x == 1 and not display.get():
+        display.insert("insert", "-")
+    else:
+        c.value1 = float(display.get())
+        c.ID_Operation = x
+        if c.ID_Operation == 6 or c.ID_Operation == 7:
+            clear()
+            display.insert("insert", c.executeOperation(c))
+        else:
+            clear()
 
 
 # buttons def
@@ -52,10 +57,10 @@ num_6 = tk.Button(calc, text="6", command=lambda: string_button_click("6"))
 num_7 = tk.Button(calc, text="7", command=lambda: string_button_click("7"))
 num_8 = tk.Button(calc, text="8", command=lambda: string_button_click("8"))
 num_9 = tk.Button(calc, text="9", command=lambda: string_button_click("9"))
-n_root = tk.Button(calc, text="x^1/n")
-n_power = tk.Button(calc, text="x^n")
-absolute_value = tk.Button(calc, text="|x|")
-factorial = tk.Button(calc, text="x!")
+n_root = tk.Button(calc, text="x^1/n", command=lambda: operation(5))
+n_power = tk.Button(calc, text="x^n", command=lambda: operation(4))
+absolute_value = tk.Button(calc, text="|x|", command=lambda: operation(6))
+factorial = tk.Button(calc, text="x!", command=lambda: operation(7))
 all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
 C_clear = tk.Button(calc, text="C", command=lambda: clear())
 hint = tk.Button(calc, text="HINT")

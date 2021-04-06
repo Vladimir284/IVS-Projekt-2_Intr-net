@@ -52,7 +52,6 @@ class Calculator:
         '''
 
         if self.ID_Operation == 0:
-            print(self.value2, self.value1)
             return math_lib.summary(self.value1, self.value2)
         elif self.ID_Operation == 1:
             return math_lib.subtraction(self.value1, self.value2)

@@ -27,7 +27,7 @@ def factorial(number):
     result = 0
 
     # Check if number isnt negative or float
-    if number < 0 | number - round(number) != 0:
+    if number < 0 or number - round(number) != 0:
         show_error()
         raise ValueError
 
