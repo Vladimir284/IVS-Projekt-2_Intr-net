@@ -6,6 +6,9 @@ class Calculator:
     '''
     Stores values of memory and contains operands methods
     '''
+    value1 = None
+    value2 = None
+    ID_Operation = None
 
     def __init__(self):
         '''
@@ -41,7 +44,7 @@ class Calculator:
         '''
         pass
 
-    def executeOpration(self, ID_Operation):
+    def executeOpration(self):
         '''
         @brief Executes operation depending on ID of operation
         @param ID_Operation:

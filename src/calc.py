@@ -1,5 +1,6 @@
 import tkinter as tk
 import math_lib
+from main import Calculator as c
 
 calc = tk.Tk()
 calc.title("Calculator")
@@ -13,6 +14,8 @@ display = tk.Entry(calc, width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
+c.executeOpration(c)
+
 
 def string_button_click(number):
     display.insert("insert", number)
@@ -23,7 +26,7 @@ def all_clear_click():
     # TODO: delete memory
 
 
-def clear_click():
+def clear():
     display.delete(0, "end")
 
 
@@ -48,7 +51,7 @@ n_power = tk.Button(calc, text="x^n")
 absolute_value = tk.Button(calc, text="|x|")
 factorial = tk.Button(calc, text="x!")
 all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
-clear = tk.Button(calc, text="C", command=lambda: clear_click())
+C_clear = tk.Button(calc, text="C", command=lambda: clear())
 hint = tk.Button(calc, text="HINT")
 plus = tk.Button(calc, text="+", command=lambda: string_button_click("+"))
 minus = tk.Button(calc, text="-", command=lambda: string_button_click("-"))
@@ -59,7 +62,8 @@ dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 ans = tk.Button(calc, text="ANS")
 
 # buttons position using grid
-buttons_array = [hint, all_clear, clear, ans, divide, n_power, num_7, num_8, num_9, times, n_root, num_4, num_5, num_6,
+buttons_array = [hint, all_clear, C_clear, ans, divide, n_power, num_7, num_8, num_9, times, n_root, num_4, num_5,
+                 num_6,
                  minus, factorial, num_1, num_2, num_3, plus, absolute_value, num_0, num_0, dot, result]
 for i in range(1, 26):
     if i != 22 or i != 23:
