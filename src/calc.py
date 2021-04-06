@@ -14,8 +14,6 @@ display = tk.Entry(calc, width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
-c.executeOpration(c)
-
 
 def string_button_click(number):
     display.insert("insert", number)
@@ -31,8 +29,16 @@ def clear():
 
 
 def calculate():
+    c.value2 = float(display.get())
     display.delete(0, "end")
-    display.insert("insert", "random")
+    print(c.executeOperation(c))
+    display.insert("insert", c.executeOperation(c))
+
+
+def operation(x):
+    c.value1 = float(display.get())
+    c.ID_Operation = x
+    clear()
 
 
 # buttons def
@@ -53,10 +59,10 @@ factorial = tk.Button(calc, text="x!")
 all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
 C_clear = tk.Button(calc, text="C", command=lambda: clear())
 hint = tk.Button(calc, text="HINT")
-plus = tk.Button(calc, text="+", command=lambda: string_button_click("+"))
-minus = tk.Button(calc, text="-", command=lambda: string_button_click("-"))
-times = tk.Button(calc, text="*", command=lambda: string_button_click("*"))
-divide = tk.Button(calc, text="/", command=lambda: string_button_click("/"))
+plus = tk.Button(calc, text="+", command=lambda: operation(0))
+minus = tk.Button(calc, text="-", command=lambda: operation(1))
+times = tk.Button(calc, text="*", command=lambda: operation(3))
+divide = tk.Button(calc, text="/", command=lambda: operation(2))
 result = tk.Button(calc, text="=", command=lambda: calculate())
 dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 ans = tk.Button(calc, text="ANS")

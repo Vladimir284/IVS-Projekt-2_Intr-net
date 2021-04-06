@@ -6,9 +6,9 @@ class Calculator:
     '''
     Stores values of memory and contains operands methods
     '''
-    value1 = None
-    value2 = None
-    ID_Operation = None
+    value1 = 0.0
+    value2 = 0.0
+    ID_Operation = ""
 
     def __init__(self):
         '''
@@ -44,15 +44,16 @@ class Calculator:
         '''
         pass
 
-    def executeOpration(self):
+    def executeOperation(self):
         '''
         @brief Executes operation depending on ID of operation
         @param ID_Operation:
         @return Result of operation
         '''
 
-        if ID_Operation == 0:
-            return math_lib.summary(self)
+        if self.ID_Operation == 0:
+            print(self.value2, self.value1)
+            return math_lib.summary(self.value1, self.value2)
         elif ID_Operation == 1:
             return math_lib.subtraction(self)
         elif ID_Operation == 2:
