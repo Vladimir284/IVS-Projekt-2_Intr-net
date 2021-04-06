@@ -6,8 +6,8 @@ class Calculator:
     '''
     Stores values of memory and contains operands methods
     '''
-    value1 = 0.0
-    value2 = 0.0
+    value1 = 0
+    value2 = 0
     ID_Operation = ""
 
     def __init__(self):
@@ -44,7 +44,7 @@ class Calculator:
         '''
         pass
 
-    def executeOperation(self):
+    def executeOpration(self):
         '''
         @brief Executes operation depending on ID of operation
         @param ID_Operation:

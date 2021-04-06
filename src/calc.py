@@ -1,4 +1,5 @@
 import tkinter as tk
+import math_lib
 from main import Calculator as c
 
 calc = tk.Tk()
@@ -30,18 +31,18 @@ def clear():
 def calculate():
     c.value2 = float(display.get())
     display.delete(0, "end")
-    display.insert("insert", c.executeOperation(c))
+    display.insert("insert", c.executeOpration(c))
 
 
 def operation(x):
     if x == 1 and not display.get():
-        display.insert("insert", "-")
+        display.insert("insert", '-')
     else:
         c.value1 = float(display.get())
         c.ID_Operation = x
         if c.ID_Operation == 6 or c.ID_Operation == 7:
             clear()
-            display.insert("insert", c.executeOperation(c))
+            display.insert("insert", c.executeOpration(c))
         else:
             clear()
 
@@ -85,7 +86,16 @@ for i in range(1, 26):
 num_0.grid(row=5, column=1, columnspan=2)
 # keyboard events
 calc.bind('<Return>', lambda e: calculate())
+calc.bind('<KP_Enter>', lambda e: calculate())
 calc.bind('<Escape>', lambda e: exit(0))
+
+# TODO : DOES NOT WORK BOIS
+
+calc.bind('<KP_Add>', lambda e: operation(0))
+calc.bind('<KP_Subtract>', lambda e: operation(1))
+calc.bind('<KP_Multiply>', lambda e: operation(3))
+calc.bind('<KP_Divide>', lambda e: operation(2))
+
 # TODO: hel(f1) and more
 
 calc.mainloop()
