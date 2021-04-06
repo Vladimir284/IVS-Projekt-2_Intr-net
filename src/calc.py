@@ -1,4 +1,5 @@
 import tkinter as tk
+import math_lib
 
 calc = tk.Tk()
 calc.title("Calculator")
@@ -70,6 +71,6 @@ num_0.grid(row=5, column=1, columnspan=2)
 # keyboard events
 calc.bind('<Return>', lambda e: calculate())
 calc.bind('<Escape>', lambda e: exit(0))
-# TODO: help(f1) and more
+# TODO: hel(f1) and more
 
 calc.mainloop()

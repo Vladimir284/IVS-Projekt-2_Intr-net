@@ -47,4 +47,23 @@ class Calculator:
         @param ID_Operation:
         @return Result of operation
         '''
-        pass
+
+        if ID_Operation == 0:
+            return math_lib.summary(self)
+        elif ID_Operation == 1:
+            return math_lib.subtraction(self)
+        elif ID_Operation == 2:
+            return math_lib.division(self)
+        elif ID_Operation == 3:
+            return math_lib.multiplication(self)
+        elif ID_Operation == 4:
+            return math_lib.nth_power(self)
+        elif ID_Operation == 5:
+            return math_lib.nth_root(self)
+        elif ID_Operation == 6:
+            return math_lib.absolute_value(self)
+        elif ID_Operation == 7:
+            return math_lib.factorial(self)
+
+
+pass
