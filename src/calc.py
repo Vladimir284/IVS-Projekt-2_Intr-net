@@ -1,6 +1,7 @@
 import tkinter as tk
 import math_lib
 from main import Calculator as c
+import subprocess
 
 calc = tk.Tk()
 calc.title("Calculator")
@@ -47,6 +48,14 @@ def operation(x):
             clear()
 
 
+def show_hint():
+    subprocess.run(['gedit', 'ahoj.txt'])
+
+
+# def del_last():
+#     display.delete(len(display.get()) - 1)
+
+
 # buttons def
 num_0 = tk.Button(calc, text="0", command=lambda: string_button_click("0"))
 num_1 = tk.Button(calc, text="1", command=lambda: string_button_click("1"))
@@ -64,7 +73,7 @@ absolute_value = tk.Button(calc, text="|x|", command=lambda: operation(6))
 factorial = tk.Button(calc, text="x!", command=lambda: operation(7))
 all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
 C_clear = tk.Button(calc, text="C", command=lambda: clear())
-hint = tk.Button(calc, text="HINT")
+hint = tk.Button(calc, text="HINT", command=lambda: show_hint())
 plus = tk.Button(calc, text="+", command=lambda: operation(0))
 minus = tk.Button(calc, text="-", command=lambda: operation(1))
 times = tk.Button(calc, text="*", command=lambda: operation(3))
@@ -91,11 +100,9 @@ calc.bind('<Escape>', lambda e: exit(0))
 
 # TODO : DOES NOT WORK BOIS
 
-calc.bind('<KP_Add>', lambda e: operation(0))
+calc.bind('<KP_Add>', lambda e: del_last(), lambda e: operation(0))
 calc.bind('<KP_Subtract>', lambda e: operation(1))
 calc.bind('<KP_Multiply>', lambda e: operation(3))
 calc.bind('<KP_Divide>', lambda e: operation(2))
-
-# TODO: hel(f1) and more
 
 calc.mainloop()
