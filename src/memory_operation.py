@@ -5,8 +5,7 @@
 
 
 def memory_recall():
-    # TODO Discuss
-    # Function is intended to print result ?
+    ''' Print ANS '''
     pass
 
 
@@ -15,19 +14,11 @@ def display_clear():
     pass
 
 
-def ans():
-    # TODO Discuss
-    # Function is intended to set new ans ?
-    pass
-
-
 def memory_clear():
     ''' Clears display and deletes last saved answer'''
     pass
 
 
-def hint():
-    # TODO: Discus
-    # Defined by UML this was supposed to be class since it has two methods
-    # Should all memory operations be classes ? Or make two separet methods in one module ?
+def hint_show_man():
+    ''' Will open man.pdf '''
     pass
