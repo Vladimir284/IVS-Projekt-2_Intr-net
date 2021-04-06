@@ -48,8 +48,7 @@ absolute_value = tk.Button(calc, text="|x|")
 factorial = tk.Button(calc, text="x!")
 all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
 clear = tk.Button(calc, text="C", command=lambda: clear_click())
-l_bracket = tk.Button(calc, text="(", command=lambda: string_button_click("("))
-r_bracket = tk.Button(calc, text=")", command=lambda: string_button_click(")"))
+hint = tk.Button(calc, text="HINT")
 plus = tk.Button(calc, text="+", command=lambda: string_button_click("+"))
 minus = tk.Button(calc, text="-", command=lambda: string_button_click("-"))
 times = tk.Button(calc, text="*", command=lambda: string_button_click("*"))
@@ -59,8 +58,8 @@ dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 ans = tk.Button(calc, text="ANS")
 
 # buttons position using grid
-buttons_array = [l_bracket, r_bracket, n_power, n_root, all_clear, num_7, num_8, num_9, divide, clear, num_4, num_5,
-                 num_6, times, factorial, num_1, num_2, num_3, minus, absolute_value, num_0, dot, result, plus, ans]
+buttons_array = [hint, all_clear, clear, ans, divide, n_power, num_7, num_8, num_9, times, n_root, num_4, num_5, num_6,
+                 minus, plus, factorial, num_1, num_2, num_3, plus, absolute_value, num_0, dot, result]
 for i in range(1, 26):
     buttons_array[i - 1].grid(row=int(i / 5 if i % 5 == 0 else i / 5 + 1), column=int(i % 5 - 1 if i % 5 != 0 else 4),
                               sticky="nesw")
