@@ -52,8 +52,9 @@ def show_hint():
     subprocess.run(['gedit', 'ahoj.txt'])
 
 
-# def del_last():
-#     display.delete(len(display.get()) - 1)
+def key_operation(x):
+    display.delete(len(display.get()) - 1)
+    operation(x)
 
 
 # buttons def
@@ -100,9 +101,9 @@ calc.bind('<Escape>', lambda e: exit(0))
 
 # TODO : DOES NOT WORK BOIS
 
-calc.bind('<KP_Add>', lambda e: del_last(), lambda e: operation(0))
-calc.bind('<KP_Subtract>', lambda e: operation(1))
-calc.bind('<KP_Multiply>', lambda e: operation(3))
-calc.bind('<KP_Divide>', lambda e: operation(2))
+calc.bind('<KP_Add>', lambda e: key_operation(0))
+calc.bind('<KP_Subtract>', lambda e: key_operation(1))
+calc.bind('<KP_Multiply>', lambda e: key_operation(2))
+calc.bind('<KP_Divide>', lambda e: key_operation(3))
 
 calc.mainloop()
