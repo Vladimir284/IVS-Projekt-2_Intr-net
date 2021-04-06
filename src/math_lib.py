@@ -27,16 +27,16 @@ def factorial(number):
     result = 0
 
     # Check if number isnt negative or float
-    if number < 0 | number-round(number)!=0 :
+    if number < 0 | number - round(number) != 0:
         show_error()
         raise ValueError
 
     # Main factorial algorythm
-    for index in range(1, number):
-        result = result * number
-        number = number - 1
+    if number <= 0:
+        return 1
+    else:
+        return number * factorial(number - 1)
 
-    return result
 
 def nth_root(root, base):
     '''
@@ -100,7 +100,6 @@ def multiplication(multiplicand, multiplier):
     :return:
     '''
     return multiplicand * multiplier
-    `
 
 
 def nth_power(base, exponent):

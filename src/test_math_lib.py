@@ -8,8 +8,8 @@ import pytest
     (-10, 10, 0),
     ((1 / 2), (1 / 2), (2 / 2))
 ])
-def test_plus(summand1, summand2, result):
-    assert math_lib.plus(summand1, summand2) == result
+def test_summary(summand1, summand2, result):
+    assert math_lib.summary(summand1, summand2) == result
 
 
 @pytest.mark.parametrize("root, base, result", [
@@ -34,9 +34,9 @@ def test_nth_root(root, base, result):
 ])
 def test_divide(x, y, result):
     with pytest.raises(Exception):
-        assert math_lib.divide(1, 0)
-        assert math_lib.divide(-50, 0)
-    assert math_lib.divide(x, y) == result
+        assert math_lib.division(1, 0)
+        assert math_lib.division(-50, 0)
+    assert math_lib.division(x, y) == result
 
 
 @pytest.mark.parametrize("x , result", [
@@ -48,6 +48,22 @@ def test_divide(x, y, result):
 ])
 def test_absolute_value(x, result):
     assert math_lib.absolute_value(x) == result
+
+
+@pytest.mark.parametrize("x, result", [
+    (5, 120),
+    (0, 1),
+    (1, 1),
+    (12, 479001600),
+    (2, 2),
+    (3, 6)
+])
+def test_factorial(x, result):
+    with pytest.raises(Exception):
+        assert math_lib.divide(1.5)
+        assert math_lib.divide(-4)
+        assert math_lib.divide(-4.5)
+    assert math_lib.factorial(x) == result
 
 
 @pytest.mark.parametrize("x, y, result", [
@@ -68,6 +84,3 @@ def test_n_power(x, y, result):
 ])
 def test_subtraction(x, y, result):
     assert math_lib.subtraction(x, y) == result
-
-
-
