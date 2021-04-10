@@ -6,7 +6,6 @@ Vývojové prostredie:
 --------------------
        Ubuntu 64-bit
        MacOS 64-bit
-       Windows 64-bit
        
  Tým:
  ----
