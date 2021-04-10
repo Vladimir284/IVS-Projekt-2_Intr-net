@@ -1,35 +1,31 @@
-'''
-    @package
-
-    Contains all mathematic operations
-'''
+## @package math_lib
+# Implementation of basic matematic function
 
 
-def absolute_value(value):
-    '''
-    Returns absolute value of value.
-    :param self:
-    :param value:
-    '''
-    if value >= 0:
-        return value
+def absolute_value(number):
+    ## Absolulte value of a number  \f$ \mid x \mid \f$
+    # @note \f$ \mid x \mid \f$
+    # @param number from which will be absolute value calculated
+    # @return absolute value of a number
+    if number >= 0:
+        return number
     else:
-        return -value
+        return -number
 
 
 def factorial(number):
-    '''
-    Return factorial of number
-    :param number:
-    :return:
-    '''
-
-    result = 0
+    ## Factorial of a non-negative integer number
+    # @note number!
+    # @param number
+    # @return factorial of a number
+    # @return If number is float return None
+    # @return If number < 0 return None
 
     # Check if number isnt negative or float
     if number < 0 or number - round(number) != 0:
         show_error()
         raise ValueError
+        return None
 
     # Main factorial algorythm
     if number <= 0:
@@ -39,14 +35,12 @@ def factorial(number):
 
 
 def nth_root(root, base):
-    '''
-    Returns N-th root of base.
-    In case that root is negative or equal to zero, ValueError will be raised
-    :param self:
-    :param root:
-    :param base:
-    :return (base)^(1/root):
-    '''
+    ## N-th roots are treated as special cases of exponentiation, where the exponent is a fraction \f$ \frac{1}{root} \f$
+    # @note \f$ \sqrt[n]{root} \f$
+    # @param a Number that will be root
+    # @param n N-th root, default is 2
+    # @return[float] N-th root of number base
+    # @return If base is negative integer and base is odd return None
 
     # In case od even roots the base cannot be negative
     # Also 0th root is a invalid input
@@ -58,62 +52,58 @@ def nth_root(root, base):
 
 
 def summary(summmand1, summand2):
-    '''
-    Addition
-    :param self:
-    :param summmand1:
-    :param summand2:
-    :return summand1 + summand2:
-    '''
+    ## Basic summary
+    # @param summand1
+    # @param summand2
+    # @return summand1 + summand2
+
     return summmand1 + summand2
 
 
 def subtraction(minuend, subtrahend):
-    '''
-    :param minuend:
-    :param subtrahend:
-    :return: minuend - subtrahend
-    '''
+    ## Basic substraction
+    # @param minuend
+    # @param subtrahend
+    # @return minuend - subtrahend
+
     return minuend - subtrahend
 
 
 def division(dividend, divisor):
-    '''
-    Return divident divided by divisor.
-    If divisor is equal to zero, Value error is raised
-    :param self:
-    :param dividend:
-    :param divisor:
-    '''
+    ## Basic division
+    # @param dividend
+    # @param divisor
+    # @return If divisor is 0 return Non
+    # @return \f$ dividend \div divisor \f$
+
     if divisor == 0:
         show_error()
         raise ValueError
+        return None
     else:
         return dividend / divisor
 
 
 def multiplication(multiplicand, multiplier):
-    '''
-    Return multiplicand * multiplier
-    :param multiplicand:
-    :param multiplier:
-    :return:
-    '''
+    ## Basic multiplication
+    # @param multiplicand
+    # @param multiplier
+    # @return multilicand * multiplier
+
     return multiplicand * multiplier
 
 
 def nth_power(base, exponent):
-    '''
-    :param self:
-    :param base: 
-    :param exponent: 
-    :return: round((base ** exponent), 2)
-    '''
+    ## When base is a positive integer, exponentiation corresponds to repeated multiplication of the base n times
+    # @note \f$ a^n \f$
+    # @param a Number that will be power
+    # @param n N-th power
+    # @return a to the power of n
+
     return base ** exponent
 
 
 def show_error():
-    '''
-    Whenever error occurs, show error will print on stdout the error
-    '''
+    ## Whenever error occurs, MATH_Error is printed just like in standard table calculator
+
     print("MATH ERROR")
