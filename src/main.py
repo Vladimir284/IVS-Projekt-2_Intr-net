@@ -44,7 +44,7 @@ class Calculator:
         '''
         pass
 
-    def executeOpration(self):
+    def executeOperation(self):
         '''
         @brief Executes operation depending on ID of operation
         @param ID_Operation:
