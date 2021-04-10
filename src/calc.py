@@ -1,5 +1,5 @@
 import tkinter as tk
-import math_lib
+import memory_operation
 from main import Calculator as c
 import subprocess
 
@@ -32,7 +32,7 @@ def clear():
 def calculate():
     c.value2 = float(display.get())
     display.delete(0, "end")
-    display.insert("insert", c.executeOpration(c))
+    display.insert("insert", c.executeOperation(c))
 
 
 def operation(x):
@@ -43,12 +43,13 @@ def operation(x):
         c.ID_Operation = x
         if c.ID_Operation == 6 or c.ID_Operation == 7:
             clear()
-            display.insert("insert", c.executeOpration(c))
+            display.insert("insert", c.executeOperation(c))
         else:
             clear()
 
 
 def show_hint():
+    # TODO call function from memory operations
     subprocess.run(['gedit', 'ahoj.txt'])
 
 
@@ -57,6 +58,9 @@ def key_operation(x):
     operation(x)
 
 
+# TODO ANS
+# TODO memory operation
+# TODO input
 # buttons def
 num_0 = tk.Button(calc, text="0", command=lambda: string_button_click("0"))
 num_1 = tk.Button(calc, text="1", command=lambda: string_button_click("1"))
@@ -98,8 +102,6 @@ num_0.grid(row=5, column=1, columnspan=2)
 calc.bind('<Return>', lambda e: calculate())
 calc.bind('<KP_Enter>', lambda e: calculate())
 calc.bind('<Escape>', lambda e: exit(0))
-
-# TODO : DOES NOT WORK BOIS
 
 calc.bind('<KP_Add>', lambda e: key_operation(0))
 calc.bind('<KP_Subtract>', lambda e: key_operation(1))
