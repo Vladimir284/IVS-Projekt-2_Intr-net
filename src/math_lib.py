@@ -40,7 +40,7 @@ def nth_root(root, base):
     # @param a Number that will be root
     # @param n N-th root, default is 2
     # @return[float] N-th root of number base
-    # @return If base is negative integer and base is odd return None
+    # @return If base is negative integer and base is odd show MATH_ERROR
 
     # In case od even roots the base cannot be negative
     # Also 0th root is a invalid input
@@ -79,7 +79,6 @@ def division(dividend, divisor):
     if divisor == 0:
         show_error()
         raise ValueError
-        return None
     else:
         return dividend / divisor
 
@@ -96,14 +95,14 @@ def multiplication(multiplicand, multiplier):
 def nth_power(base, exponent):
     ## When base is a positive integer, exponentiation corresponds to repeated multiplication of the base n times
     # @note \f$ a^n \f$
-    # @param a Number that will be power
-    # @param n N-th power
-    # @return a to the power of n
+    # @param exponent Number that will be power
+    # @param base of N-th power
+    # @return base to the power of exponent
 
     return base ** exponent
 
 
 def show_error():
-    ## Whenever error occurs, MATH_Error is printed just like in standard table calculator
+    ## Whenever error occurs, MATH_ERROR is printed just like in standard table calculator
 
     print("MATH ERROR")
