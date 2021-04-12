@@ -1,7 +1,7 @@
 from random import seed
 from random import randint
 
-my_data = open('data.txt', 'w')
+my_data = open('../src/data.txt', 'w')
 
 seed(1)
 rnd_num = []
