@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ivs_2dprojekt_2d2_5fintr_2dnet_0',['IVS-Projekt-2_Intr-net',['../md__home_vladimir_fit_IVS_Projekt2_IVS_Projekt_2_Intr_net_README.html',1,'']]]
+  ['_5f_5finit_5f_5f_0',['__init__',['../classmain_1_1Calculator.html#ad2a578808c3298c1b9391a3140f242da',1,'main::Calculator']]]
 ];

@@ -1,18 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "i",
-  1: "i"
+  0: "_cdeghms",
+  1: "c",
+  2: "m",
+  3: "_deghms"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "pages"
+  1: "classes",
+  2: "namespaces",
+  3: "functions"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Pages"
+  1: "Classes",
+  2: "Namespaces",
+  3: "Functions"
 };
 

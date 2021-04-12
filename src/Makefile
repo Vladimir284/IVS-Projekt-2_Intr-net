@@ -7,8 +7,8 @@
 # clean (smaže všechny soubory, co nemají být odevzdány)
 clean:
 	UNAME_S := $(shell uname -s)
-	ifeq ($(UNAME_S),Linux)
-    	sudo apt-get remove # Name of the app
+ifeq ($(UNAME_S),Linux)
+    sudo apt-get remove # Name of the app
     endif
     ifeq ($(UNAME_S),Darwin)
         sudo brew uninstall # Name of the app
