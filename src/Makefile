@@ -31,6 +31,6 @@ profile:
 	python3 profiling.py < data.txt
 
 remove_documentation:
-	# Will clean all the documntation
-	# Need to discuss
-	echo "Delete"
+	rm -rf ../latex
+	rm -rf ../html
+	rm -rf ../man
