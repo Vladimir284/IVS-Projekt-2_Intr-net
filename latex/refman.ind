@@ -1,0 +1,55 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {main.Calculator}, \hyperpage{7}
+
+  \indexspace
+
+  \item {display\_clear}
+    \subitem {memory\_operation}, \hyperpage{6}
+
+  \indexspace
+
+  \item {executeOperation}
+    \subitem {main.Calculator}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getMemory}
+    \subitem {main.Calculator}, \hyperpage{8}
+  \item {getOperand}
+    \subitem {main.Calculator}, \hyperpage{8}
+
+  \indexspace
+
+  \item {hint\_show\_man}
+    \subitem {memory\_operation}, \hyperpage{6}
+
+  \indexspace
+
+  \item {main.Calculator}, \hyperpage{7}
+    \subitem {\_\_init\_\_}, \hyperpage{7}
+    \subitem {executeOperation}, \hyperpage{8}
+    \subitem {getMemory}, \hyperpage{8}
+    \subitem {getOperand}, \hyperpage{8}
+    \subitem {setMemory}, \hyperpage{8}
+    \subitem {setOperand}, \hyperpage{9}
+  \item {math\_lib}, \hyperpage{5}
+  \item {memory\_clear}
+    \subitem {memory\_operation}, \hyperpage{6}
+  \item {memory\_operation}, \hyperpage{5}
+    \subitem {display\_clear}, \hyperpage{6}
+    \subitem {hint\_show\_man}, \hyperpage{6}
+    \subitem {memory\_clear}, \hyperpage{6}
+    \subitem {memory\_recall}, \hyperpage{6}
+  \item {memory\_recall}
+    \subitem {memory\_operation}, \hyperpage{6}
+
+  \indexspace
+
+  \item {setMemory}
+    \subitem {main.Calculator}, \hyperpage{8}
+  \item {setOperand}
+    \subitem {main.Calculator}, \hyperpage{9}
+
+\end{theindex}
