@@ -1,24 +1,26 @@
-'''@package
+## @package memory_operation
+# @brief Implements operation with memory
+#
+# All of the functions are void and don't take any paramater
 
-    Contains operations with memory
-'''
-
+## We might have a problem
+# @note Useless
+# ince our calculator can operate with only two operands there is no need for this function
 
 def memory_recall():
-    ''' Print ANS '''
     pass
 
 
+## Clears the display
 def display_clear():
-    ''' Clears the display but will not delete last saved answer '''
     pass
 
 
+## Clears the display and the last saved answer (ANS)
 def memory_clear():
-    ''' Clears display and deletes last saved answer'''
     pass
 
 
+## Opens manual for the user
 def hint_show_man():
-    ''' Will open man.pdf '''
     pass
