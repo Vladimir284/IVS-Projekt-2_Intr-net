@@ -1,7 +1,12 @@
+## @package profiling
+# Module for computing standard deviation
+# @note \f$ s = \sqrt{\frac{1}{N-1} \cdot (\sum_{i=1}^{N} x_{i}^2-N \cdot \overline{x}^2})\f$
+# @param numbers Sequence of numbers from file or stdin
+
 import math_lib
 
 # Read and split
-input_string = input()
+input_string = input() #!<  Input string of numbers separated by empty space
 array_of_numbers = input_string.split(" ")
 
 # Declare all used varriable
