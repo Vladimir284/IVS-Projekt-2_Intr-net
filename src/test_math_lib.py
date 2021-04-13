@@ -52,7 +52,7 @@ def test_nth_root(root, base, result):
 # @test \f$ divisor \div dividend = result \f$
 # @test Value Error exception
 def test_divide(dividend, substrahend, result):
-    with pytest.raises(Exception):
+    with pytest.raises(ValueError):
         assert math_lib.division(1, 0)
         assert math_lib.division(-50, 0)
     assert math_lib.division(dividend, substrahend) == result
@@ -88,7 +88,7 @@ def test_absolute_value(number, result):
 # @test number! = result
 # @test Value Error exceptions
 def test_factorial(number, result):
-    with pytest.raises(Exception):
+    with pytest.raises(ValueError):
         assert math_lib.factorial(1.5)
         assert math_lib.factorial(-4)
         assert math_lib.factorial(-4.5)
