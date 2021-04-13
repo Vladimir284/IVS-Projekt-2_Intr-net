@@ -1,6 +1,7 @@
+## @package test_math_lib
+# Tests for mathemathical library
 import math_lib
 import pytest
-
 
 @pytest.mark.parametrize("summand1, summand2, result", [
     (10, 10, 20),
@@ -8,6 +9,8 @@ import pytest
     (-10, 10, 0),
     ((1 / 2), (1 / 2), (2 / 2))
 ])
+
+## Addition tests
 def test_summary(summand1, summand2, result):
     assert math_lib.summary(summand1, summand2) == result
 
@@ -16,6 +19,7 @@ def test_summary(summand1, summand2, result):
     (3, 8, 2),
     (2, 1, 1),
 ])
+## N-th root tests
 def test_nth_root(root, base, result):
     assert math_lib.nth_root(root, base) == result
     with pytest.raises(ValueError):
@@ -32,6 +36,7 @@ def test_nth_root(root, base, result):
     (-15, 7, -2.142857142857143),
     (0, 5, 0),
 ])
+## Division tests
 def test_divide(x, y, result):
     with pytest.raises(Exception):
         assert math_lib.division(1, 0)
@@ -46,6 +51,8 @@ def test_divide(x, y, result):
     (-123645789, 123645789),
     (-1.2548, 1.2548)
 ])
+
+## Asblute value tests
 def test_absolute_value(x, result):
     assert math_lib.absolute_value(x) == result
 
@@ -58,6 +65,8 @@ def test_absolute_value(x, result):
     (2, 2),
     (3, 6)
 ])
+
+## Factorial tests
 def test_factorial(x, result):
     with pytest.raises(Exception):
         assert math_lib.divide(1.5)
