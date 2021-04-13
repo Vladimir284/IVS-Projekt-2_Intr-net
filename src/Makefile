@@ -6,13 +6,13 @@
 
 # clean (smaže všechny soubory, co nemají být odevzdány)
 clean:
-	UNAME_S := $(shell uname -s)
-ifeq ($(UNAME_S),Linux)
-    sudo apt-get remove # Name of the app
-    endif
-    ifeq ($(UNAME_S),Darwin)
-        sudo brew uninstall # Name of the app
-    endif
+	# UNAME_S := $(shell uname -s)
+    # ifeq ($(UNAME_S),Linux)
+    # 	sudo apt-get remove # Name of the app
+    # endif
+    # ifeq ($(UNAME_S),Darwin)
+    # 	sudo brew uninstall # Name of the app
+    # endif
 
 # test (spustí testy matematické knihovny)
 test:
@@ -31,6 +31,6 @@ profile:
 	python3 profiling.py < data.txt
 
 remove_documentation:
-	rm -rf ../latex
-	rm -rf ../html
-	rm -rf ../man
+	rm -rf ../doc/latex
+	rm -rf ../doc/html
+	rm -rf ../doc/man
