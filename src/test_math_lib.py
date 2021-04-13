@@ -1,7 +1,8 @@
 ## @package test_math_lib
-# Tests for mathemathical library
+# @brief Tests for mathemathical library
 import math_lib
 import pytest
+
 
 @pytest.mark.parametrize("summand1, summand2, result", [
     (10, 10, 20),
@@ -9,8 +10,11 @@ import pytest
     (-10, 10, 0),
     ((1 / 2), (1 / 2), (2 / 2))
 ])
-
 ## Addition tests
+# @param summand1 Summand
+# @param summand2 Summand
+# @param result Expected value
+# @test summand1 + summand2 = result
 def test_summary(summand1, summand2, result):
     assert math_lib.summary(summand1, summand2) == result
 
@@ -20,6 +24,11 @@ def test_summary(summand1, summand2, result):
     (2, 1, 1),
 ])
 ## N-th root tests
+# @param root Root of term
+# @param base Base of term
+# @param result Expected value of finding root
+# @test \f$ \sqrt[root]{base} = result \f$
+# @test ValueError ecxceptions
 def test_nth_root(root, base, result):
     assert math_lib.nth_root(root, base) == result
     with pytest.raises(ValueError):
@@ -37,6 +46,11 @@ def test_nth_root(root, base, result):
     (0, 5, 0),
 ])
 ## Division tests
+# @param divisor Divisor of divison
+# @param dividend Dividend of division
+# @param result Expected value of division
+# @test \f$ divisor \div dividend = result \f$
+# @test Value Error exception
 def test_divide(x, y, result):
     with pytest.raises(Exception):
         assert math_lib.division(1, 0)
@@ -51,8 +65,11 @@ def test_divide(x, y, result):
     (-123645789, 123645789),
     (-1.2548, 1.2548)
 ])
-
-## Asblute value tests
+## Absolute value tests
+# @param number Number of term
+# @param result Expected value from term
+# @test \f$ number \geq 0 \Rightarrow |number| = number \f$
+# @test \f$ number < 0 \Rightarrow |number| = number \f$
 def test_absolute_value(x, result):
     assert math_lib.absolute_value(x) == result
 
@@ -65,8 +82,11 @@ def test_absolute_value(x, result):
     (2, 2),
     (3, 6)
 ])
-
 ## Factorial tests
+# @param number number
+# @param result Expected value
+# @test number! = result
+# @test Value Error exceptions
 def test_factorial(x, result):
     with pytest.raises(Exception):
         assert math_lib.divide(1.5)
@@ -82,6 +102,11 @@ def test_factorial(x, result):
     (5, -1, 0.2),
     (2, 1.5, 2.8284271247461903)
 ])
+## N-th power tests
+# @param base Base of power
+# @param exponent Exponent of power
+# @param result Excpected value of power
+# @test \f$  base^{exponent} = result \f$
 def test_n_power(x, y, result):
     assert math_lib.nth_power(x, y) == result
 
@@ -91,5 +116,10 @@ def test_n_power(x, y, result):
     (369, 125, 244),
     (-10, 22, -32)
 ])
+## Substraction tests
+# @param minuend Minuend of subsaction
+# @param substrahend Substrahend of operation
+# @param result Expected value of substraction
+# @test minuend - subtrahen = result
 def test_subtraction(x, y, result):
     assert math_lib.subtraction(x, y) == result
