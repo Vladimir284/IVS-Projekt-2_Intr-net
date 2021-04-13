@@ -38,7 +38,7 @@ def test_nth_root(root, base, result):
     assert math_lib.nth_root(2, 20) == 2 * (math_lib.nth_root(2, 5))
 
 
-@pytest.mark.parametrize("x , y , result", [
+@pytest.mark.parametrize("dividend , substrahend, result", [
     (10, 2, 5),
     (15, -5, -3),
     (-15, 3, -5),
@@ -51,14 +51,14 @@ def test_nth_root(root, base, result):
 # @param result Expected value of division
 # @test \f$ divisor \div dividend = result \f$
 # @test Value Error exception
-def test_divide(x, y, result):
+def test_divide(dividend, substrahend, result):
     with pytest.raises(Exception):
         assert math_lib.division(1, 0)
         assert math_lib.division(-50, 0)
-    assert math_lib.division(x, y) == result
+    assert math_lib.division(dividend, substrahend) == result
 
 
-@pytest.mark.parametrize("x , result", [
+@pytest.mark.parametrize("number , result", [
     (5, 5),
     (-4, 4),
     (0, 0),
@@ -70,11 +70,11 @@ def test_divide(x, y, result):
 # @param result Expected value from term
 # @test \f$ number \geq 0 \Rightarrow |number| = number \f$
 # @test \f$ number < 0 \Rightarrow |number| = number \f$
-def test_absolute_value(x, result):
-    assert math_lib.absolute_value(x) == result
+def test_absolute_value(number, result):
+    assert math_lib.absolute_value(number) == result
 
 
-@pytest.mark.parametrize("x, result", [
+@pytest.mark.parametrize("number, result", [
     (5, 120),
     (0, 1),
     (1, 1),
@@ -87,15 +87,15 @@ def test_absolute_value(x, result):
 # @param result Expected value
 # @test number! = result
 # @test Value Error exceptions
-def test_factorial(x, result):
+def test_factorial(number, result):
     with pytest.raises(Exception):
         assert math_lib.divide(1.5)
         assert math_lib.divide(-4)
         assert math_lib.divide(-4.5)
-    assert math_lib.factorial(x) == result
+    assert math_lib.factorial(number) == result
 
 
-@pytest.mark.parametrize("x, y, result", [
+@pytest.mark.parametrize("base, power, result", [
     (5, 2, 25),
     (-5, 6, 15625),
     (-5, 3, -125),
@@ -107,11 +107,11 @@ def test_factorial(x, result):
 # @param exponent Exponent of power
 # @param result Excpected value of power
 # @test \f$  base^{exponent} = result \f$
-def test_n_power(x, y, result):
-    assert math_lib.nth_power(x, y) == result
+def test_n_power(base, power, result):
+    assert math_lib.nth_power(base, power) == result
 
 
-@pytest.mark.parametrize("x, y, result", [
+@pytest.mark.parametrize("minuend, substrahend, result", [
     (10, 5, 5),
     (369, 125, 244),
     (-10, 22, -32)
@@ -121,5 +121,5 @@ def test_n_power(x, y, result):
 # @param substrahend Substrahend of operation
 # @param result Expected value of substraction
 # @test minuend - subtrahen = result
-def test_subtraction(x, y, result):
-    assert math_lib.subtraction(x, y) == result
+def test_subtraction(minuend, substrahend, result):
+    assert math_lib.subtraction(minuend, substrahend) == result
