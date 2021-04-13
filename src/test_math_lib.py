@@ -89,9 +89,9 @@ def test_absolute_value(number, result):
 # @test Value Error exceptions
 def test_factorial(number, result):
     with pytest.raises(Exception):
-        assert math_lib.divide(1.5)
-        assert math_lib.divide(-4)
-        assert math_lib.divide(-4.5)
+        assert math_lib.factorial(1.5)
+        assert math_lib.factorial(-4)
+        assert math_lib.factorial(-4.5)
     assert math_lib.factorial(number) == result
 
 
