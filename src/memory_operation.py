@@ -1,4 +1,3 @@
-## @package memory_operation
 # @file memory_operation.py
 # @brief Implements operation with memory
 #

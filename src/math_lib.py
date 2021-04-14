@@ -1,4 +1,3 @@
-## @package math_lib
 # @file math_lib.py
 # @brief Implementation of basic matematic function
 

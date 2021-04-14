@@ -1,4 +1,3 @@
-## @package calc
 # @file calc.py
 # @brief GUI
 import tkinter as tk

@@ -1,4 +1,3 @@
-## @package main
 # @file main.py
 # @brief TO-DO
 import math_lib

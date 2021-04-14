@@ -1,4 +1,3 @@
-## @package profiling
 # @file profiling.py
 # @brief Module for computing standard deviation
 # @brief Inside varriables that store number are initilaized to zero
