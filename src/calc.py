@@ -1,3 +1,6 @@
+## @package calc
+# @file calc.py
+# @brief GUI
 import tkinter as tk
 import memory_operation
 from main import Calculator as c

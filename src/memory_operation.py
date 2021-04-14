@@ -1,4 +1,5 @@
 ## @package memory_operation
+# @file memory_operation.py
 # @brief Implements operation with memory
 #
 # All of the functions are void and don't take any paramater
