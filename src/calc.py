@@ -30,15 +30,18 @@ def clear():
 
 
 def calculate():
-    c.value2 = float(display.get())
-    display.delete(0, "end")
-    display.insert("insert", c.executeOperation(c))
+    if display.get() and display.get().isnumeric():
+        c.value2 = float(display.get())
+        display.delete(0, "end")
+        display.insert("insert", c.executeOperation(c))
+    else:
+        clear()
 
 
 def operation(x):
     if x == 1 and not display.get():
         display.insert("insert", '-')
-    else:
+    elif display.get() and display.get().isnumeric():
         c.value1 = float(display.get())
         c.ID_Operation = x
         if c.ID_Operation == 6 or c.ID_Operation == 7:
@@ -46,6 +49,8 @@ def operation(x):
             display.insert("insert", c.executeOperation(c))
         else:
             clear()
+    else:
+        clear()
 
 
 def show_hint():
