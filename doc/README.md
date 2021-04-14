@@ -35,3 +35,17 @@ sudo apt-get install TheCalculator
 ```bash
 sudo brew install TheCalculator
 ```
+
+## Deletion
+
+    For deletion on ubuntu run:
+
+```bash
+sudo apt-get uninstall TheCalculator
+```
+
+    For instalation on mac OSX run:
+
+```bash
+sudo brew remove TheCalculator
+```
