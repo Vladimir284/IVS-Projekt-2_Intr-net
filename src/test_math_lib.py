@@ -1,5 +1,5 @@
 # @file test_math_lib.py
-# @brief Tests for mathemathical library
+# @brief Module with tests for mathemathical library
 import math_lib
 import pytest
 

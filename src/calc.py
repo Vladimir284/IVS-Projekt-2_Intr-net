@@ -1,5 +1,5 @@
 # @file calc.py
-# @brief GUI
+# @brief Module with GUI
 import tkinter as tk
 import memory_operation
 from main import Calculator as c

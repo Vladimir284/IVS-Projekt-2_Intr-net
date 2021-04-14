@@ -1,5 +1,5 @@
 # @file memory_operation.py
-# @brief Implements operation with memory
+# @brief Module with implementation of operations with memory
 #
 # All of the functions are void and don't take any paramater
 
