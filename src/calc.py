@@ -1,3 +1,5 @@
+## @package calc.py
+# @brief Package with GUI
 # @file calc.py
 # @brief Module with GUI
 import tkinter as tk
@@ -17,6 +19,20 @@ calc.minsize(400, 200)
 #
 ## TO-DO Def
 weight = 0
+
+#
+## TO-DO Def
+row = 0
+
+
+#
+## TO-DO Def
+column = 0
+
+#
+## TO-DO Def
+columnspan = 0
+
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
 for i in range(5):
