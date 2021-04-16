@@ -1,24 +1,51 @@
 # IVS-Projekt-2_Intr-net
-IVS Projekt-2
 
+## Devlopment Platforms
 
-Vývojové prostredie:
---------------------
        Ubuntu 64-bit
        MacOS 64-bit
-       
- Tým:
- ----
+
+## Team
+
        Intr_net
-       
-Autori:
--------
+
+## List of authors
+
     Vladimír Mečiar xmecia00
     Filip Tichý xtichy31
     Matěj Šauer xsauer03
     Václav Polaštík xpolas41
-    
-Licencia:
---------
-       Program je poskytovaný s licenciou 
-       GNU General Public ver. 3
+
+## Licence
+
+       This program is disributed with license GNU GPL v3
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+## Instalation
+
+    For instalation on ubuntu run:
+
+```bash
+sudo apt-get install TheCalculator
+```
+
+    For instalation on mac OSX run:
+
+```bash
+sudo brew install TheCalculator
+```
+
+## Deletion
+
+    For deletion on ubuntu run:
+
+```bash
+sudo apt-get uninstall TheCalculator
+```
+
+    For instalation on mac OSX run:
+
+```bash
+sudo brew remove TheCalculator
+```
