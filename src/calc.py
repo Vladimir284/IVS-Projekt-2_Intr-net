@@ -2,8 +2,11 @@
 # @brief Module with GUI
 import tkinter as tk
 import memory_operation
-from main import Calculator as c
+from main import Calculator
 import subprocess
+
+## New instance of class object c
+c = Calculator
 
 #
 ## TO-DO Def
