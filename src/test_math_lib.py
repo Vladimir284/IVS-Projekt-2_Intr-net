@@ -121,5 +121,5 @@ def test_n_power(base, power, result):
 # @param substrahend Substrahend of operation
 # @param result Expected value of substraction
 # @test minuend - subtrahen = result
-def test_subtraction(minuend, substrahend, result):
-    assert math_lib.subtraction(minuend, substrahend) == result
+def test_subtsraction(minuend, substrahend, result):
+    assert math_lib.substraction(minuend, substrahend) == result
