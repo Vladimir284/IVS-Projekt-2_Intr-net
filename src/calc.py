@@ -41,9 +41,10 @@ def string_button_click(number):
 # @note TO-DO If you have something to add
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function retuns
-def all_clear_click():
-    display.delete(0, "end")
-    c.value1 = 0
+def all_clear():
+    c.setMemory(c, 0)
+    c.setOperand(c, 0)
+    clear()
     # TODO: delete memory
 
 
@@ -61,33 +62,33 @@ def clear():
 # @return TO-DO What this function returns
 def calculate():
     if display.get() and display.get().replace('.', '', 1).isdigit():
-        # c.value2 = float(display.get())
-        c.setOperand(float(display.get()))
-
+        c.setOperand(c, float(display.get()))
         display.delete(0, "end")
         display.insert("insert", c.executeOperation(c))
-        c.value1 = c.executeOperation(c)
+        c.setMemory(c, c.executeOperation(c))
     else:
-        clear()
+        all_clear()
+        display.insert("insert", "SYNTAX ERROR")
 
 
 ## TO-DO Again, what function are we talking about and also
 # @note TO-DO If you have something to add
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function returns
-def operation(x):
-    if x == 1 and not display.get():
+def operation(id_op):
+    if id_op == 1 and not display.get():
         display.insert("insert", '-')
     elif display.get() and display.get().replace('.', '', 1).isdigit():
-        c.value1 = float(display.get())
-        c.ID_Operation = x
-        if c.ID_Operation == 6 or c.ID_Operation == 7:
+        c.setMemory(c, float(display.get()))
+        c.setID(c, id_op)
+        if c.getID(c) == 6 or c.getID(c) == 7:
             clear()
             display.insert("insert", c.executeOperation(c))
         else:
             clear()
     else:
-        clear()
+        all_clear()
+        display.insert("insert", "SYNTAX ERROR")
 
 
 ## TO-DO Again, what function are we talking about and also
@@ -108,9 +109,7 @@ def key_operation(x):
     operation(x)
 
 
-# TODO ANS
 # TODO memory operation
-# TODO input
 
 
 # buttons def
@@ -175,7 +174,7 @@ factorial = tk.Button(calc, text="x!", command=lambda: operation(7))
 
 ##
 # TO-DO Def
-all_clear = tk.Button(calc, text="AC", command=lambda: all_clear_click())
+All_clear = tk.Button(calc, text="AC", command=lambda: all_clear())
 
 ##
 # TO-DO Def
@@ -211,12 +210,12 @@ dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 
 ##
 # TO-DO Def
-ans = tk.Button(calc, text="ANS", command=lambda: string_button_click(c.value1))
+ans = tk.Button(calc, text="ANS", command=lambda: string_button_click(c.getMemory(c)))
 
 ##
 # TO-DO Def
 # buttons position using grid // You can do better
-buttons_array = [hint, all_clear, C_clear, ans, divide, n_power, num_7, num_8, num_9, times, n_root, num_4, num_5,
+buttons_array = [hint, All_clear, C_clear, ans, divide, n_power, num_7, num_8, num_9, times, n_root, num_4, num_5,
                  num_6,
                  minus, factorial, num_1, num_2, num_3, plus, absolute_value, num_0, num_0, dot, result]
 for i in range(1, 26):

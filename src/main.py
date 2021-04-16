@@ -46,15 +46,23 @@ class Calculator:
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
     def getOperand(self):
-        return Calculator.__ID_Operation
+        return Calculator.__Operand
         pass
 
     ## TO-DO Again, what function are we talking about and also
     # @note TO-DO If you have something to add
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
-    def setOperand(self, ID_Operation):
-        Calculator.__ID_Operation = ID_Operation
+    def setOperand(self, value):
+        Calculator.__Operand = value
+        pass
+
+    def setID(self, value):
+        Calculator.__ID_Operation = value
+        pass
+
+    def getID(self):
+        return Calculator.__ID_Operation
         pass
 
     ## TO-DO Again, what function are we talking about and also
@@ -63,22 +71,22 @@ class Calculator:
     # @return TO-DO What this function retuns
     def executeOperation(self):
 
-        if self.ID_Operation == 0:
-            return math_lib.summary(self.value1, self.value2)
-        elif self.ID_Operation == 1:
-            return math_lib.subtraction(self.value1, self.value2)
-        elif self.ID_Operation == 2:
-            return math_lib.division(self.value1, self.value2)
-        elif self.ID_Operation == 3:
-            return math_lib.multiplication(self.value1, self.value2)
-        elif self.ID_Operation == 4:
-            return math_lib.nth_power(self.value1, self.value2)
-        elif self.ID_Operation == 5:
-            return math_lib.nth_root(self.value1, self.value2)
-        elif self.ID_Operation == 6:
-            return math_lib.absolute_value(self.value1)
-        elif self.ID_Operation == 7:
-            return math_lib.factorial(self.value1)
+        if self.__ID_Operation == 0:
+            return math_lib.summary(self.__Last_saved_answer, self.__Operand)
+        elif self.__ID_Operation == 1:
+            return math_lib.subtraction(self.__Last_saved_answer, self.__Operand)
+        elif self.__ID_Operation == 2:
+            return math_lib.division(self.__Last_saved_answer, self.__Operand)
+        elif self.__ID_Operation == 3:
+            return math_lib.multiplication(self.__Last_saved_answer, self.__Operand)
+        elif self.__ID_Operation == 4:
+            return math_lib.nth_power(self.__Last_saved_answer, self.__Operand)
+        elif self.__ID_Operation == 5:
+            return math_lib.nth_root(self.__Last_saved_answer, self.__Operand)
+        elif self.__ID_Operation == 6:
+            return math_lib.absolute_value(self.__Last_saved_answer)
+        elif self.__ID_Operation == 7:
+            return math_lib.factorial(self.__Last_saved_answer)
 
 
 pass
