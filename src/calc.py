@@ -64,12 +64,6 @@ def calculate():
         # c.value2 = float(display.get())
         c.setOperand(float(display.get()))
 
-
-        c.setMemory(c, 10)
-
-        c.
-
-
         display.delete(0, "end")
         display.insert("insert", c.executeOperation(c))
         c.value1 = c.executeOperation(c)
