@@ -1,0 +1,12 @@
+In the attached graphs, we can see that we tested 1000, 1000 000 and 10 000 000 numbers input.
+As you can see at the first graph, when we used only 1000 numbers, the profiler output doesn't even show us the time spent on calling particular functions.
+So this output doesn't really tell us much.
+
+But from the other two graphs it's visible that the functions, which took the longest time and were called the most are the functions, which you repatedly need to calculate the standart deviation.
+Those functions are: summary, substraction and nth-power.
+
+Those functions maybe were called the most and the profiler spent there the most of the time, but the time spent there was still pretty short.
+
+To sum it up, I think that our functions summary and substraction are really fast and they don't need any optimalization.
+
+For calculation the nth-power of the number we used the python build-in function (**), which seems pretty good optimalized too. Honestly I don't think we could implement it any better.
