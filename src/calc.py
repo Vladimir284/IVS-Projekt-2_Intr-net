@@ -46,7 +46,7 @@ def clear():
 ## TO-DO Again, what function are we talking about and also
 # @note TO-DO If you have something to add
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-# @return TO-DO What this function retuns
+# @return TO-DO What this function returns
 def calculate():
     if display.get() and display.get().isnumeric():
         c.value2 = float(display.get())
@@ -60,9 +60,9 @@ def calculate():
 ## TO-DO Again, what function are we talking about and also
 # @note TO-DO If you have something to add
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-# @return TO-DO What this function retuns
+# @return TO-DO What this function returns
 def operation(x):
-    print(display.get())
+    print(display.get().isnumeric())
     if x == 1 and not display.get():
         display.insert("insert", '-')
     elif display.get() and display.get().isnumeric():
@@ -81,7 +81,7 @@ def operation(x):
 ## TO-DO Again, what function are we talking about and also
 # @note TO-DO If you have something to add
 # @param TO-DO After param, type name of parameter and after it what it represents, For each param youll have one line
-# @return TO-DO What this function retuns
+# @return TO-DO What this function returns
 def show_hint():
     # TODO call function from memory operations
     subprocess.run(['gedit', 'ahoj.txt'])
@@ -90,7 +90,7 @@ def show_hint():
 ## TO-DO Again, what function are we talking about and also
 # @note TO-DO If you have something to add
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-# @return TO-DO What this function retuns
+# @return TO-DO What this function returns
 def key_operation(x):
     display.delete(len(display.get()) - 1)
     operation(x)
