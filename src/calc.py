@@ -1,13 +1,14 @@
-## @package calc
+# @package calc
 # @brief Package with GUI
-## @file calc.py
+# @file calc.py
 # @brief Module with GUI
 import tkinter as tk
 import memory_operation
 from main import Calculator
 import subprocess
 
-## New instance of class object c
+##
+# New instance of class object c
 c = Calculator
 
 ##
@@ -22,43 +23,43 @@ calc.title("Calculator")
 # Defining the default size of the calculator
 calc.minsize(400, 200)
 
-#
-## TO-DO Def
+##
+# TO-DO Def
 weight = 0
 
-#
-## TO-DO Def
+##
+# TO-DO Def
 row = 0
 
-
-#
-## TO-DO Def
+##
+# TO-DO Def
 column = 0
 
-#
-## TO-DO Def
+##
+# TO-DO Def
 columnspan = 0
-
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
 for i in range(5):
     tk.Grid.columnconfigure(calc, i, weight=1)
 
-#
-## TO-DO Def
+##
+# TO-DO Def
 display = tk.Entry(calc, width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
 
-## Inserts the number on the display
+##
+# Inserts the number on the display
 # @param number - Number, which is to be insert on the display
 # @return void, inserts the number on the display
 def string_button_click(number):
     display.insert("insert", number)
 
 
-## Clears the display and the last saved answer
+##
+# Clears the display and the last saved answer
 # @return void, deletes the memory and the display
 def all_clear():
     c.setMemory(c, 0)
@@ -67,6 +68,7 @@ def all_clear():
     # TODO: delete memory
 
 
+##
 # Clears the display
 # @note keeps the last saved answer
 # @return void, clears the display
@@ -74,7 +76,8 @@ def clear():
     display.delete(0, "end")
 
 
-## When the '=' is pressed, this will calculate the result
+##
+# When the '=' is pressed, this will calculate the result
 # @note Also checks for some not-a-number characters
 # @return void, calls directly different functions
 def calculate():
@@ -88,7 +91,8 @@ def calculate():
         display.insert("insert", "SYNTAX ERROR")
 
 
-## Stores the display value into the variable and also stores the operation which will be made
+##
+# Stores the display value into the variable and also stores the operation which will be made
 # @note also checks for the not-a-number characters
 # @param id_op - ID of the operation
 # @return void, calls directly different functions
@@ -108,14 +112,16 @@ def operation(id_op):
         display.insert("insert", "SYNTAX ERROR")
 
 
-## Shows the manual for the user
+##
+# Shows the manual for the user
 # @return void, shows the manual
 def show_hint():
     # TODO call function from memory operations
     subprocess.run(['gedit', 'ahoj.txt'])
 
 
-## Makes the keyboard buttons and operations work correctly
+##
+# Makes the keyboard buttons and operations work correctly
 # @note Delete the character specific for the operation, so the string can be converted to the integer(float)
 # @param x - the ID of the operation
 # @return void, calls directly the function operation
