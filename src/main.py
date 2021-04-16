@@ -4,9 +4,9 @@ import math_lib
 import memory_operation
 
 
-## fixme Finish the comments
+# fixme Finish the comments
 
-##  TO-DO write here what class are we talking about
+#  TO-DO write here what class are we talking about
 # @note TO-DO If you have something to add type it here, might not be needed
 # @brief TO-DO Surely type here briefly about calculator, what id does#
 #
