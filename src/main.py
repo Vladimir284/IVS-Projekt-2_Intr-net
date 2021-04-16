@@ -21,6 +21,7 @@ class Calculator:
     # @note TO-DO If you have something to add
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
+
     def __init__(self):
         _Operand = 0.0
         _ID_operation = 0

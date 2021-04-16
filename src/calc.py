@@ -5,14 +5,22 @@ import memory_operation
 from main import Calculator as c
 import subprocess
 
+#
+## TO-DO Def
 calc = tk.Tk()
 calc.title("Calculator")
 calc.minsize(400, 200)
+
+#
+## TO-DO Def
+weight = 0
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
 for i in range(5):
     tk.Grid.columnconfigure(calc, i, weight=1)
 
+#
+## TO-DO Def
 display = tk.Entry(calc, width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
@@ -96,8 +104,9 @@ def key_operation(x):
 # TODO ANS
 # TODO memory operation
 # TODO input
-# buttons def
 
+
+# buttons def
 # TO-DO Definition of each button
 
 
@@ -197,7 +206,6 @@ dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 # TO-DO Def
 ans = tk.Button(calc, text="ANS")
 
-
 ##
 # TO-DO Def
 # buttons position using grid // You can do better
@@ -211,6 +219,7 @@ for i in range(1, 26):
                                   sticky="nesw")
 
 num_0.grid(row=5, column=1, columnspan=2)
+
 # keyboard events
 calc.bind('<Return>', lambda e: calculate())
 calc.bind('<KP_Enter>', lambda e: calculate())
