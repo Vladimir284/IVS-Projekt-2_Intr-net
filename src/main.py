@@ -1,7 +1,7 @@
 ## @file main.py
 # @brief TO-DO
 import math_lib
-import memory_operation
+import memory_operation as mop
 
 
 # fixme Finish the comments

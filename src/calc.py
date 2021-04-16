@@ -43,6 +43,7 @@ def string_button_click(number):
 # @return TO-DO What this function retuns
 def all_clear_click():
     display.delete(0, "end")
+    c.value1 = 0
     # TODO: delete memory
 
 
@@ -208,7 +209,7 @@ dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 
 ##
 # TO-DO Def
-ans = tk.Button(calc, text="ANS")
+ans = tk.Button(calc, text="ANS", command=lambda: string_button_click(c.value1))
 
 ##
 # TO-DO Def
