@@ -13,31 +13,32 @@ import memory_operation
 # TO-DO If needed, detailed description will be here
 
 class Calculator:
-    value1 = 0
-    value2 = 0
-    ID_Operation = ""
+    ##
+    # Number stored in memory
+    __Last_saved_answer = 0
 
-    ## TO-DO Again, what function are we talking about and also
-    # @note TO-DO If you have something to add
-    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-    # @return TO-DO What this function retuns
-    def __init__(self):
-        _Operand = 0.0
-        _ID_operation = 0
-        _Last_answer = 0
+    ##
+    # Next number that will be processed
+    __Operand = 0
+
+    ##
+    # ID of next operation
+    __ID_Operation = ""
 
     ## TO-DO Again, what function are we talking about and also
     # @note TO-DO If you have something to add
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
     def getMemory(self):
+        return Calculator.__Last_saved_answer
         pass
 
     ## TO-DO Again, what function are we talking about and also
     # @note TO-DO If you have something to add
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
-    def setMemory(self):
+    def setMemory(self, value):
+        Calculator.__Last_saved_answer = value
         pass
 
     ## TO-DO Again, what function are we talking about and also
@@ -45,13 +46,15 @@ class Calculator:
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
     def getOperand(self):
+        return Calculator.__ID_Operation
         pass
 
     ## TO-DO Again, what function are we talking about and also
     # @note TO-DO If you have something to add
     # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
     # @return TO-DO What this function retuns
-    def setOperand(self):
+    def setOperand(self, ID_Operation):
+        Calculator.__ID_Operation = ID_Operation
         pass
 
     ## TO-DO Again, what function are we talking about and also
