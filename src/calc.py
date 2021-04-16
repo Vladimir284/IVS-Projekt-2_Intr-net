@@ -52,6 +52,7 @@ def calculate():
         c.value2 = float(display.get())
         display.delete(0, "end")
         display.insert("insert", c.executeOperation(c))
+        c.value1 = c.executeOperation(c)
     else:
         clear()
 
@@ -61,6 +62,7 @@ def calculate():
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function retuns
 def operation(x):
+    print(display.get())
     if x == 1 and not display.get():
         display.insert("insert", '-')
     elif display.get() and display.get().isnumeric():
@@ -72,6 +74,7 @@ def operation(x):
         else:
             clear()
     else:
+        print("etf")
         clear()
 
 
@@ -196,7 +199,6 @@ dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
 ##
 # TO-DO Def
 ans = tk.Button(calc, text="ANS")
-
 
 ##
 # TO-DO Def
