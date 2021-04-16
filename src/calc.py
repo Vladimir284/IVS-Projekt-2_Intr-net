@@ -59,7 +59,7 @@ def clear():
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function returns
 def calculate():
-    if display.get() and display.get().isnumeric():
+    if display.get() and display.get().replace('.', '', 1).isdigit():
         c.value2 = float(display.get())
         display.delete(0, "end")
         display.insert("insert", c.executeOperation(c))
@@ -73,10 +73,9 @@ def calculate():
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function returns
 def operation(x):
-    print(display.get().isnumeric())
     if x == 1 and not display.get():
         display.insert("insert", '-')
-    elif display.get() and display.get().isnumeric():
+    elif display.get() and display.get().replace('.', '', 1).isdigit():
         c.value1 = float(display.get())
         c.ID_Operation = x
         if c.ID_Operation == 6 or c.ID_Operation == 7:
@@ -85,7 +84,6 @@ def operation(x):
         else:
             clear()
     else:
-        print("etf")
         clear()
 
 
