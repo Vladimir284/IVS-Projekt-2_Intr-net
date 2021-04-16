@@ -58,7 +58,7 @@ def summary(summmand1, summand2):
 # @param minuend Minuend of the substraction
 # @param subtrahend Substrahnd of the substraction
 # @return Result of substraction
-def subtraction(minuend, subtrahend):
+def substraction(minuend, subtrahend):
     return minuend - subtrahend
 
 ## Basic division
