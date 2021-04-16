@@ -3,11 +3,7 @@
 #
 # All of the functions are void and don't take any paramater
 
-## We might have a problem
-# @note Useless
-# ince our calculator can operate with only two operands there is no need for this function
-def memory_recall():
-    pass
+import calc
 
 
 ## Clears the display
@@ -16,6 +12,7 @@ def memory_recall():
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function retuns
 def display_clear():
+    calc.clear()
     pass
 
 
@@ -25,6 +22,7 @@ def display_clear():
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function retuns
 def memory_clear():
+    calc.c.setMemory(calc.c, 0)
     pass
 
 
@@ -34,4 +32,5 @@ def memory_clear():
 # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
 # @return TO-DO What this function retuns
 def hint_show_man():
+    # TO-DO write manual
     pass
