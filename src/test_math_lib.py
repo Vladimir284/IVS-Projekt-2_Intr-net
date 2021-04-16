@@ -1,4 +1,4 @@
-# @file test_math_lib.py
+## @file test_math_lib.py
 # @brief Module with tests for mathemathical library
 import math_lib
 import pytest

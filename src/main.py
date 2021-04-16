@@ -1,57 +1,64 @@
-# @file main.py
+## @file main.py
 # @brief TO-DO
 import math_lib
 import memory_operation
 
 
+## fixme Finish the comments
+
+##  TO-DO write here what class are we talking about
+# @note TO-DO If you have something to add type it here, might not be needed
+# @brief TO-DO Surely type here briefly about calculator, what id does#
+#
+# TO-DO If needed, detailed description will be here
+
 class Calculator:
-    '''
-    Stores values of memory and contains operands methods
-    '''
     value1 = 0
     value2 = 0
     ID_Operation = ""
 
+    ## TO-DO Again, what function are we talking about and also
+    # @note TO-DO If you have something to add
+    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
+    # @return TO-DO What this function retuns
     def __init__(self):
-        '''
-        Constructor
-        Every parameter will be set to zero
-        '''
         _Operand = 0.0
         _ID_operation = 0
         _Last_answer = 0
 
+    ## TO-DO Again, what function are we talking about and also
+    # @note TO-DO If you have something to add
+    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
+    # @return TO-DO What this function retuns
     def getMemory(self):
-        '''
-        Return values currently stored on memory
-        @return Last saved answr
-        '''
         pass
 
+    ## TO-DO Again, what function are we talking about and also
+    # @note TO-DO If you have something to add
+    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
+    # @return TO-DO What this function retuns
     def setMemory(self):
-        '''
-        Set memory on current value
-        '''
         pass
 
+    ## TO-DO Again, what function are we talking about and also
+    # @note TO-DO If you have something to add
+    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
+    # @return TO-DO What this function retuns
     def getOperand(self):
-        '''
-        Read from In.
-        '''
         pass
 
+    ## TO-DO Again, what function are we talking about and also
+    # @note TO-DO If you have something to add
+    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
+    # @return TO-DO What this function retuns
     def setOperand(self):
-        '''
-        Set ID of next operation depending on opration entered
-        '''
         pass
 
+    ## TO-DO Again, what function are we talking about and also
+    # @note TO-DO If you have something to add
+    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
+    # @return TO-DO What this function retuns
     def executeOperation(self):
-        '''
-        @brief Executes operation depending on ID of operation
-        @param ID_Operation:
-        @return Result of operation
-        '''
 
         if self.ID_Operation == 0:
             return math_lib.summary(self.value1, self.value2)

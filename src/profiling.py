@@ -1,4 +1,4 @@
-# @file profiling.py
+## @file profiling.py
 # @brief Module for computing standard deviation
 # @brief Inside varriables that store number are initilaized to zero
 # @note \f$ s = \sqrt{\frac{1}{N-1} \cdot (\sum_{i=1}^{N} x_{i}^2-N \cdot \overline{x}^2})\f$

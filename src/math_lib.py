@@ -1,4 +1,4 @@
-# @file math_lib.py
+## @file math_lib.py
 # @brief Module with implementation of basic matematic function
 
 ## Absolute value, is a non-negative value of x without regard to its sign
