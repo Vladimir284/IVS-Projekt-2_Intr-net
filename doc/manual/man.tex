@@ -10,6 +10,7 @@
 \usepackage{caption}
 \usepackage[unicode]{hyperref}
 \usepackage{times}
+\usepackage{graphicx}
 
 \newtheorem{thm}{Theorem}[section]
 \theoremstyle{definition}
@@ -42,8 +43,6 @@
 
     \newpage
 
-    % TO-DO after discussed
-
 
     \section{Install}
 
@@ -68,15 +67,45 @@
 
     \subsubsection{N-th root}
 
+    \newpage
+
     \subsection{Memory oprations}
 
     \subsubsection{Clear Display }
 
+    \begin{figure}[h]
+        \includegraphics[scale = 0.2]{clear_display}
+        \centering
+        \label{fig:ac}
+    \end{figure}
+    \\
+    This button will clear the display. Last saved answer will remain untouched
+
     \subsubsection{Clear Memory}
 
-    \subsubsection{Hint}
-    
+    \begin{figure}[h]
+        \includegraphics[scale = 0.2]{clear_memory}
+        \centering
+        \label{fig:c}
+    \end{figure}
+    \\
+    This button will reset last saved answer to zero and will also clear the display
+
+    \subsubsection[scale = 0.2]{Hint}
+
+
+    \begin{figure}[h]
+        \includegraphics[scale = 0.2]{hint}
+        \centering
+        \label{fig:h}
+    \end{figure}
+    \\
+    This button will open up this manual.
+
+    \newpage
+
     \subsection{Equal}
+
 
     \section{Uninstall}
 \end{document}

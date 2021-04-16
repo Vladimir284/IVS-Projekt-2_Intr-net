@@ -3,7 +3,7 @@
 #
 # All of the functions are void and don't take any paramater
 #
-# @file memory_operation.py
+## @file memory_operation.py
 # @brief Module with implementation of operations with memory
 #
 
