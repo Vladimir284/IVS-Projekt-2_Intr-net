@@ -1,16 +1,20 @@
 ## @file main.py
-# @brief TO-DO
+# @brief declares class Calculator
 import math_lib
 import memory_operation as mop
 
 
-# fixme Finish the comments
-
-#  TO-DO write here what class are we talking about
-# @note TO-DO If you have something to add type it here, might not be needed
-# @brief TO-DO Surely type here briefly about calculator, what id does#
+## @class Calculator
+# @brief Instance holds 3 values and her methods
 #
-# TO-DO If needed, detailed description will be here
+#
+# Values:
+# 1. Last saved answer
+# 2. Operand
+# 3. ID of operation
+#
+# All of the varriables are initialised to zero
+# Class also holds all its methods
 
 class Calculator:
     ##
@@ -25,50 +29,43 @@ class Calculator:
     # ID of next operation
     __ID_Operation = ""
 
-    ## TO-DO Again, what function are we talking about and also
-    # @note TO-DO If you have something to add
-    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-    # @return TO-DO What this function retuns
+    ## Gets Last saved answer
+    # @return Last saved answer
     def getMemory(self):
         return Calculator.__Last_saved_answer
         pass
 
-    ## TO-DO Again, what function are we talking about and also
-    # @note TO-DO If you have something to add
-    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-    # @return TO-DO What this function retuns
+    ## Sets Last saved answer
+    # @param value Number which is saved as Last saved answer
+
     def setMemory(self, value):
         Calculator.__Last_saved_answer = value
         pass
 
-    ## TO-DO Again, what function are we talking about and also
-    # @note TO-DO If you have something to add
-    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-    # @return TO-DO What this function retuns
+    ## Gets operand
+    # @return Operand
     def getOperand(self):
         return Calculator.__Operand
         pass
 
-    ## TO-DO Again, what function are we talking about and also
-    # @note TO-DO If you have something to add
-    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-    # @return TO-DO What this function retuns
+    ## Sets Operand on value
+    # @param value Value on which is operand set
     def setOperand(self, value):
         Calculator.__Operand = value
         pass
 
+    ## Sets ID of operation
+    # @param value Sets ID of opration on value
     def setID(self, value):
         Calculator.__ID_Operation = value
         pass
 
+    ## Gets ID of operation
     def getID(self):
         return Calculator.__ID_Operation
         pass
 
-    ## TO-DO Again, what function are we talking about and also
-    # @note TO-DO If you have something to add
-    # @param TO-DO After @param, type name of parameter and after it what it represents, For each param youll have one line
-    # @return TO-DO What this function retuns
+    ## Executes mathematical operation based on ID
     def executeOperation(self):
 
         if self.__ID_Operation == 0:

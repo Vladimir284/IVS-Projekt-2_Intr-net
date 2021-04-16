@@ -1,6 +1,6 @@
-## @package calc.py
+## @package calc
 # @brief Package with GUI
-# @file calc.py
+## @file calc.py
 # @brief Module with GUI
 import tkinter as tk
 import memory_operation
