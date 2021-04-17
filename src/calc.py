@@ -3,6 +3,7 @@
 ## @file calc.py
 # @brief Module with GUI
 import tkinter as tk
+from tkinter import *
 import memory_operation
 from main import Calculator
 import subprocess
@@ -24,7 +25,6 @@ weight = 0
 ## TO-DO Def
 row = 0
 
-
 #
 ## TO-DO Def
 column = 0
@@ -32,7 +32,6 @@ column = 0
 #
 ## TO-DO Def
 columnspan = 0
-
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
 for i in range(5):
@@ -134,7 +133,8 @@ def key_operation(x):
 
 #
 ## TO-DO Def
-num_0 = tk.Button(calc, text="0", command=lambda: string_button_click("0"))
+image = PhotoImage(file="button_pics/0.png")
+num_0 = tk.Button(calc, image=image, command=lambda: string_button_click("0"))
 
 ##
 # TO-DO Def
