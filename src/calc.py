@@ -5,6 +5,7 @@
 import tkinter as tk
 import memory_operation
 from main import Calculator
+from tkinter import *
 import subprocess
 
 ##
@@ -135,101 +136,125 @@ def key_operation(x):
 # TO-DO Definition of each button
 
 
+image = PhotoImage(file="button_pic_gif/0.gif")
 ##
 # Calculator button - Insert zero on the display
-num_0 = tk.Button(calc, text="0", command=lambda: string_button_click("0"))
+num_0 = tk.Button(calc, image=image, height=20, width=20, command=lambda: string_button_click("0"))
 
+image = PhotoImage(file="button_pic_gif/1.gif")
 ##
 # Calculator button - Insert one on the display
-num_1 = tk.Button(calc, text="1", command=lambda: string_button_click("1"))
+num_1 = tk.Button(calc, image=image, command=lambda: string_button_click("1"))
 
+image = PhotoImage(file="button_pic_gif/2.gif")
 ##
 # Calculator button - Insert two on the display
-num_2 = tk.Button(calc, text="2", command=lambda: string_button_click("2"))
+num_2 = tk.Button(calc, image=image, command=lambda: string_button_click("2"))
 
+image = PhotoImage(file="button_pic_gif/3.gif")
 ##
 # Calculator button - Insert three on the display
-num_3 = tk.Button(calc, text="3", command=lambda: string_button_click("3"))
+num_3 = tk.Button(calc, image=image, command=lambda: string_button_click("3"))
 
+image = PhotoImage(file="button_pic_gif/4.gif")
 ##
 # Calculator button - Insert four on the display
-num_4 = tk.Button(calc, text="4", command=lambda: string_button_click("4"))
+num_4 = tk.Button(calc, image=image, command=lambda: string_button_click("4"))
 
+image = PhotoImage(file="button_pic_gif/5.gif")
 ##
 # Calculator button - Insert five on the display
-num_5 = tk.Button(calc, text="5", command=lambda: string_button_click("5"))
+num_5 = tk.Button(calc, image=image, command=lambda: string_button_click("5"))
 
+image = PhotoImage(file="button_pic_gif/6.gif")
 ##
 # Calculator button - Insert six on the display
-num_6 = tk.Button(calc, text="6", command=lambda: string_button_click("6"))
+num_6 = tk.Button(calc, image=image, command=lambda: string_button_click("6"))
 
+image = PhotoImage(file="button_pic_gif/7.gif")
 ##
 # Calculator button - Insert seven on the display
-num_7 = tk.Button(calc, text="7", command=lambda: string_button_click("7"))
+num_7 = tk.Button(calc, image=image, command=lambda: string_button_click("7"))
 
+image = PhotoImage(file="button_pic_gif/8.gif")
 ##
 # Calculator button - Insert eight on the display
-num_8 = tk.Button(calc, text="8", command=lambda: string_button_click("8"))
+num_8 = tk.Button(calc, image=image, command=lambda: string_button_click("8"))
 
+image = PhotoImage(file="button_pic_gif/9.gif")
 ##
 # Calculator button - Insert nine on the display
-num_9 = tk.Button(calc, text="9", command=lambda: string_button_click("9"))
+num_9 = tk.Button(calc, image=image, command=lambda: string_button_click("9"))
 
+image = PhotoImage(file="button_pic_gif/n_th-root.gif")
 ##
 # Calculator button - Makes the nth root of the given number
-n_root = tk.Button(calc, text="x^1/n", command=lambda: operation(5))
+n_root = tk.Button(calc, image=image, command=lambda: operation(5))
 
+image = PhotoImage(file="button_pic_gif/n_th-power.gif")
 ##
 # Calculator button - Makes the nth power of the given number
-n_power = tk.Button(calc, text="x^n", command=lambda: operation(4))
+n_power = tk.Button(calc, image=image, command=lambda: operation(4))
 
+image = PhotoImage(file="button_pic_gif/abs.gif")
 ##
 # Calculator button - Makes the absolute value of the number
-absolute_value = tk.Button(calc, text="|x|", command=lambda: operation(6))
+absolute_value = tk.Button(calc, image=image, command=lambda: operation(6))
 
+image = PhotoImage(file="button_pic_gif/factorial.gif")
 ##
 # Calculator button - Makes the factorial of the given number
-factorial = tk.Button(calc, text="x!", command=lambda: operation(7))
+factorial = tk.Button(calc, image=image, command=lambda: operation(7))
 
+image = PhotoImage(file="button_pic_gif/clear_memory.gif")
 ##
-# Calculator button - Clears the display
-All_clear = tk.Button(calc, text="AC", command=lambda: all_clear())
+# Calculator button - Clears the display Code review
+All_clear = tk.Button(calc, image=image, command=lambda: all_clear())
 
+image = PhotoImage(file="button_pic_gif/clear_display.gif")
 ##
-# Calculator button - Clears the display and the last saved answer
-C_clear = tk.Button(calc, text="C", command=lambda: clear())
+# Calculator button - Clears the display and the last saved answer  Code-review
+C_clear = tk.Button(calc, image=image, command=lambda: clear())
 
+image = PhotoImage(file="button_pic_gif/hint.gif")
 ##
 # Calculator button - Shows the manual for the user
-hint = tk.Button(calc, text="HINT", command=lambda: show_hint())
+hint = tk.Button(calc, image=image, command=lambda: show_hint())
 
+image = PhotoImage(file="button_pic_gif/plus.gif")
 ##
 # Calculator button - Makes the summary of the number on the display and the next given number
-plus = tk.Button(calc, text="+", command=lambda: operation(0))
+plus = tk.Button(calc, image=image, command=lambda: operation(0))
 
+image = PhotoImage(file="button_pic_gif/minus.gif")
 ##
 # Calculator button - Makes the distinction of the number on the display and the next given number
-minus = tk.Button(calc, text="-", command=lambda: operation(1))
+minus = tk.Button(calc, image=image, command=lambda: operation(1))
 
+image = PhotoImage(file="button_pic_gif/times.gif")
 ##
 # Calculator button - Makes the multiplication of the number on the display and the next given number
-times = tk.Button(calc, text="*", command=lambda: operation(3))
+times = tk.Button(calc, image=image, command=lambda: operation(3))
 
+image = PhotoImage(file="button_pic_gif/divide.gif")
 ##
 # Calculator button - Divide the number on the display and the next given number
-divide = tk.Button(calc, text="/", command=lambda: operation(2))
+divide = tk.Button(calc, image=image, command=lambda: operation(2))
 
+image = PhotoImage(file="button_pic_gif/equals.gif")
 ##
 # Calculator button - Shows the result
-result = tk.Button(calc, text="=", command=lambda: calculate())
+result = tk.Button(calc, image=image, command=lambda: calculate())
 
+image = PhotoImage(file="button_pic_gif/dot.gif")
 ##
 # Calculator button - Insert "." on the display
-dot = tk.Button(calc, text=".", command=lambda: string_button_click("."))
+dot = tk.Button(calc, image=image, command=lambda: string_button_click("."))
 
+image = PhotoImage(file="button_pic_gif/ans.gif")
 ##
 # Calculator button - Shows the last saved answer
-ans = tk.Button(calc, text="ANS", command=lambda: string_button_click(c.getMemory(c)))
+ans = tk.Button(calc, image=image, command=lambda: string_button_click(c.getMemory(c)))
 
 ##
 # The array of the buttons which are in the calculator
