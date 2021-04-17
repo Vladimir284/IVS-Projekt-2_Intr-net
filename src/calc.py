@@ -32,6 +32,8 @@ weight = 0
 # TO-DO Def
 row = 0
 
+##
+# TO-DO Def
 column = 0
 
 ##
@@ -135,6 +137,14 @@ def key_operation(x):
 # buttons def
 # TO-DO Definition of each button
 
+
+##
+# Sets width of a button
+width = 0
+
+##
+# Sets height of a button
+height = 0
 
 ##
 # Contains data about specified image which will be put on the button
