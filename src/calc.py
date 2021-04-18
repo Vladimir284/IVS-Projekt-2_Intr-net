@@ -100,7 +100,7 @@ def calculate():
 def operation(id_op):
     if id_op == 1 and not display.get():
         display.insert("insert", '-')
-    elif display.get() and display.get().replace('.', '', 1).isdigit():
+    elif display.get() and display.get().replace('.', '', 1).replace('-', '', 1).isdigit():
         c.setMemory(c, float(display.get()))
         c.setID(c, id_op)
         if c.getID(c) == 6 or c.getID(c) == 7:
