@@ -85,7 +85,10 @@ def calculate():
     if display.get() and display.get().replace('.', '', 1).isdigit():
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
-        display.insert("insert", c.executeOperation(c))
+        if c.executeOperation(c) % 1 == 0:
+            display.insert("insert", int(c.executeOperation(c)))
+        else:
+            display.insert("insert", c.executeOperation(c))
         c.setMemory(c, c.executeOperation(c))
     else:
         all_clear()
