@@ -3,7 +3,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[top=2.5cm, left=1.5cm, text={18cm, 25cm}]{geometry}
 \usepackage[IL2]{fontenc}
-\usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{turnstile}
@@ -11,11 +10,6 @@
 \usepackage[unicode]{hyperref}
 \usepackage{times}
 \usepackage{graphicx}
-
-\newtheorem{thm}{Theorem}[section]
-\theoremstyle{definition}
-\newtheorem{definition}{Definice}
-\newtheorem{veta}{Věta}
 
 
 \title{proj2}
@@ -79,12 +73,13 @@
         \label{fig:ac}
     \end{figure}
     \\
-    This button will clear the display. Last saved answer will remain untouched
+    This button will clear the display. Last saved answer will remain unchanged
 
     \subsubsection{Clear Memory}
 
     \begin{figure}[h]
         \includegraphics[scale = 0.2]{clear_memory}
+        \caption{Clear memory button}
         \centering
         \label{fig:c}
     \end{figure}
@@ -96,6 +91,7 @@
 
     \begin{figure}[h]
         \includegraphics[scale = 0.2]{hint}
+        \caption{Hint button}
         \centering
         \label{fig:h}
     \end{figure}
