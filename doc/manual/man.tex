@@ -11,9 +11,9 @@
 \usepackage{times}
 \usepackage{graphicx}
 
-
+\renewcommand{\figurename}{Button Image}
 \title{proj2}
-\author{matej.patej }
+\author{Intr#net}
 \date{March 2021}
 \begin{document}
     \begin{titlepage}
@@ -25,8 +25,8 @@
             \hspace{0.2cm}
             \Huge V\huge YSOKÉ UČENÍ TECHNIOCKÉ V \Huge B\huge RNĚ\\
             \vspace{\stretch{0.382}}
-            MANUAL\\
-            CALCULATOR
+            CALCULATOR \\
+            MANUAL
             \vspace{\stretch{0.618}}
 
 
@@ -37,37 +37,59 @@
 
     \newpage
 
+    \tableofcontents
+
 
     \section{Install}
+    \label{sec:install}
+    In this section we will take a closer look how to install Calculator 0.1 to your computer
 
 
     \section{Usage}
+    \t Usage of buttons with mathematical functions.
+    For more detailed description, open refman.pdf.
+    \label{sec:usage}
 
     \subsection{Math operations}
+    \label{subsec:mathOperations}
 
     \subsubsection{Plus}
+    \label{subsubsec:plus}
 
     \subsubsection{Minus}
+    \label{subsubsec:minus}
 
     \subsubsection{Times}
+    \label{subsubsec:times}
 
     \subsubsection{Divide}
+    \label{subsubsec:division}
 
     \subsubsection{Factorial}
+    \label{subsubsec:factorial}
 
     \subsubsection{Absolute value}
+    \label{subsubsec:absolutevalue}
 
     \subsubsection{Power}
+    \label{subsubsec:power}
 
     \subsubsection{N-th root}
+    \label{subsubsec:nthroot}
 
     \newpage
 
     \subsection{Memory oprations}
+    \t Usage of buttons with memory operations.
+    For more detailed description, open refman.pdf.
+    \label{subsec:memoryoperations}
 
     \subsubsection{Clear Display }
 
+    \label{subsubsec:cleardisplay}
+
     \begin{figure}[h]
+        \caption{Clear display}
         \includegraphics[scale = 0.2]{clear_display}
         \centering
         \label{fig:ac}
@@ -76,10 +98,11 @@
     This button will clear the display. Last saved answer will remain unchanged
 
     \subsubsection{Clear Memory}
+    \label{subsubsec:clearmemory}
 
     \begin{figure}[h]
+        \caption{Clear memory}
         \includegraphics[scale = 0.2]{clear_memory}
-        \caption{Clear memory button}
         \centering
         \label{fig:c}
     \end{figure}
@@ -87,11 +110,12 @@
     This button will reset last saved answer to zero and will also clear the display
 
     \subsubsection[scale = 0.2]{Hint}
+    \label{subsubsec:hint}
 
 
     \begin{figure}[h]
-        \includegraphics[scale = 0.2]{hint}
         \caption{Hint button}
+        \includegraphics[scale = 0.2]{hint}
         \centering
         \label{fig:h}
     \end{figure}
@@ -101,7 +125,10 @@
     \newpage
 
     \subsection{Equal}
+    \label{subsec:equal}
 
 
     \section{Uninstall}
+    \label{sec:uninstall}
+
 \end{document}
