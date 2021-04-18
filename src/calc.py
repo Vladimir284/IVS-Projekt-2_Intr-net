@@ -46,7 +46,7 @@ for i in range(5):
 
 ##
 # TO-DO Def
-display = tk.Entry(calc, width=30)
+display = tk.Entry(calc, font="Calibri 20", width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
