@@ -2,7 +2,7 @@
 # @brief Package with GUI
 # @file calc.py
 # @brief Module with GUI
-#import tkinter as tk
+import tkinter as tk
 import memory_operation
 from main import Calculator
 from tkinter import *
