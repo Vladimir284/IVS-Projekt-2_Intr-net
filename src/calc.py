@@ -2,7 +2,7 @@
 # @brief Package with GUI
 # @file calc.py
 # @brief Module with GUI
-import tkinter as tk
+#import tkinter as tk
 import memory_operation
 from main import Calculator
 from tkinter import *
@@ -22,7 +22,7 @@ calc.title("Calculator")
 
 ##
 # Defining the default size of the calculator
-calc.minsize(400, 200)
+calc.minsize(720, 300)
 
 ##
 # TO-DO Def
@@ -46,7 +46,7 @@ for i in range(5):
 
 ##
 # TO-DO Def
-display = tk.Entry(calc, width=30)
+display = tk.Entry(calc, font="Calibri 20", width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
@@ -85,7 +85,10 @@ def calculate():
     if display.get() and display.get().replace('.', '', 1).isdigit():
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
-        display.insert("insert", c.executeOperation(c))
+        if c.executeOperation(c) % 1 == 0:
+            display.insert("insert", int(c.executeOperation(c)))
+        else:
+            display.insert("insert", c.executeOperation(c))
         c.setMemory(c, c.executeOperation(c))
     else:
         all_clear()
@@ -100,7 +103,7 @@ def calculate():
 def operation(id_op):
     if id_op == 1 and not display.get():
         display.insert("insert", '-')
-    elif display.get() and display.get().replace('.', '', 1).isdigit():
+    elif display.get() and display.get().replace('.', '', 1).replace('-', '', 1).isdigit():
         c.setMemory(c, float(display.get()))
         c.setID(c, id_op)
         if c.getID(c) == 6 or c.getID(c) == 7:
@@ -152,7 +155,7 @@ image = PhotoImage(file="buttons_images/0.gif")
 
 ##
 # Calculator button - Insert zero on the display
-num_0 = tk.Button(calc, image=image, width=40, height=25, command=lambda: string_button_click("0"))
+num_0 = tk.Button(calc, image=image, width=40, height=45, command=lambda: string_button_click("0"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_0.image = image
@@ -162,7 +165,7 @@ image = PhotoImage(file="buttons_images/1.gif")
 
 ##
 # Calculator button - Insert one on the display
-num_1 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("1"))
+num_1 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("1"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_1.image = image
@@ -172,7 +175,7 @@ image = PhotoImage(file="buttons_images/2.gif")
 
 ##
 # Calculator button - Insert two on the display
-num_2 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("2"))
+num_2 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("2"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_2.image = image
@@ -182,7 +185,7 @@ image = PhotoImage(file="buttons_images/3.gif")
 
 ##
 # Calculator button - Insert three on the display
-num_3 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("3"))
+num_3 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("3"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_3.image = image
@@ -192,7 +195,7 @@ image = PhotoImage(file="buttons_images/4.gif")
 
 ##
 # Calculator button - Insert four on the display
-num_4 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("4"))
+num_4 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("4"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_4.image = image
@@ -202,7 +205,7 @@ image = PhotoImage(file="buttons_images/5.gif")
 
 ##
 # Calculator button - Insert five on the display
-num_5 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("5"))
+num_5 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("5"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_5.image = image
@@ -212,7 +215,7 @@ image = PhotoImage(file="buttons_images/6.gif")
 
 ##
 # Calculator button - Insert six on the display
-num_6 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("6"))
+num_6 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("6"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_6.image = image
@@ -222,7 +225,7 @@ image = PhotoImage(file="buttons_images/7.gif")
 
 ##
 # Calculator button - Insert seven on the display
-num_7 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("7"))
+num_7 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("7"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_7.image = image
@@ -232,7 +235,7 @@ image = PhotoImage(file="buttons_images/8.gif")
 
 ##
 # Calculator button - Insert eight on the display
-num_8 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("8"))
+num_8 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("8"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_8.image = image
@@ -242,7 +245,7 @@ image = PhotoImage(file="buttons_images/9.gif")
 
 ##
 # Calculator button - Insert nine on the display
-num_9 = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("9"))
+num_9 = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("9"))
 
 # Save the image so it won't be deleted by thrash cleaner
 num_9.image = image
@@ -252,7 +255,7 @@ image = PhotoImage(file="buttons_images/n-th_root.gif")
 
 ##
 # Calculator button - Makes the nth root of the given number
-n_root = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(5))
+n_root = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(5))
 
 # Save the image so it won't be deleted by thrash cleaner
 n_root.image = image
@@ -262,7 +265,7 @@ image = PhotoImage(file="buttons_images/n-th_power.gif")
 
 ##
 # Calculator button - Makes the nth power of the given number
-n_power = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(4))
+n_power = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(4))
 
 # Save the image so it won't be deleted by thrash cleaner
 n_power.image = image
@@ -272,7 +275,7 @@ image = PhotoImage(file="buttons_images/abs.gif")
 
 ##
 # Calculator button - Makes the absolute value of the number
-absolute_value = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(6))
+absolute_value = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(6))
 
 # Save the image so it won't be deleted by thrash cleaner
 absolute_value.image = image
@@ -282,7 +285,7 @@ image = PhotoImage(file="buttons_images/factorial.gif")
 
 ##
 # Calculator button - Makes the factorial of the given number
-factorial = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(7))
+factorial = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(7))
 
 # Save the image so it won't be deleted by thrash cleaner
 factorial.image = image
@@ -292,7 +295,7 @@ image = PhotoImage(file="buttons_images/clear_memory.gif")
 
 ##
 # Calculator button - Clears the display Code review Code-review
-All_clear = tk.Button(calc, image=image, width=20, height=25, command=lambda: all_clear())
+All_clear = tk.Button(calc, image=image, width=30, height=45, command=lambda: all_clear())
 
 # Save the image so it won't be deleted by thrash cleaner
 All_clear.image = image
@@ -302,7 +305,7 @@ image = PhotoImage(file="buttons_images/clear_display.gif")
 
 ##
 # Calculator button - Clears the display and the last saved answer  Code-review
-C_clear = tk.Button(calc, image=image, width=20, height=25, command=lambda: clear())
+C_clear = tk.Button(calc, image=image, width=30, height=45, command=lambda: clear())
 
 # Save the image so it won't be deleted by thrash cleaner
 C_clear.image = image
@@ -312,7 +315,7 @@ image = PhotoImage(file="buttons_images/hint.gif")
 
 ##
 # Calculator button - Shows the manual for the user
-hint = tk.Button(calc, image=image, width=20, height=25, command=lambda: show_hint())
+hint = tk.Button(calc, image=image, width=30, height=45, command=lambda: show_hint())
 
 # Save the image so it won't be deleted by thrash cleaner
 hint.image = image
@@ -322,7 +325,7 @@ image = PhotoImage(file="buttons_images/plus.gif")
 
 ##
 # Calculator button - Makes the summary of the number on the display and the next given number
-plus = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(0))
+plus = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(0))
 
 # Save the image so it won't be deleted by thrash cleaner
 plus.image = image
@@ -332,7 +335,7 @@ image = PhotoImage(file="buttons_images/minus.gif")
 
 ##
 # Calculator button - Makes the distinction of the number on the display and the next given number
-minus = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(1))
+minus = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(1))
 
 # Save the image so it won't be deleted by thrash cleaner
 minus.image = image
@@ -342,7 +345,7 @@ image = PhotoImage(file="buttons_images/multiply.gif")
 
 ##
 # Calculator button - Makes the multiplication of the number on the display and the next given number
-times = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(3))
+times = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(3))
 
 # Save the image so it won't be deleted by thrash cleaner
 times.image = image
@@ -352,7 +355,7 @@ image = PhotoImage(file="buttons_images/divide.gif")
 ##
 
 # Calculator button - Divide the number on the display and the next given number
-divide = tk.Button(calc, image=image, width=20, height=25, command=lambda: operation(2))
+divide = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(2))
 
 # Save the image so it won't be deleted by thrash cleaner
 divide.image = image
@@ -362,7 +365,7 @@ image = PhotoImage(file="buttons_images/equals.gif")
 
 ##
 # Calculator button - Shows the result
-result = tk.Button(calc, image=image, width=20, height=25, command=lambda: calculate())
+result = tk.Button(calc, image=image, width=30, height=45, command=lambda: calculate())
 
 # Save the image so it won't be deleted by thrash cleaner
 result.image = image
@@ -372,7 +375,7 @@ image = PhotoImage(file="buttons_images/colon.gif")
 
 ##
 # Calculator button - Insert "." on the display
-dot = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click("."))
+dot = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click("."))
 
 # Save the image so it won't be deleted by thrash cleaner
 dot.image = image
@@ -382,7 +385,7 @@ image = PhotoImage(file="buttons_images/ans.gif")
 
 ##
 # Calculator button - Shows the last saved answer
-ans = tk.Button(calc, image=image, width=20, height=25, command=lambda: string_button_click(c.getMemory(c)))
+ans = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click(c.getMemory(c)))
 
 # Save the image so it won't be deleted by thrash cleaner
 ans.image = image
