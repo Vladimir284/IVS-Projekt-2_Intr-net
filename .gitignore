@@ -1,8 +1,10 @@
-.DS_Store
 /doc/html
 /doc/latex
 /doc/man
 /src/__pycache__
+/src/.pytest_cache
+/src/.idea
+.DS_Store
 .idea
 .pytest_cache
 venv
