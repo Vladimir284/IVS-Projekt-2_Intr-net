@@ -3,4 +3,6 @@
 /doc/latex
 /doc/man
 /src/__pycache__
-
+.idea
+.pytest_cache
+venv
