@@ -83,20 +83,37 @@ def all_clear():
 def clear():
     display.delete(0, "end")
 
+
 ##
 # When the '=' is pressed, this will calculate the result
 # @note Also checks for some not-a-number characters
 # @return void, calls directly different functions
 def calculate():
+    # If display is empty show ANS
     if not display.get():
         display.insert("insert", c.getOperand(c))
+
+    # If string is digit (condition replaces . and - with nothing so method isdigit will accept them)
     elif display.get().replace('.', '', 1).replace('-', '', 1).isdigit():
+
+        # If memory is number on display will be new ANS and wil be printed
+        # After this condition function can be exited so thats why return statement
+        # Display does not have to be deleted cause the printed ANS will remain the same
+        if c.getMemory(c) == 0:
+            c.setMemory(c, display.get())
+            return
+
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
+
+        # If result is int then print int
         if c.executeOperation(c) % 1 == 0:
             display.insert("insert", int(c.executeOperation(c)))
+
+        # Otherwise print float
         else:
             display.insert("insert", c.executeOperation(c))
+
         c.setMemory(c, c.executeOperation(c))
     else:
         all_clear()
