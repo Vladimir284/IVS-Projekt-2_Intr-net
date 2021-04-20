@@ -1,10 +1,11 @@
 ## @file math_lib.py
 # @brief Module with implementation of basic math function
 
-#import calc
+# import calc
 
 
-## Absolute value, is a non-negative value of x without regard to its sign
+##
+# Absolute value, is a non-negative value of x without regard to its sign
 # @note | number |
 # @param number Number
 # @return Absolute value of a number
@@ -15,7 +16,8 @@ def absolute_value(number):
         return -number
 
 
-## Factorial of a non-negative integer number, denoted by number!, is the product of all positive integers less than or equal to the number
+##
+# Factorial of a number is a product of an integer and all the integers below all the way to 1
 # @note number!
 # @param number Number
 # @return Product of all positive integers less than or equal to number
@@ -33,7 +35,8 @@ def factorial(number):
         return number * factorial(number - 1)
 
 
-## N-th roots are treated as special cases of power, where the exponent is a fraction \f$ \frac{1}{root} \f$
+##
+# N-th roots are treated as special cases of power, where the exponent is a fraction \f$ \frac{1}{root} \f$
 # @note \f$ \sqrt[root]{base} \f$
 # @param base Number that will be base of power
 # @param root N-th root
@@ -48,7 +51,8 @@ def nth_root(root, base):
         return base ** (1 / root)
 
 
-## Basic addition
+##
+# Basic addition
 # @note summand1 + summand2
 # @param summand1 Summand of the addition
 # @param summand2 Summand of the addition
@@ -57,7 +61,8 @@ def summary(summmand1, summand2):
     return summmand1 + summand2
 
 
-## Basic subtraction
+##
+# Basic subtraction
 # @note minuend - subtrahend
 # @param minuend Minuend of the subtraction
 # @param subtrahend Subtrahend of the subtraction
@@ -66,7 +71,8 @@ def subtraction(minuend, subtrahend):
     return minuend - subtrahend
 
 
-## Basic division
+##
+# Basic division
 # @note \f$ dividend \div divisor \f$
 # @param dividend Dividend of the division
 # @param divisor Divisor of the divison
@@ -78,7 +84,8 @@ def division(dividend, divisor):
         return dividend / divisor
 
 
-## Basic multiplication
+##
+# Basic multiplication
 # @note \f$ multiplicand \cdot multiplier \f$
 # @param multiplicand Multiplicand of a multiplication
 # @param multiplier Multiplier of a multiplication
@@ -87,7 +94,8 @@ def multiplication(multiplicand, multiplier):
     return multiplicand * multiplier
 
 
-## When base is a positive integer, exponentiation corresponds to repeated multiplication of the base base times
+##
+# When base is a positive integer, exponentiation corresponds to repeated multiplication of the base base times
 # @note \f$ base^{exponent} \f$
 # @param base Number that will be the base of a power
 # @param exponent N-th power
@@ -96,7 +104,8 @@ def nth_power(base, exponent):
     return base ** exponent
 
 
-## Prints on the calculator screen MATH ERROR
+##
+# Prints on the calculator screen MATH ERROR
 # @exception ValueError
 def show_error():
     raise ValueError
