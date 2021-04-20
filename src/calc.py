@@ -58,6 +58,10 @@ justify = 0
 sticky = 0
 
 ##
+# index through which will be iterated in for cycle
+i = 0
+
+##
 # TO-DO Poor definition
 # definition of variable columnspan
 columnspan = 0
@@ -185,7 +189,6 @@ def key_operation(x):
 
 
 # buttons def
-
 
 ##
 # Sets width of a button
