@@ -1,6 +1,6 @@
 # IVS-Projekt-2_Intr-net
 
-## Devlopment Platforms
+## Development Platforms
 
        Ubuntu 64-bit
        MacOS 64-bit
@@ -24,6 +24,7 @@
 
 ## Instalation
 
+    TO-DO Finish
     For instalation on ubuntu run:
 
 ```bash
@@ -37,6 +38,8 @@ sudo brew install TheCalculator
 ```
 
 ## Deletion
+
+    TO-DO Finish
 
     For deletion on ubuntu run:
 
