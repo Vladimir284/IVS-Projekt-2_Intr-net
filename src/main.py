@@ -2,6 +2,7 @@
 # @brief declares class Calculator
 import math_lib
 
+
 ## @class Calculator
 # @brief Instance holds 3 values and her methods
 #
@@ -26,6 +27,7 @@ class Calculator:
     ##
     # ID of next operation
     __ID_Operation = ""
+
 
     ## Gets Last saved answer
     # @return Last saved answer
