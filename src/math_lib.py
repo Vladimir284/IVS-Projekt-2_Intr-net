@@ -44,7 +44,7 @@ def factorial(number):
 def nth_root(root, base):
     # In case od even roots the base cannot be negative
     # Also 0th root is a invalid input
-    if base % 2 == 0 and root < 0 or root == 0:
+    if (root % 2 == 0 and base < 0) or root == 0:
         show_error()
     else:
         return base ** (1 / root)
@@ -102,5 +102,4 @@ def nth_power(base, exponent):
 # @exception ValueError
 def show_error():
     calc.display.insert("insert", "MATH ERROR")  # Code-review
-    print("MATH ERROR")  # TO-DO Print to the GUI
     raise ValueError
