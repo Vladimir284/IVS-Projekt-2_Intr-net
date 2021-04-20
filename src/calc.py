@@ -150,7 +150,7 @@ def operation(id_op):
 # Shows the manual for the user
 # @return void, shows the manual
 def show_hint():
-    subprocess.run(['gedit', 'ahoj.txt'])
+    subprocess.run(['gedit', '../man.pdf'])
 
 
 ##

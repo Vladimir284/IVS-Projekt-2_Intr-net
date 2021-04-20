@@ -3,7 +3,7 @@
 # @file math_lib.py
 # @brief Module with implementation of basic mathematic function
 
-import calc
+# import calc
 
 
 ## Absolute value, is a non-negative value of x without regard to its sign
@@ -101,5 +101,5 @@ def nth_power(base, exponent):
 ## Prints on the calculator screen MATH ERROR
 # @exception ValueError
 def show_error():
-    calc.display.insert("insert", "MATH ERROR")
+    # calc.display.insert("insert", "MATH ERROR")
     raise ValueError
