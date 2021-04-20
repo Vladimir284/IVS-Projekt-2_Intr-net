@@ -28,8 +28,9 @@ class Calculator:
     # ID of next operation
     __ID_Operation = ""
 
+
     ##
-    # Gets last saved answer
+    # Gets Last saved answer
     # @return Last saved answer
     def getMemory(self):
         return Calculator.__Last_saved_answer

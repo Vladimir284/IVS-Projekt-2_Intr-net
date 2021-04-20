@@ -45,7 +45,7 @@ for i in range(5):
     tk.Grid.columnconfigure(calc, i, weight=1)
 
 ##
-# Defined display. All comunication will be done via this entity
+# Defined display. All communication will be done via this entity
 display = tk.Entry(calc, font="Calibri 20", width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
@@ -322,7 +322,7 @@ factorial.image = image
 image = PhotoImage(file="buttons_images/clear_memory.gif")
 
 ##
-# Calculator button - Clears the display and memmory
+# Calculator button - Clears the display and memory
 All_clear = tk.Button(calc, image=image, width=30, height=45, command=lambda: all_clear())
 
 # Save the image so it won't be deleted by thrash cleaner

@@ -1,7 +1,7 @@
 ## @file math_lib.py
-# @brief Module with implementation of basic mathematic function
+# @brief Module with implementation of basic math function
 
-# import calc
+#import calc
 
 
 ## Absolute value, is a non-negative value of x without regard to its sign
@@ -21,21 +21,21 @@ def absolute_value(number):
 # @return Product of all positive integers less than or equal to number
 # @exception ValueError if number is float or negative
 def factorial(number):
-    # Check if number isnt negative or float
+    # Check if number isn't negative or float
     if number < 0 or number - round(number) != 0:
         show_error()
         raise ValueError
 
-    # Main factorial algorythm
+    # Main factorial algorithm
     if number <= 0:
         return 1
     else:
         return number * factorial(number - 1)
 
 
-## N-th roots are treated as special cases of exponentation, where the exponent is a fraction \f$ \frac{1}{root} \f$
+## N-th roots are treated as special cases of power, where the exponent is a fraction \f$ \frac{1}{root} \f$
 # @note \f$ \sqrt[root]{base} \f$
-# @param base Number that will be base of exponentation
+# @param base Number that will be base of power
 # @param root N-th root
 # @return [float] N-th root of a number base
 # @exception ValueError If base is negative integer and root is odd
