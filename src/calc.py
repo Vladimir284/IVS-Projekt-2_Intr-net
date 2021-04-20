@@ -170,7 +170,7 @@ def operation(id_op):
             clear()
     else:
         all_clear()
-        display.insert("insert", "SYNTAX ERROR")
+        display.insert("insert", SYNTAX_ERROR)
 
 
 ##
