@@ -1,6 +1,6 @@
-# @file profiling.py
+## @file profiling.py
 # @brief Module for computing standard deviation
-# @brief Inside varriables that store number are initilaized to zero
+# @brief Inside variables that store number are initialized to zero
 # @note \f$ s = \sqrt{\frac{1}{N-1} \cdot (\sum_{i=1}^{N} x_{i}^2-N \cdot \overline{x}^2})\f$
 # @param numbers Sequence of numbers from stdin
 
@@ -14,7 +14,7 @@ input_string = input()
 # Separated numbers from #input_string stored in array
 array_of_numbers = input_string.split(" ")
 
-# Declare all used varriable
+# Declare all used variable
 ##
 # Amount of numbers in #array_of_numbers
 amount_of_numbers = len(array_of_numbers)
@@ -44,7 +44,7 @@ difference_of_element = 0.0
 square_of_difference_of_element = 0.0
 variance = 0.0
 
-# Summary of all the elements enetered
+# Summary of all the elements entered
 for number_string in array_of_numbers:
     if number_string.isdigit():
         sum_of_numbers = math_lib.summary(float(number_string), sum_of_numbers)

@@ -2,8 +2,9 @@
 # @brief declares class Calculator
 import math_lib
 
+
 ## @class Calculator
-# @brief Instance holds 3 values and her methods
+# @brief Instance holds 3 values and its methods
 #
 #
 # Values:
@@ -11,7 +12,7 @@ import math_lib
 # 2. Operand
 # 3. ID of operation
 #
-# All of the varriables are initialised to zero
+# All of the variables are initialised to zero.
 # Class also holds all its methods
 
 class Calculator:
@@ -27,49 +28,51 @@ class Calculator:
     # ID of next operation
     __ID_Operation = ""
 
-    ## Gets Last saved answer
+
+    ##
+    # Gets Last saved answer
     # @return Last saved answer
     def getMemory(self):
         return Calculator.__Last_saved_answer
-        pass
 
-    ## Sets Last saved answer
+    ##
+    # Sets Last saved answer
     # @param value Number which is saved as Last saved answer
 
     def setMemory(self, value):
         Calculator.__Last_saved_answer = value
-        pass
 
-    ## Gets operand
+    ##
+    # Gets operand
     # @return Operand
     def getOperand(self):
         return Calculator.__Operand
-        pass
 
-    ## Sets Operand on value
+    ##
+    # Sets Operand on value
     # @param value Value on which is operand set
     def setOperand(self, value):
         Calculator.__Operand = value
-        pass
 
-    ## Sets ID of operation
-    # @param value Sets ID of opration on value
+    ##
+    # Sets ID of operation
+    # @param value Sets ID of operation on value
     def setID(self, value):
         Calculator.__ID_Operation = value
-        pass
 
-    ## Gets ID of operation
+    ##
+    # Gets ID of operation
     def getID(self):
         return Calculator.__ID_Operation
-        pass
 
-    ## Executes mathematical operation based on ID
+    ##
+    # Executes mathematical operation based on ID
     def executeOperation(self):
 
         if self.__ID_Operation == 0:
             return math_lib.summary(self.__Last_saved_answer, self.__Operand)
         elif self.__ID_Operation == 1:
-            return math_lib.substraction(self.__Last_saved_answer, self.__Operand)
+            return math_lib.subtraction(self.__Last_saved_answer, self.__Operand)
         elif self.__ID_Operation == 2:
             return math_lib.division(self.__Last_saved_answer, self.__Operand)
         elif self.__ID_Operation == 3:
@@ -82,6 +85,3 @@ class Calculator:
             return math_lib.absolute_value(self.__Last_saved_answer)
         elif self.__ID_Operation == 7:
             return math_lib.factorial(self.__Last_saved_answer)
-
-
-pass
