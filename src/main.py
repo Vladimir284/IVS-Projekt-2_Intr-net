@@ -69,7 +69,7 @@ class Calculator:
         if self.__ID_Operation == 0:
             return math_lib.summary(self.__Last_saved_answer, self.__Operand)
         elif self.__ID_Operation == 1:
-            return math_lib.substraction(self.__Last_saved_answer, self.__Operand)
+            return math_lib.subtraction(self.__Last_saved_answer, self.__Operand)
         elif self.__ID_Operation == 2:
             return math_lib.division(self.__Last_saved_answer, self.__Operand)
         elif self.__ID_Operation == 3:

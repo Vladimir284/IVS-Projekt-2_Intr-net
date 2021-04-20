@@ -69,7 +69,7 @@ def test_divide(dividend, substrahend, result):
 # @param number Number of term
 # @param result Expected value from term
 # @test \f$ number \geq 0 \Rightarrow |number| = number \f$
-# @test \f$ number < 0 \Rightarrow |number| = number \f$
+# @test \f$ number < 0 \Rightarrow |number| = -number \f$
 def test_absolute_value(number, result):
     assert math_lib.absolute_value(number) == result
 
@@ -105,21 +105,21 @@ def test_factorial(number, result):
 ## N-th power tests
 # @param base Base of power
 # @param exponent Exponent of power
-# @param result Excpected value of power
+# @param result Expected value of power
 # @test \f$  base^{exponent} = result \f$
 def test_n_power(base, power, result):
     assert math_lib.nth_power(base, power) == result
 
 
-@pytest.mark.parametrize("minuend, substrahend, result", [
+@pytest.mark.parametrize("minuend, subtrahend, result", [
     (10, 5, 5),
     (369, 125, 244),
     (-10, 22, -32)
 ])
-## Substraction tests
-# @param minuend Minuend of subsaction
-# @param substrahend Substrahend of operation
-# @param result Expected value of substraction
-# @test minuend - subtrahen = result
-def test_subtsraction(minuend, substrahend, result):
-    assert math_lib.substraction(minuend, substrahend) == result
+## Subtraction tests
+# @param minuend Minuend of subtraction
+# @param subtrahend Subtrahend of operation
+# @param result Expected value of subtraction
+# @test minuend - subtrahend = result
+def test_subtsraction(minuend, subtrahend, result):
+    assert math_lib.subtraction(minuend, subtrahend) == result

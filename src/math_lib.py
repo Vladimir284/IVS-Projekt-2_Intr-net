@@ -57,12 +57,12 @@ def summary(summmand1, summand2):
     return summmand1 + summand2
 
 
-## Basic substraction
+## Basic subtraction
 # @note minuend - subtrahend
-# @param minuend Minuend of the substraction
-# @param subtrahend Substrahnd of the substraction
-# @return Result of substraction
-def substraction(minuend, subtrahend):
+# @param minuend Minuend of the subtraction
+# @param subtrahend Subtrahend of the subtraction
+# @return Result of subtraction
+def subtraction(minuend, subtrahend):
     return minuend - subtrahend
 
 
