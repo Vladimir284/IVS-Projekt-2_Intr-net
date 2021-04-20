@@ -3,7 +3,6 @@
 ## Development Platforms
 
        Ubuntu 64-bit
-       MacOS 64-bit
 
 ## Team
 
@@ -14,7 +13,7 @@
     Vladimír Mečiar xmecia00
     Filip Tichý xtichy31
     Matěj Šauer xsauer03
-    Václav Polaštík xpolas41
+    (Václav Polaštík xpolas41)
 
 ## Licence
 
@@ -25,6 +24,7 @@
 ## Instalation
 
     TO-DO Finish
+
     For instalation on ubuntu run:
 
 ```bash

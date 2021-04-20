@@ -11,7 +11,6 @@ clean:
     # 	sudo brew uninstall # Name of the app
     # endif
 
-# TO-DO napisat testy pre ostatne kniznice
 test:
 	pytest test_math_lib.py
 

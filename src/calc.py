@@ -53,6 +53,8 @@ display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
 
+##
+# Since button ans had more complex implementation we created a special function for it
 def f_ans(number):
     if display.get() == number or c.getMemory(c) == 0:
         clear()
@@ -322,7 +324,7 @@ factorial.image = image
 image = PhotoImage(file="buttons_images/clear_memory.gif")
 
 ##
-# Calculator button - Clears the display Code review Code-review
+# Calculator button - Clears the display and memmory
 All_clear = tk.Button(calc, image=image, width=30, height=45, command=lambda: all_clear())
 
 # Save the image so it won't be deleted by thrash cleaner
@@ -332,7 +334,7 @@ All_clear.image = image
 image = PhotoImage(file="buttons_images/clear_display.gif")
 
 ##
-# Calculator button - Clears the display and the last saved answer  Code-review
+# Calculator button - Clears the display
 C_clear = tk.Button(calc, image=image, width=30, height=45, command=lambda: clear())
 
 # Save the image so it won't be deleted by thrash cleaner
