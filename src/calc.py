@@ -7,9 +7,9 @@ from main import Calculator
 from tkinter import *
 import subprocess
 
-global SYNTAX_ERROR
 SYNTAX_ERROR = "SYNTAX ERROR"
 MATH_ERROR = "MATH ERROR"
+
 ##
 # New instance of class object c
 c = Calculator
