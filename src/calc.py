@@ -2,7 +2,7 @@
 # @brief Package with GUI
 # @file calc.py
 # @brief Module with GUI
-#import tkinter as tk
+import tkinter as tk
 import memory_operation
 from main import Calculator
 from tkinter import *
@@ -25,19 +25,19 @@ calc.title("Calculator")
 calc.minsize(720, 300)
 
 ##
-# TO-DO Def
+# definition of variable weight
 weight = 0
 
 ##
-# TO-DO Def
+# definition of variable row
 row = 0
 
 ##
-# TO-DO Def
+# definition of variable column
 column = 0
 
 ##
-# TO-DO Def
+# definition of variable columnspan
 columnspan = 0
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
@@ -82,7 +82,9 @@ def clear():
 # @note Also checks for some not-a-number characters
 # @return void, calls directly different functions
 def calculate():
-    if display.get() and display.get().replace('.', '', 1).isdigit():
+    if not display.get():
+        display.insert("insert", c.getOperand(c))
+    elif display.get().replace('.', '', 1).isdigit():
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
         if c.executeOperation(c) % 1 == 0:
@@ -120,7 +122,6 @@ def operation(id_op):
 # Shows the manual for the user
 # @return void, shows the manual
 def show_hint():
-    # TODO call function from memory operations
     subprocess.run(['gedit', 'ahoj.txt'])
 
 
@@ -134,11 +135,7 @@ def key_operation(x):
     operation(x)
 
 
-# TODO memory operation
-
-
 # buttons def
-# TO-DO Definition of each button
 
 
 ##
