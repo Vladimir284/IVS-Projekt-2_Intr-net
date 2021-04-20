@@ -1,6 +1,4 @@
-## @package math_lib
-# @brief Package with implementation of basic mathematic function
-# @file math_lib.py
+## @file math_lib.py
 # @brief Module with implementation of basic mathematic function
 
 # import calc

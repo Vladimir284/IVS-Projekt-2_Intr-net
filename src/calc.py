@@ -1,6 +1,4 @@
-# @package calc
-# @brief Package with GUI
-# @file calc.py
+## @file calc.py
 # @brief Module with GUI
 import tkinter as tk
 from main import Calculator
