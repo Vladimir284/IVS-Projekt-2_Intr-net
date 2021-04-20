@@ -25,7 +25,6 @@ def factorial(number):
     if number < 0 or number - round(number) != 0:
         show_error()
         raise ValueError
-        return None
 
     # Main factorial algorythm
     if number <= 0:

@@ -75,7 +75,7 @@ def all_clear():
 # @return void, clears the display
 def clear():
     display.delete(0, "end")
-
+# lalallaal
 
 ##
 # When the '=' is pressed, this will calculate the result
