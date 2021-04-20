@@ -9,6 +9,7 @@ import subprocess
 
 global SYNTAX_ERROR
 SYNTAX_ERROR = "SYNTAX ERROR"
+MATH_ERROR = "MATH ERROR"
 ##
 # New instance of class object c
 c = Calculator
@@ -65,7 +66,7 @@ def f_ans(number):
 def string_button_click(number):
     # If display shows syntax error and number is pressed
     # Text syntax error is deleted
-    if display.get() == SYNTAX_ERROR:
+    if display.get() == SYNTAX_ERROR or display.get() == MATH_ERROR:
         clear()
 
     display.insert("insert", number)
@@ -109,7 +110,9 @@ def calculate():
 
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
-
+        if c.executeOperation(c) == "":
+            display.insert("insert", MATH_ERROR)
+            return
         # If result is int then print int
         if c.executeOperation(c) % 1 == 0:
             display.insert("insert", int(c.executeOperation(c)))
