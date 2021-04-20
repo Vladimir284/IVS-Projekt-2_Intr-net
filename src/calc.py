@@ -6,6 +6,9 @@ import tkinter as tk
 from main import Calculator
 from tkinter import *
 import subprocess
+from math_lib import show_error
+import sys
+
 
 SYNTAX_ERROR = "SYNTAX ERROR"
 MATH_ERROR = "MATH ERROR"
@@ -112,10 +115,13 @@ def calculate():
 
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
-        if c.executeOperation(c) == "":
-            display.insert("insert", MATH_ERROR)
-            return
         # If result is int then print int
+        try:
+            c.executeOperation(c)
+        except ValueError:
+            display.insert("insert", "MATH ERROR")
+            return
+
         if c.executeOperation(c) % 1 == 0:
             display.insert("insert", int(c.executeOperation(c)))
 
