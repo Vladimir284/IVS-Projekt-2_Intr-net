@@ -3,7 +3,6 @@
 # @file calc.py
 # @brief Module with GUI
 import tkinter as tk
-import memory_operation
 from main import Calculator
 from tkinter import *
 import subprocess
@@ -53,6 +52,12 @@ display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
 
 
+def f_ans(number):
+    if display.get() == number or c.getMemory(c) == 0:
+        clear()
+    string_button_click(number)
+
+
 ##
 # Inserts the number on the display
 # @param number - Number, which is to be insert on the display
@@ -60,7 +65,7 @@ display.config(justify="right")
 def string_button_click(number):
     # If display shows syntax error and number is pressed
     # Text syntax error is deleted
-    if display.get() == SYNTAX_ERROR or (display.get() == number or c.getMemory(c) == 0):
+    if display.get() == SYNTAX_ERROR:
         clear()
 
     display.insert("insert", number)
@@ -405,7 +410,7 @@ image = PhotoImage(file="buttons_images/ans.gif")
 
 ##
 # Calculator button - Shows the last saved answer
-ans = tk.Button(calc, image=image, width=30, height=45, command=lambda: string_button_click(c.getMemory(c)))
+ans = tk.Button(calc, image=image, width=30, height=45, command=lambda: f_ans(c.getMemory(c)))
 
 # Save the image so it won't be deleted by thrash cleaner
 ans.image = image

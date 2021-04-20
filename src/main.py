@@ -1,8 +1,6 @@
 ## @file main.py
 # @brief declares class Calculator
 import math_lib
-import memory_operation as mop
-
 
 ## @class Calculator
 # @brief Instance holds 3 values and her methods
