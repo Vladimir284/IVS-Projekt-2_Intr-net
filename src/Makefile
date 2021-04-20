@@ -17,6 +17,8 @@ test:
 
 doc: remove_documentation
 	doxygen ../doc/Doxyfile
+	cd ../doc/latex # TO-DO Make doc should make also refman.pdf
+	make
 
 run:
 	python3 calc.py
