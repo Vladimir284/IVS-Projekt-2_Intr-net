@@ -1,6 +1,9 @@
-## @file math_lib.py
+##
+# @package math_lib
 # @brief Module with implementation of basic math function
-
+#
+# @file math_lib.py
+# @brief Implementation of basic mathematical functions
 # import calc
 
 
@@ -57,8 +60,8 @@ def nth_root(root, base):
 # @param summand1 Summand of the addition
 # @param summand2 Summand of the addition
 # @return Result of the addition
-def summary(summmand1, summand2):
-    return summmand1 + summand2
+def summary(summand1, summand2):
+    return summand1 + summand2
 
 
 ##

@@ -1,9 +1,14 @@
-## @file main.py
-# @brief declares class Calculator
+##
+# @package main
+# @brief Declaration of class Calculator
+#
+# @file main.py
+# @brief Declaration of class Calculator
 import math_lib
 
 
-## @class Calculator
+##
+# @class Calculator
 # @brief Instance holds 3 values and its methods
 #
 #
@@ -27,7 +32,6 @@ class Calculator:
     ##
     # ID of next operation
     __ID_Operation = ""
-
 
     ##
     # Gets Last saved answer

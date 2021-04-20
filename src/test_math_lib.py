@@ -1,5 +1,9 @@
-## @file test_math_lib.py
-# @brief Module with tests for mathemathical library
+##
+# @package test_math_lib
+# @brief Module with tests for mathematical library
+#
+# @file test_math_lib.py
+# @brief Tests for mathematical library
 import math_lib
 import pytest
 
@@ -10,7 +14,8 @@ import pytest
     (-10, 10, 0),
     ((1 / 2), (1 / 2), (2 / 2))
 ])
-## Addition tests
+##
+# Addition tests
 # @param summand1 Summand
 # @param summand2 Summand
 # @param result Expected value
@@ -23,12 +28,13 @@ def test_summary(summand1, summand2, result):
     (3, 8, 2),
     (2, 1, 1),
 ])
-## N-th root tests
+##
+# N-th root tests
 # @param root Root of term
 # @param base Base of term
 # @param result Expected value of finding root
 # @test \f$ \sqrt[root]{base} = result \f$
-# @test ValueError ecxceptions
+# @test ValueError exceptions
 def test_nth_root(root, base, result):
     assert math_lib.nth_root(root, base) == result
     with pytest.raises(ValueError):
@@ -38,24 +44,25 @@ def test_nth_root(root, base, result):
     assert math_lib.nth_root(2, 20) == 2 * (math_lib.nth_root(2, 5))
 
 
-@pytest.mark.parametrize("dividend , substrahend, result", [
+@pytest.mark.parametrize("dividend , divisor, result", [
     (10, 2, 5),
     (15, -5, -3),
     (-15, 3, -5),
     (-15, 7, -2.142857142857143),
     (0, 5, 0),
 ])
-## Division tests
-# @param divisor Divisor of divison
-# @param dividend Dividend of division
+##
+# Division tests
+# @param divisor Dividend of division
+# @param dividend Divisor of division
 # @param result Expected value of division
 # @test \f$ divisor \div dividend = result \f$
 # @test Value Error exception
-def test_divide(dividend, substrahend, result):
+def test_divide(dividend, divisor, result):
     with pytest.raises(ValueError):
         assert math_lib.division(1, 0)
         assert math_lib.division(-50, 0)
-    assert math_lib.division(dividend, substrahend) == result
+    assert math_lib.division(dividend, divisor) == result
 
 
 @pytest.mark.parametrize("number , result", [
@@ -65,7 +72,8 @@ def test_divide(dividend, substrahend, result):
     (-123645789, 123645789),
     (-1.2548, 1.2548)
 ])
-## Absolute value tests
+##
+# Absolute value tests
 # @param number Number of term
 # @param result Expected value from term
 # @test \f$ number \geq 0 \Rightarrow |number| = number \f$
@@ -82,7 +90,8 @@ def test_absolute_value(number, result):
     (2, 2),
     (3, 6)
 ])
-## Factorial tests
+##
+# Factorial tests
 # @param number number
 # @param result Expected value
 # @test number! = result
@@ -95,20 +104,21 @@ def test_factorial(number, result):
     assert math_lib.factorial(number) == result
 
 
-@pytest.mark.parametrize("base, power, result", [
+@pytest.mark.parametrize("base, exponent, result", [
     (5, 2, 25),
     (-5, 6, 15625),
     (-5, 3, -125),
     (5, -1, 0.2),
     (2, 1.5, 2.8284271247461903)
 ])
-## N-th power tests
+##
+# N-th power tests
 # @param base Base of power
 # @param exponent Exponent of power
 # @param result Expected value of power
 # @test \f$  base^{exponent} = result \f$
-def test_n_power(base, power, result):
-    assert math_lib.nth_power(base, power) == result
+def test_n_power(base, exponent, result):
+    assert math_lib.nth_power(base, exponent) == result
 
 
 @pytest.mark.parametrize("minuend, subtrahend, result", [
@@ -116,7 +126,8 @@ def test_n_power(base, power, result):
     (369, 125, 244),
     (-10, 22, -32)
 ])
-## Subtraction tests
+##
+# Subtraction tests
 # @param minuend Minuend of subtraction
 # @param subtrahend Subtrahend of operation
 # @param result Expected value of subtraction

@@ -1,4 +1,8 @@
-## @file calc.py
+##
+# @package calc
+# @brief Module with GUI
+#
+# @file calc.py
 # @brief Module with GUI
 import tkinter as tk
 from main import Calculator
@@ -7,8 +11,12 @@ import subprocess
 from math_lib import show_error
 import sys
 
-
+##
+# Macro for SYNTAX_ERROR message
 SYNTAX_ERROR = "SYNTAX ERROR"
+
+##
+# Macro for MATH_ERROR message
 MATH_ERROR = "MATH ERROR"
 
 ##
@@ -16,30 +24,41 @@ MATH_ERROR = "MATH ERROR"
 c = Calculator
 
 ##
+# TO-DO Definition
 # New instance of class tkinter???
 calc = tk.Tk()
 
-##
 # Defining the title of the calculator
 calc.title("Calculator")
 
-##
 # Defining the default size of the calculator
 calc.minsize(720, 300)
 
 ##
+# TO-DO Poor definition
 # definition of variable weight
 weight = 0
 
 ##
+# TO-DO Poor definition
 # definition of variable row
 row = 0
 
 ##
+# TO-DO Poor definition
 # definition of variable column
 column = 0
 
 ##
+# TO-DO Def
+justify = 0
+
+##
+# TO-DO Def
+sticky = 0
+
+##
+# TO-DO Poor definition
 # definition of variable columnspan
 columnspan = 0
 
@@ -65,7 +84,6 @@ def f_ans(number):
 ##
 # Inserts the number on the display
 # @param number - Number, which is to be insert on the display
-# @return void, inserts the number on the display
 def string_button_click(number):
     # If display shows syntax error and number is pressed
     # Text syntax error is deleted
@@ -77,7 +95,6 @@ def string_button_click(number):
 
 ##
 # Clears the display and the last saved answer
-# @return void, deletes the memory and the display
 def all_clear():
     c.setMemory(c, 0)
     c.setOperand(c, 0)
@@ -87,7 +104,6 @@ def all_clear():
 ##
 # Clears the display
 # @note keeps the last saved answer
-# @return void, clears the display
 def clear():
     display.delete(0, "end")
 
@@ -95,7 +111,6 @@ def clear():
 ##
 # When the '=' is pressed, this will calculate the result
 # @note Also checks for some not-a-number characters
-# @return void, calls directly different functions
 def calculate():
     # If display is empty show ANS
     if not display.get():
@@ -138,7 +153,6 @@ def calculate():
 # Stores the display value into the variable and also stores the operation which will be made
 # @note also checks for the not-a-number characters
 # @param id_op - ID of the operation
-# @return void, calls directly different functions
 def operation(id_op):
     if id_op == 1 and not display.get():
         display.insert("insert", '-')
@@ -157,7 +171,6 @@ def operation(id_op):
 
 ##
 # Shows the manual for the user
-# @return void, shows the manual
 def show_hint():
     subprocess.run(['gedit', '../man.pdf'])
 
@@ -166,7 +179,6 @@ def show_hint():
 # Makes the keyboard buttons and operations work correctly
 # @note Delete the character specific for the operation, so the string can be converted to the integer(float)
 # @param x - the ID of the operation
-# @return void, calls directly the function operation
 def key_operation(x):
     display.delete(len(display.get()) - 1)
     operation(x)
@@ -386,8 +398,8 @@ times.image = image
 
 # Change image
 image = PhotoImage(file="buttons_images/divide.gif")
-##
 
+##
 # Calculator button - Divide the number on the display and the next given number
 divide = tk.Button(calc, image=image, width=30, height=45, command=lambda: operation(2))
 
@@ -426,7 +438,7 @@ ans.image = image
 
 ##
 # The array of the buttons which are in the calculator
-# buttons position using grid // You can do better
+# buttons position using grid
 buttons_array = [hint, All_clear, C_clear, ans, divide, n_power, num_7, num_8, num_9, times, n_root, num_4, num_5,
                  num_6,
                  minus, factorial, num_1, num_2, num_3, plus, absolute_value, num_0, num_0, dot, result]

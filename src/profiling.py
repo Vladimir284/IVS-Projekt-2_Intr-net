@@ -1,8 +1,12 @@
-## @file profiling.py
+##
+# @package profiling
 # @brief Module for computing standard deviation
 # @brief Inside variables that store number are initialized to zero
 # @note \f$ s = \sqrt{\frac{1}{N-1} \cdot (\sum_{i=1}^{N} x_{i}^2-N \cdot \overline{x}^2})\f$
 # @param numbers Sequence of numbers from stdin
+#
+# @file profiling.py
+# @brief Computation of standard deviation
 
 import math_lib
 
@@ -28,7 +32,7 @@ sum_of_numbers = 0.0
 mean_of_numbers = 0.0
 
 ##
-# Sum of \f$ x_{i}\f$ squared and #mean_of_number squared
+# Sum of \f$ x_{i}\f$ squared and #mean_of_numbers squared
 sum_of_squared_difference = 0.0
 
 ##
@@ -59,7 +63,8 @@ for number_string in array_of_numbers:
         square_of_difference_of_element = math_lib.nth_power(difference_of_element, 2)
         sum_of_squared_difference = math_lib.summary(sum_of_squared_difference, square_of_difference_of_element)
 
-# Last counting, I promise:)
+##
+# Fractal of difference of elements and amount elements
 variance = math_lib.division(sum_of_squared_difference, amount_of_numbers)
 standard_deviation = math_lib.nth_root(2, variance)
 
