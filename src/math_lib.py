@@ -8,8 +8,6 @@ import calc
 # @note | number |
 # @param number Number
 # @return Absolute value of a number
-
-
 def absolute_value(number):
     if number >= 0:
         return number
