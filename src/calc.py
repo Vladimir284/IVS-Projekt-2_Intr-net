@@ -60,7 +60,7 @@ display.config(justify="right")
 def string_button_click(number):
     # If display shows syntax error and nuber is pressed
     # Text syntax error is deleted
-    if display.get() == SYNTAX_ERROR or display.get() == number:
+    if display.get() == SYNTAX_ERROR or (display.get() == number or c.getMemory(c) == 0):
         clear()
 
     display.insert("insert", number)
