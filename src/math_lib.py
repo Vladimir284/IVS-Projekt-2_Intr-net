@@ -101,5 +101,5 @@ def nth_power(base, exponent):
 ## Prints on the calculator screen MATH ERROR
 # @exception ValueError
 def show_error():
-    calc.display.insert("insert", "MATH ERROR")  # Code-review
+    calc.display.insert("insert", "MATH ERROR")
     raise ValueError

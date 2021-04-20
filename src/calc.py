@@ -47,7 +47,7 @@ for i in range(5):
     tk.Grid.columnconfigure(calc, i, weight=1)
 
 ##
-# TO-DO Def
+# Defined display. All comunication will be done via this entity
 display = tk.Entry(calc, font="Calibri 20", width=30)
 display.grid(row=0, column=0, columnspan=5, sticky="nesw")
 display.config(justify="right")
@@ -73,7 +73,6 @@ def all_clear():
     c.setMemory(c, 0)
     c.setOperand(c, 0)
     clear()
-    # TODO: delete memory
 
 
 ##
