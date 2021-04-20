@@ -8,6 +8,8 @@ from main import Calculator
 from tkinter import *
 import subprocess
 
+global SYNTAX_ERROR
+SYNTAX_ERROR = "SYNTAX ERROR"
 ##
 # New instance of class object c
 c = Calculator
@@ -56,6 +58,12 @@ display.config(justify="right")
 # @param number - Number, which is to be insert on the display
 # @return void, inserts the number on the display
 def string_button_click(number):
+
+    # If display shows syntax error and nuber is pressed
+    # Text syntax error is deleted
+    if display.get() == SYNTAX_ERROR:
+        clear()
+
     display.insert("insert", number)
 
 
@@ -75,6 +83,8 @@ def all_clear():
 # @return void, clears the display
 def clear():
     display.delete(0, "end")
+
+
 # lalallaal
 
 ##
