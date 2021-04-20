@@ -115,6 +115,7 @@ def calculate():
             display.insert("insert", c.executeOperation(c))
 
         c.setMemory(c, c.executeOperation(c))
+        c.setID(c, None)
     else:
         all_clear()
         display.insert("insert", SYNTAX_ERROR)
