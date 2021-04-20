@@ -75,7 +75,7 @@ def all_clear():
 # @return void, clears the display
 def clear():
     display.delete(0, "end")
-# lalallaal
+
 
 ##
 # When the '=' is pressed, this will calculate the result
@@ -84,7 +84,7 @@ def clear():
 def calculate():
     if not display.get():
         display.insert("insert", c.getOperand(c))
-    elif display.get().replace('.', '', 1).isdigit():
+    elif display.get().replace('.', '', 1).replace('-', '', 1).isdigit():
         c.setOperand(c, float(display.get()))
         display.delete(0, "end")
         if c.executeOperation(c) % 1 == 0:

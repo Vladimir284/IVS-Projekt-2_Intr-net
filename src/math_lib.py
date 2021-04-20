@@ -4,6 +4,8 @@
 # @brief Module with implementation of basic mathematic function
 
 import calc
+
+
 ## Absolute value, is a non-negative value of x without regard to its sign
 # @note | number |
 # @param number Number
@@ -47,6 +49,7 @@ def nth_root(root, base):
     else:
         return base ** (1 / root)
 
+
 ## Basic addition
 # @note summand1 + summand2
 # @param summand1 Summand of the addition
@@ -55,6 +58,7 @@ def nth_root(root, base):
 def summary(summmand1, summand2):
     return summmand1 + summand2
 
+
 ## Basic substraction
 # @note minuend - subtrahend
 # @param minuend Minuend of the substraction
@@ -62,6 +66,7 @@ def summary(summmand1, summand2):
 # @return Result of substraction
 def substraction(minuend, subtrahend):
     return minuend - subtrahend
+
 
 ## Basic division
 # @note \f$ dividend \div divisor \f$
@@ -74,6 +79,7 @@ def division(dividend, divisor):
     else:
         return dividend / divisor
 
+
 ## Basic multiplication
 # @note \f$ multiplicand \cdot multiplier \f$
 # @param multiplicand Multiplicand of a multiplication
@@ -81,6 +87,7 @@ def division(dividend, divisor):
 # @return Result of a multiplication
 def multiplication(multiplicand, multiplier):
     return multiplicand * multiplier
+
 
 ## When base is a positive integer, exponentiation corresponds to repeated multiplication of the base base times
 # @note \f$ base^{exponent} \f$
@@ -90,9 +97,10 @@ def multiplication(multiplicand, multiplier):
 def nth_power(base, exponent):
     return base ** exponent
 
+
 ## Prints on the calculator screen MATH ERROR
 # @exception ValueError
 def show_error():
-    calc.display.insert("MATH ERROR")  # Code-review
+    calc.display.insert("insert", "MATH ERROR")  # Code-review
     print("MATH ERROR")  # TO-DO Print to the GUI
     raise ValueError
