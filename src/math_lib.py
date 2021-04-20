@@ -4,7 +4,6 @@
 #
 # @file math_lib.py
 # @brief Implementation of basic mathematical functions
-# import calc
 
 
 ##
