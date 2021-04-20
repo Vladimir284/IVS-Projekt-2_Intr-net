@@ -58,7 +58,6 @@ display.config(justify="right")
 # @param number - Number, which is to be insert on the display
 # @return void, inserts the number on the display
 def string_button_click(number):
-
     # If display shows syntax error and nuber is pressed
     # Text syntax error is deleted
     if display.get() == SYNTAX_ERROR:
@@ -104,7 +103,7 @@ def calculate():
         c.setMemory(c, c.executeOperation(c))
     else:
         all_clear()
-        display.insert("insert", "SYNTAX ERROR")
+        display.insert("insert", SYNTAX_ERROR)
 
 
 ##
