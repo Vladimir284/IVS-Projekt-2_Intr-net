@@ -2,7 +2,7 @@
 	# TO-DO Team work - brainstorming
 
 # clean (smaže všechny soubory, co nemají být odevzdány)
-clean:
+clean: remove_documentation
 
 test:
 	pytest test_math_lib.py
