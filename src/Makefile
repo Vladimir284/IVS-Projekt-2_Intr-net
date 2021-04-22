@@ -9,8 +9,7 @@ test:
 
 doc: remove_documentation
 	doxygen ../doc/Doxyfile
-	cd ../doc/latex # TO-DO Make doc should make also refman.pdf
-	make refman
+	cd ../doc/latex && $(MAKE)
 
 run:
 	python3 calc.py
