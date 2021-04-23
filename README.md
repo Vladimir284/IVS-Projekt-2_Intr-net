@@ -23,32 +23,14 @@
 
 ## Instalation
 
-    TO-DO Finish
-
-    For instalation on ubuntu run:
-
 ```bash
 sudo apt-get install TheCalculator
-```
-
-    For instalation on mac OSX run:
-
-```bash
-sudo brew install TheCalculator
 ```
 
 ## Deletion
 
     TO-DO Finish
 
-    For deletion on ubuntu run:
-
 ```bash
 sudo apt-get uninstall TheCalculator
-```
-
-    For instalation on mac OSX run:
-
-```bash
-sudo brew remove TheCalculator
 ```
