@@ -33,12 +33,27 @@ calc.title("Calculator")
 calc.minsize(720, 300)
 
 ##
-# Parameters of tkinter functions
+# Parameter of tkinter functions
 weight = 0
+
+##
+# Parameter of tkinter functions
 row = 0
+
+##
+# Parameter of tkinter functions
 column = 0
+
+##
+# Parameter of tkinter functions
 justify = 0
+
+##
+# Parameter of tkinter functions
 sticky = 0
+
+##
+# Parameter of tkinter functions
 columnspan = 0
 
 ##

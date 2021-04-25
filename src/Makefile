@@ -1,5 +1,7 @@
 .PHONY : clean
 
+all: run
+
 # (zabalí projekt tak, aby mohl být odevzdán)
 pack: pack_folder remove_packed_folder
 	# TO-DO Team work - brainstorming
@@ -16,12 +18,21 @@ pack_folder: remove_packed_folder doc
 remove_packed_folder:
 	rm -rf ../../xtichy31_xsauer03_xpolas41_xmecia00
 
-clean: remove_documentation
+install: uninstall
+	pyinstaller -i calc.icns -n Calculator -w -F calc.py
+
+
+uninstall:
+	rm -rf dist
+	rm -rf build
+	rm -rf Calculator.spec
+
+clean: remove_documentation uninstall
 
 test:
 	pytest test_math_lib.py
 
-doc: remove_documentation
+doc:
 	doxygen ../doc/Doxyfile
 	cd ../doc/latex && $(MAKE)
 
@@ -35,3 +46,4 @@ remove_documentation:
 	rm -rf ../doc/latex
 	rm -rf ../doc/html
 	rm -rf ../doc/man
+
