@@ -155,7 +155,7 @@ def operation(id_op):
 ##
 # Shows the manual for the user
 def show_hint():
-    subprocess.run(['gedit', '../man.pdf'])
+    subprocess.run(['firefox', '../man.pdf'])
 
 
 ##
