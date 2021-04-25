@@ -16,12 +16,22 @@ pack_folder: remove_packed_folder doc
 remove_packed_folder:
 	rm -rf ../../xtichy31_xsauer03_xpolas41_xmecia00
 
-clean: remove_documentation
+install: uninstall
+	pyinstaller -n Calculator -i calc.icns calc.py
+	cp -R buttons_images dist/Calculator/
+
+
+uninstall:
+	rm -rf dist
+	rm -rf build
+	rm -rf Calculator.spec
+
+clean: remove_documentation uninstall
 
 test:
 	pytest test_math_lib.py
 
-doc: remove_documentation
+doc:
 	doxygen ../doc/Doxyfile
 	cd ../doc/latex && $(MAKE)
 
