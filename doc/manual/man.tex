@@ -9,6 +9,13 @@
 \usepackage[unicode]{hyperref}
 \usepackage{graphicx}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
 \renewcommand{\figurename}{Button Image}
 \title{proj2}
 \author{Intr-net}
@@ -48,86 +55,98 @@
     For more detailed description, open refman.pdf.
     \label{sec:usage}
 
+    \subsection{Introduction}
+    \label{subsec:Introduction}
+        Our calculator is divided to parts. Numbers, \href{subsec:mathOperations}{math operations}, \href{subsec:memoryoperations}{memory operation} and display. Usage is simple and is described in every operation.
+        \newline
+        \begin{figure}[h]
+            \includegraphics[scale = 0.5]{Calc_screen.png}
+            \centering
+            \label{pic:calc}
+        \end{figure}
+        
     \subsection{Math operations}
     \label{subsec:mathOperations}
         First you need to enter number then some math operation. If the operation is unary (factorial, absolute value) the result will be automatically displayed. In case of binary operation, after operation you have to enter another number and then click on equal button.
     \subsubsection{Plus}
     \label{subsubsec:plus}
         \begin{figure}[h]
-        \caption{Plus}
-        \includegraphics[scale = 0.2]{plus.gif}
-        \centering
-        \label{fig:plus}
-    \end{figure}
+            \caption{Plus}
+            \includegraphics[scale = 0.2]{plus}
+            \centering
+            \label{fig:plus}
+        \end{figure}
         This button will add two numbers.
     \subsubsection{Minus}
     \label{subsubsec:minus}
-        \begin{figure}[h]
+        \begin{figure}[hbt!]
             \caption{Minus}
-            \includegraphics[scale = 0.2]{minus.gif}
+            \includegraphics[scale = 0.2]{minus}
             \centering
             \label{fig:minus}
         \end{figure}
         This button will subtract two numbers.
-\newpage
     \subsubsection{Times}
     \label{subsubsec:times}
-        \begin{figure}[h]
+        \begin{figure}[hbt!]
             \caption{Multiply}
-            \includegraphics[scale = 0.2]{multiply.gif}
+            \includegraphics[scale = 0.2]{multiply}
             \centering
             \label{fig:mul}
         \end{figure}
         This button will multiply two numbers
     \subsubsection{Divide}
     \label{subsubsec:division}
-        \begin{figure}[h]
+        \begin{figure}[hbt!]
             \caption{divide}
-            \includegraphics[scale = 0.2]{divide.gif}
+            \includegraphics[scale = 0.2]{divide}
             \centering
             \label{fig:div}
         \end{figure}
         This button will divide two number.
     \subsubsection{Factorial}
     \label{subsubsec:factorial}
-        \begin{figure}[h]
+        \begin{figure}[hbt!]
             \caption{Factorial}
-            \includegraphics[scale = 0.2]{factorial.gif}
+            \includegraphics[scale = 0.2]{factorial}
             \centering
             \label{fig:fact}
         \end{figure}
-        This button will calculate factorial of a number.
+        This button will calculate factorial of a number
     \subsubsection{Absolute value}
-    \label{subsubsec:absolute value}
-        \begin{figure}[h]
+    \label{subsubsec:absolute_value}
+        \begin{figure}[hbt!]
             \caption{Absolute value}
-            \includegraphics[scale = 0.2]{abs.gif}
+            \includegraphics[scale = 0.2]{abs}
             \centering
             \label{fig:abs_v}
         \end{figure}
         This button will return absolute value of a number.
+        
     \subsubsection{Power}
     \label{subsubsec:power}
-        \begin{figure}[h]
+        \begin{figure}[hbt!]
             \caption{Power}
-            \includegraphics[scale = 0.2]{n-th_power.gif}
+            \includegraphics[scale = 0.2]{n-th_power}
             \centering
             \label{fig:pow}
         \end{figure}
         This button will do power. First number is an exponent and second number is base.
+        
     \subsubsection{Nth root}
     \label{subsubsec:nthroot}
-        \begin{figure}[h]
+        \begin{figure}[hbt!]
             \caption{Nth root}
-            \includegraphics[scale = 0.2]{n-th_root.gif}
+            \includegraphics[scale = 0.2]{n-th_root}
             \centering
             \label{fig:root}
         \end{figure}
+        
         This button will do nth root. First number is root and second number is base.
     \newpage
-
+    
     \subsection{Memory oprations}
-    \t Usage of buttons with memory operations.
+    Usage of buttons with memory operations.
     For more detailed description, open refman.pdf.
     \label{subsec:memoryoperations}
 
@@ -135,7 +154,7 @@
 
     \label{subsubsec:cleardisplay}
 
-    \begin{figure}[h]
+    \begin{figure}[hbt!]
         \caption{Clear display}
         \includegraphics[scale = 0.2]{clear_display}
         \centering
@@ -146,7 +165,7 @@
     \subsubsection{Clear Memory}
     \label{subsubsec:clearmemory}
 
-    \begin{figure}[h]
+    \begin{figure}[hbt!]
         \caption{Clear memory}
         \includegraphics[scale = 0.2]{clear_memory}
         \centering
@@ -154,11 +173,11 @@
     \end{figure}
     This button will reset last saved answer to zero and will also clear the display
 
-    \subsubsection[scale = 0.2]{Hint}
+    \subsubsection{Hint}
     \label{subsubsec:hint}
 
 
-    \begin{figure}[h]
+    \begin{figure}[hbt!]
         \caption{Hint button}
         \includegraphics[scale = 0.2]{hint}
         \centering
@@ -168,9 +187,6 @@
     This button will open up this manual.
 
     \newpage
-
-    \subsection{Equal}
-    \label{subsec:equal}
 
 
     \section{Uninstall}
