@@ -2,7 +2,7 @@
 
 ## Development Platforms
 
-       Ubuntu 64-bit
+       Windows 64-bit
 
 ## Team
 
