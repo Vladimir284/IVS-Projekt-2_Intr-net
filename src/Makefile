@@ -1,5 +1,7 @@
 .PHONY : clean
 
+all: run
+
 # (zabalí projekt tak, aby mohl být odevzdán)
 pack: pack_folder remove_packed_folder
 	# TO-DO Team work - brainstorming
@@ -17,8 +19,7 @@ remove_packed_folder:
 	rm -rf ../../xtichy31_xsauer03_xpolas41_xmecia00
 
 install: uninstall
-	pyinstaller -n Calculator -i calc.icns calc.py
-	cp -R buttons_images dist/Calculator/
+	pyinstaller -i calc.icns -n Calculator -w -F calc.py
 
 
 uninstall:
@@ -45,3 +46,4 @@ remove_documentation:
 	rm -rf ../doc/latex
 	rm -rf ../doc/html
 	rm -rf ../doc/man
+
