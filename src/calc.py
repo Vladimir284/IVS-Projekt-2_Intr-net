@@ -8,7 +8,6 @@ import tkinter as tk
 from main import Calculator
 from tkinter import *
 import subprocess
-from math_lib import show_error
 import sys
 
 ##
