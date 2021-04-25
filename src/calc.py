@@ -24,8 +24,7 @@ MATH_ERROR = "MATH ERROR"
 c = Calculator
 
 ##
-# TO-DO Definition
-# New instance of class tkinter???
+# New instance of class tkinter
 calc = tk.Tk()
 
 # Defining the title of the calculator
@@ -35,36 +34,17 @@ calc.title("Calculator")
 calc.minsize(720, 300)
 
 ##
-# TO-DO Poor definition
-# definition of variable weight
+# Parameters of tkinter functions
 weight = 0
-
-##
-# TO-DO Poor definition
-# definition of variable row
 row = 0
-
-##
-# TO-DO Poor definition
-# definition of variable column
 column = 0
-
-##
-# TO-DO Def
 justify = 0
-
-##
-# TO-DO Def
 sticky = 0
+columnspan = 0
 
 ##
 # index through which will be iterated in for cycle
 i = 0
-
-##
-# TO-DO Poor definition
-# definition of variable columnspan
-columnspan = 0
 
 tk.Grid.rowconfigure(calc, 0, weight=1)
 for i in range(5):

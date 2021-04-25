@@ -77,7 +77,7 @@ def subtraction(minuend, subtrahend):
 # Basic division
 # @note \f$ dividend \div divisor \f$
 # @param dividend Dividend of the division
-# @param divisor Divisor of the divison
+# @param divisor Divisor of the division
 # @return [float] Result of a division
 def division(dividend, divisor):
     if divisor == 0:
