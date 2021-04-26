@@ -25,7 +25,7 @@ install_mac: uninstall
 
 install_windows: uninstall
 	pyinstaller -n Calculator -i calc.icns calc.py
-	cp -R buttons_images/ dist/buttons_images
+	cp -R buttons_images/ dist/Calculator/buttons_images
 
 uninstall:
 	rm -rf dist

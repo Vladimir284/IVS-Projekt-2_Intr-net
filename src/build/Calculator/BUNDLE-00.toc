@@ -1,3 +1,0 @@
-([('Calculator',
-   '/Users/vladis/FIT/Druhy_Semester/IVS/Projekt2/repo/IVS-Projekt-2_Intr-net/src/dist/Calculator',
-   'EXECUTABLE')],)
