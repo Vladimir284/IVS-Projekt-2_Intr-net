@@ -45,7 +45,7 @@
  [],
  False,
  False,
- 1619454032,
+ 1619454666,
  [('run',
    '/Users/vladis/FIT/Druhy_Semester/IVS/Projekt2/repo/venv/lib/python3.8/site-packages/PyInstaller/bootloader/Darwin-64bit/run',
    'EXECUTABLE')])

@@ -12,7 +12,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
 }
 
@@ -45,106 +45,122 @@
     \tableofcontents
 
 
-    \section{Install}
-    \label{sec:install}
-    In this section we will take a closer look how to install Calculator 0.1 to your computer
-
-
     \section{Usage}
-    \t Usage of buttons with mathematical functions.
+    \t Usage of buttons with mathematical and logical functions.
     For more detailed description, open refman.pdf.
     \label{sec:usage}
 
     \subsection{Introduction}
     \label{subsec:Introduction}
-        Our calculator is divided to parts. Numbers, \href{subsec:mathOperations}{math operations}, \href{subsec:memoryoperations}{memory operation} and display. Usage is simple and is described in every operation.
-        \newline
-        \begin{figure}[h]
-            \includegraphics[scale = 0.5]{Calc_screen.png}
-            \centering
-            \label{pic:calc}
-        \end{figure}
-        
+    Our calculator app is split to parts. Buttons with: numbers, math operations, memory operations and display.
+    Usage is simple and is described in subsection of each operation.
+    \newline
+    \begin{figure}[h]
+        \includegraphics[scale = 0.5]{Calc_screen.png}
+        \centering
+        \label{fig:calc}
+    \end{figure}
+
+    \newpage
+
     \subsection{Math operations}
     \label{subsec:mathOperations}
-        First you need to enter number then some math operation. If the operation is unary (factorial, absolute value) the result will be automatically displayed. In case of binary operation, after operation you have to enter another number and then click on equal button.
-    \subsubsection{Plus}
-    \label{subsubsec:plus}
-        \begin{figure}[h]
-            \caption{Plus}
-            \includegraphics[scale = 0.2]{plus}
-            \centering
-            \label{fig:plus}
-        \end{figure}
-        This button will add two numbers.
-    \subsubsection{Minus}
-    \label{subsubsec:minus}
-        \begin{figure}[hbt!]
-            \caption{Minus}
-            \includegraphics[scale = 0.2]{minus}
-            \centering
-            \label{fig:minus}
-        \end{figure}
-        This button will subtract two numbers.
-    \subsubsection{Times}
-    \label{subsubsec:times}
-        \begin{figure}[hbt!]
-            \caption{Multiply}
-            \includegraphics[scale = 0.2]{multiply}
-            \centering
-            \label{fig:mul}
-        \end{figure}
-        This button will multiply two numbers
-    \subsubsection{Divide}
-    \label{subsubsec:division}
-        \begin{figure}[hbt!]
-            \caption{divide}
-            \includegraphics[scale = 0.2]{divide}
-            \centering
-            \label{fig:div}
-        \end{figure}
-        This button will divide two number.
+    Now, the usage depends on whether you want to use binary or unary operations. \newline
+    For more detailed description open refman.pdf.
+
+
+    \subsubsection{Unary operations}
+    First you need to enter a number then some mathematical operation. If no number is entered as the first, SYNTAX ERROR will be printed on the display.
+
     \subsubsection{Factorial}
     \label{subsubsec:factorial}
-        \begin{figure}[hbt!]
-            \caption{Factorial}
-            \includegraphics[scale = 0.2]{factorial}
-            \centering
-            \label{fig:fact}
-        \end{figure}
-        This button will calculate factorial of a number
+    \begin{figure}[hbt!]
+        \caption{Factorial}
+        \includegraphics[scale = 0.2]{factorial}
+        \centering
+        \label{fig:fact}
+    \end{figure}
+    This button will calculate factorial of a number.
+
     \subsubsection{Absolute value}
     \label{subsubsec:absolute_value}
-        \begin{figure}[hbt!]
-            \caption{Absolute value}
-            \includegraphics[scale = 0.2]{abs}
-            \centering
-            \label{fig:abs_v}
-        \end{figure}
-        This button will return absolute value of a number.
-        
+    \begin{figure}[hbt!]
+        \caption{Absolute value}
+        \includegraphics[scale = 0.2]{abs}
+        \centering
+        \label{fig:abs_v}
+    \end{figure}
+    This button will return absolute value of a number.
+
+    \subsubsection{Binary operations}
+    First you need to enter a number, then some mathematical operation and then again press enter number (otherwise it will print SYNTAX ERROR on the display).
+
+
+
+    \subsubsection{Plus}
+    \label{subsubsec:plus}
+    \begin{figure}[h]
+        \caption{Plus}
+        \includegraphics[scale = 0.2]{plus}
+        \centering
+        \label{fig:plus}
+    \end{figure}
+    This button will add two numbers.
+
+    \subsubsection{Minus}
+    \label{subsubsec:minus}
+    \begin{figure}[hbt!]
+        \caption{Minus}
+        \includegraphics[scale = 0.2]{minus}
+        \centering
+        \label{fig:minus}
+    \end{figure}
+    This button will subtract two numbers.
+
+    \subsubsection{Times}
+    \label{subsubsec:times}
+    \begin{figure}[hbt!]
+        \caption{Multiply}
+        \includegraphics[scale = 0.2]{multiply}
+        \centering
+        \label{fig:mul}
+    \end{figure}
+    This button will multiply two numbers.
+
+    \subsubsection{Divide}
+    \label{subsubsec:division}
+    \begin{figure}[hbt!]
+        \caption{divide}
+        \includegraphics[scale = 0.2]{divide}
+        \centering
+        \label{fig:div}
+    \end{figure}
+    This button will divide two numbers.
+
+
+
     \subsubsection{Power}
     \label{subsubsec:power}
-        \begin{figure}[hbt!]
-            \caption{Power}
-            \includegraphics[scale = 0.2]{n-th_power}
-            \centering
-            \label{fig:pow}
-        \end{figure}
-        This button will do power. First number is an exponent and second number is base.
-        
+    \begin{figure}[hbt!]
+        \caption{Power}
+        \includegraphics[scale = 0.2]{n-th_power}
+        \centering
+        \label{fig:pow}
+    \end{figure}
+    This button will calculate nth power of a number. First number is a base and second number is exponent.
+
     \subsubsection{Nth root}
     \label{subsubsec:nthroot}
-        \begin{figure}[hbt!]
-            \caption{Nth root}
-            \includegraphics[scale = 0.2]{n-th_root}
-            \centering
-            \label{fig:root}
-        \end{figure}
-        
-        This button will do nth root. First number is root and second number is base.
+    \begin{figure}[hbt!]
+        \caption{Nth root}
+        \includegraphics[scale = 0.2]{n-th_root}
+        \centering
+        \label{fig:root}
+    \end{figure}
+
+    This button will calculate nth root of a number. First number is root and second number is base.
     \newpage
-    
+
     \subsection{Memory oprations}
     Usage of buttons with memory operations.
     For more detailed description, open refman.pdf.
@@ -186,10 +202,23 @@
 
     This button will open up this manual.
 
+    \subsection{Print result}
+    \begin{figure}[hbt!]
+        \caption{Print result}
+        \includegraphics[scale = 0.2]{plus}
+        \centering
+        \label{fig:print_result}
+    \end{figure}
+
+    This button has some predefined behaviour \\
+
+    \noindent
+    \textbf{1. Pressing '=' without entering first number} \\
+    \indent ANS will be set on 0 and calculator will work with 0 as ANS. \\\\
+    \textbf{2. Pressing '=' without previously entered math operation} \\
+    \indent Last saved answer (ANS) will be printed on the display. \\\\
+    \textbf{3. Pressing '=' without entering second number of binary operations} \\
+    \indent SYNTAX ERROR will be printed on screen.
     \newpage
-
-
-    \section{Uninstall}
-    \label{sec:uninstall}
 
 \end{document}
