@@ -8,7 +8,7 @@ pack: pack_folder remove_packed_folder
 
 pack_folder: remove_packed_folder doc
 	mkdir ../../xtichy31_xsauer03_xpolas41_xmecia00
-	mkdir ../../xtichy31_xsauer03_xpolas41_xmecia00/install # TO-DO Write installator for Calculator
+	mkdir ../../xtichy31_xsauer03_xpolas41_xmecia00/install
 	cp -R ../doc ../../xtichy31_xsauer03_xpolas41_xmecia00
 	rm ../../xtichy31_xsauer03_xpolas41_xmecia00/doc/Doxyfile
 	rm ../../xtichy31_xsauer03_xpolas41_xmecia00/doc/intr_net_logo.png
