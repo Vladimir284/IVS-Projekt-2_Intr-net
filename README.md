@@ -2,7 +2,7 @@
 
 ## Development Platforms
 
-       Windows 64-bit
+       TBD
 
 ## Team
 
