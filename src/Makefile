@@ -18,9 +18,14 @@ pack_folder: remove_packed_folder doc
 remove_packed_folder:
 	rm -rf ../../xtichy31_xsauer03_xpolas41_xmecia00
 
-install: uninstall
-	pyinstaller -i calc.icns -n Calculator -w -F calc.py
+install_mac: uninstall
+	pyinstaller -n Calculator -i calc.icns -w -F --collect-all buttons_images calc.py
+	cp -R buttons_images/ dist/buttons_images
+	cp -R buttons_images/ dist/Calculator.app/Contents/MacOS/buttons_images
 
+install_windows: uninstall
+	pyinstaller -n Calculator -i calc.icns calc.py
+	cp -R buttons_images/ dist/buttons_images
 
 uninstall:
 	rm -rf dist
