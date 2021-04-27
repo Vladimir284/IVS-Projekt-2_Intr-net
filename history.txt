@@ -1,185 +1,187 @@
-b9de0e8 - Vladimir, 9 minutes ago : Deleted build file
-861e5ca - Vladimir, 34 minutes ago : Removed tex file for manual and images for manual
-07e1309 - Vladimir, 39 minutes ago : Added final manaul
-12acc03 - Vladimir, 2 hours ago : Undo
-f039fac - Vladimir, 8 hours ago : Commented from gitignor executable builded files (for chcking on windows)
-c03b9f0 - Vladimir, 8 hours ago : Development section rewriten on TBD
-de94c01 - Vladimir, 8 hours ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-a11ea27 - Vladimir, 8 hours ago : Added install targt (for bulding executable) for windows and for mac separately
-af4bd51 - MatejS99, 23 hours ago : manual
-b05d43c - MatejS99, 24 hours ago : Merge remote-tracking branch 'origin/main'
-e67b983 - Vladimir, 24 hours ago : Edited pyinstaller - now creates one file
-6d6c6c9 - Vladimir, 24 hours ago : Renamed buttons and added calc icon
-bd2f3ca - Vladimir, 24 hours ago : Added lines to make install and unistall
-227044d - Vladimir, 24 hours ago : Added files created by pyinstaller
-ae3de5a - Vladimir, 25 hours ago : Rename from calc.iso to calc.icns
-1fc27c2 - Vladimir, 25 hours ago : Split comment of parameter for tkinter
-e56b39d - Vladimir, 25 hours ago : Added cover image of calculator
-08de315 - Vladimir, 26 hours ago : Added screenshot of calculator
-200c19f - Vladimir, 26 hours ago : Added rest of buttons with resized text
-6230894 - Vladimir, 27 hours ago : Added butons with resized text
-85bf9d1 - MatejS99, 27 hours ago : Merge remote-tracking branch 'origin/main'
-f52313a - MatejS99, 27 hours ago : webbrowser hint open
-239d82a - Vladimir, 28 hours ago : Deleted packages from manual for calculator
-944cf2a - Vladimir, 28 hours ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-4625a6e - Vladimir, 28 hours ago : Changed dev. platform to Windows
-9a7d246 - Vladimir, 28 hours ago : Removed comments from makefile
-1e1b19f - MatejS99, 28 hours ago : manual in calc runable
-8bde8c6 - Filipes, 28 hours ago : Merge remote-tracking branch 'origin/main'
-f7d37f8 - Filipes, 28 hours ago : fixed some documentation
-49cdf10 - MatejS99, 28 hours ago : man
-35677aa - Vladimir, 2 days ago : Added final version of images of buttons
-167526a - Vladimir, 3 days ago : Created .txt files for hand out
-84b0057 - Vladimir, 3 days ago : Made commands for pack target, added target remove_packed_folder target and.PHONY
-0781dae - Vladimir, 3 days ago : Deleted MAC OSX parts in instalation and deletion
-d606c99 - Vladimir, 4 days ago : Added dependency in clean command
-e686a00 - Vladimir, 4 days ago : Added command for generating pdf from latex genarated by doxygen
-0496275 - Vladimir, 6 days ago : From method deleted SYNTAX_ERROR and replaced it with var SYNTAX_ERROR
-59798a6 - Vladimir, 6 days ago : Deleted import calc
-75e3536 - Vladimir, 6 days ago : Added var i
-d936506 - Vladimir, 6 days ago : Edited doxyfile, added variables and TO-DOs to them, added @package command
-11c9b2a - Vladimir, 6 days ago : Edited man.tex
-713fa68 - Vladimir, 6 days ago : Edited math_lib
-2481e27 - Vladimir, 6 days ago : Edited subtraction name
-1b26e47 - Vladimir, 6 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-5eee111 - Vladimir, 6 days ago : Code review, fixed documentation
-f8b82fe - MatejS99, 6 days ago : Merge remote-tracking branch 'origin/main'
-46a2152 - MatejS99, 6 days ago : math error
-ddccbc8 - Vladimir, 6 days ago : Fixed merging errors
-7377086 - Vladimir, 6 days ago : Code review main.py
-4a9eead - Filipes, 6 days ago : fixed syntactic mistakes in math_lib.py
-50d5b42 - Filipes, 6 days ago : fixed syntactic mistakes in profiling.py
-9d11fac - Filipes, 6 days ago : Merge remote-tracking branch 'origin/main'
-a0897b3 - Filipes, 6 days ago : fixed syntactic mistakes
-581ac57 - Vladimir, 6 days ago : Renamed substraction
-696ec08 - Vladimir, 6 days ago : Deleted packages
-97d1572 - Vladimir, 6 days ago : Deleted TO-DO's
-4d82284 - Vladimir, 6 days ago : Checked profiler
-97271cf - Vladimir, 6 days ago : Deleted dsd.py and dsds
-3156280 - Vladimir, 6 days ago : Deleted global SYNTAX_ERROR
-0c57082 - MatejS99, 6 days ago : some changes
-4cef5ad - Vladimir, 6 days ago : Added to-dos in README
-3be4276 - Vladimir, 6 days ago : Added manual.pdf, commented imports to avoid circular importing Finished some to-doe
-c48a54a - MatejS99, 6 days ago : ans again
-5be7f7a - Vladimir, 6 days ago : What is dsd.py ?
-61f82db - Vladimir, 6 days ago : Added TO-DO
-5877b3d - Vladimir, 6 days ago : Edited comment
-763eab5 - Vladimir, 6 days ago : Anulated ID of operation after = is pressed
-26ac9f5 - MatejS99, 6 days ago : ans again
-4809783 - MatejS99, 6 days ago : ans
-c17dc8a - Vladimir, 6 days ago : Setting ans
-1b3f43f - Vladimir, 6 days ago : Edited merge errors
-5a81ddb - Vladimir, 6 days ago : Added macro syntax error
-9b46bda - MatejS99, 6 days ago : some rep
-468fbed - Vladimir, 6 days ago : Edited number buttons pushing and syntax error
-f5d29e5 - MatejS99, 6 days ago : result 0
-66e7ceb - MatejS99, 6 days ago : Merge remote-tracking branch 'origin/main'
-a38b87c - MatejS99, 6 days ago : result 0
-f2311a0 - Vladimir, 6 days ago : Deleted empty line
-4a937dc - Vladimir, 7 days ago : Delted src/.idea from repo
-0571526 - Vladimir, 7 days ago : Deleted .idea venv and .pytest_cache from repo
-0ad4afb - Vladimir, 7 days ago : Edited .gitignore
-e92fc80 - Vladimir, 7 days ago : Delete # before import sentence
-8f94388 - Vladimir, 7 days ago : Deleted repo
-85245ab - Vladimir, 7 days ago : Added to gitignore venv + .idea
-4279a47 - Vladimir, 7 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-64608d5 - Filipes, 8 days ago : gui 1.1
-d96241e - Filipes, 8 days ago : gui 1.1
-27dde15 - Filipes, 8 days ago : gui - *.0 results are now shown as just *
-61fc7d8 - MatejS99, 8 days ago : minus fix
-c01681f - MatejS99, 8 days ago : dislaz font
-f500dfd - Filipes, 8 days ago : gui the size of buttons changed
-dd63ec9 - Vladimir, 8 days ago : Added documentation
-6c1e35b - Vladimir, 8 days ago : Added table of contents, description of sections
-ffea041 - Vladimir, 8 days ago : Added captions
-ad1a2b5 - Vladimir, 8 days ago : Added documentation to image=PhotoImage
-f4787ee - Vladimir, 8 days ago : Added resized buttons with images, still not complete
-72042ab - Vladimir, 9 days ago : Buttons resized now they only need label :D
-2bac2e6 - Vladimir, 9 days ago : Added todo
-4436891 - Vladimir, 9 days ago : Added comments to vars width and height
-48a17b2 - Vladimir, 9 days ago : Added images to buttons (need to rsize each button)
-37033ad - Vladimir, 9 days ago : Added basics of image, need to finish
-a7e95e0 - Vladimir, 9 days ago : Added factorial abd power and root images
-f438134 - Vladimir, 9 days ago : TKinter can work with .gif file so her you go :)
-c73815e - Vladimir, 9 days ago : Mergeing erros correction
-7062f02 - Vladimir, 9 days ago : Edited size of images plus try to import the to calc
-77b8021 - Filipes, 10 days ago : no problems connected with comments reported now
-8091764 - Filipes, 10 days ago : substraction fixed
-770b9c0 - Filipes, 10 days ago : Merge remote-tracking branch 'origin/main'
-713029a - Filipes, 10 days ago : added comments to calc.py - tbd later
-733870f - Vladimir, 10 days ago : Added newpages to manual
-217c15c - Vladimir, 10 days ago : Added memory operations plus added pictures of buttons
-660cf03 - Vladimir, 10 days ago : Added Clea_display pic
-ef96207 - Vladimir, 10 days ago : Added dscrition of main
-87de7a1 - Vladimir, 10 days ago : Added button pictures
-f7db0fd - Vladimir, 10 days ago : Deleted package
-3d47368 - Vladimir, 10 days ago : Added package and todo def of internal varriables
-d72b43b - Vladimir, 10 days ago : Added packages
-26f2264 - Vladimir, 10 days ago : Documentation of memory_operations
-1fa73a2 - Vladimir, 10 days ago : Deleted test_strin
-21ccfcb - Vladimir, 10 days ago : Deleted test string
-1440207 - Vladimir, 10 days ago : Deleted test for mem op.
-12a7b64 - Vladimir, 10 days ago : Deleted test for mem op.
-884a739 - Vladimir, 10 days ago : Rename subtaction to substraction
-7836414 - Vladimir, 10 days ago : Substaction renamed to substraction
-9b9d98c - MatejS99, 10 days ago : gui Syntax error, and other
-dd18bfd - Vladimir, 10 days ago : Deleted empty rows
-02758d1 - Vladimir, 10 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-3068787 - Vladimir, 10 days ago : Added memory operations
-758969a - MatejS99, 10 days ago : gui ans, and other
-2cb3cdd - Vladimir, 10 days ago : Added getters, and setters
-3ff7f38 - Vladimir, 10 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net Connect
-af26747 - Vladimir, 10 days ago : Minor changes
-20a78e1 - Vladimir, 10 days ago : Created instanc of calculator
-d8f7df3 - MatejS99, 10 days ago : gui float rep
-3524946 - MatejS99, 10 days ago : Merge remote-tracking branch 'origin/main'
-bfe33b5 - MatejS99, 10 days ago : gui float rep
-5978ae3 - fajcek, 10 days ago : pridani shrnuti profilingu
-cdb37ad - Vladimir, 10 days ago : Added subsections
-cb1a163 - Vladimir, 10 days ago : Added sections and sabsections
-58b9c1d - Vladimir, 10 days ago : Added skelets of sections
-faace36 - MatejS99, 10 days ago : manula
-8e645ab - MatejS99, 10 days ago : Merge remote-tracking branch 'origin/main'
-fd19395 - MatejS99, 10 days ago : manula
-8da7259 - Vladimir, 10 days ago : Moved readme to ..
-573af06 - Vladimir, 10 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-f5e3efd - Vladimir, 10 days ago : Skelet for test
-0a9171b - Vladimir, 10 days ago : Added skelets for another tests
-47118f4 - Vladimir, 10 days ago : Added path to README
-018a336 - Vladimir, 10 days ago : English version of readme.md
-bc315b4 - Vladimir, 10 days ago : Deleted Redme.md, will be replacd with english version
-c2ff44b - Vladimir, 10 days ago : Deleted pack and coments for other sections
-2669611 - Vladimir, 10 days ago : Deleted empty rows, dont mind
-8851926 - MatejS99, 10 days ago : gui input
+265f4f5 - Vladimir, 14 hours ago : Edited command for crating windwed exe file and deleted install_windows target
+de41099 - Vladimir, 14 hours ago : Added history from git
+b9de0e8 - Vladimir, 14 hours ago : Deleted build file
+861e5ca - Vladimir, 14 hours ago : Removed tex file for manual and images for manual
+07e1309 - Vladimir, 14 hours ago : Added final manaul
+12acc03 - Vladimir, 16 hours ago : Undo
+f039fac - Vladimir, 22 hours ago : Commented from gitignor executable builded files (for chcking on windows)
+c03b9f0 - Vladimir, 22 hours ago : Development section rewriten on TBD
+de94c01 - Vladimir, 22 hours ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+a11ea27 - Vladimir, 22 hours ago : Added install targt (for bulding executable) for windows and for mac separately
+af4bd51 - MatejS99, 2 days ago : manual
+b05d43c - MatejS99, 2 days ago : Merge remote-tracking branch 'origin/main'
+e67b983 - Vladimir, 2 days ago : Edited pyinstaller - now creates one file
+6d6c6c9 - Vladimir, 2 days ago : Renamed buttons and added calc icon
+bd2f3ca - Vladimir, 2 days ago : Added lines to make install and unistall
+227044d - Vladimir, 2 days ago : Added files created by pyinstaller
+ae3de5a - Vladimir, 2 days ago : Rename from calc.iso to calc.icns
+1fc27c2 - Vladimir, 2 days ago : Split comment of parameter for tkinter
+e56b39d - Vladimir, 2 days ago : Added cover image of calculator
+08de315 - Vladimir, 2 days ago : Added screenshot of calculator
+200c19f - Vladimir, 2 days ago : Added rest of buttons with resized text
+6230894 - Vladimir, 2 days ago : Added butons with resized text
+85bf9d1 - MatejS99, 2 days ago : Merge remote-tracking branch 'origin/main'
+f52313a - MatejS99, 2 days ago : webbrowser hint open
+239d82a - Vladimir, 2 days ago : Deleted packages from manual for calculator
+944cf2a - Vladimir, 2 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+4625a6e - Vladimir, 2 days ago : Changed dev. platform to Windows
+9a7d246 - Vladimir, 2 days ago : Removed comments from makefile
+1e1b19f - MatejS99, 2 days ago : manual in calc runable
+8bde8c6 - Filipes, 2 days ago : Merge remote-tracking branch 'origin/main'
+f7d37f8 - Filipes, 2 days ago : fixed some documentation
+49cdf10 - MatejS99, 2 days ago : man
+35677aa - Vladimir, 3 days ago : Added final version of images of buttons
+167526a - Vladimir, 4 days ago : Created .txt files for hand out
+84b0057 - Vladimir, 4 days ago : Made commands for pack target, added target remove_packed_folder target and.PHONY
+0781dae - Vladimir, 4 days ago : Deleted MAC OSX parts in instalation and deletion
+d606c99 - Vladimir, 5 days ago : Added dependency in clean command
+e686a00 - Vladimir, 5 days ago : Added command for generating pdf from latex genarated by doxygen
+0496275 - Vladimir, 7 days ago : From method deleted SYNTAX_ERROR and replaced it with var SYNTAX_ERROR
+59798a6 - Vladimir, 7 days ago : Deleted import calc
+75e3536 - Vladimir, 7 days ago : Added var i
+d936506 - Vladimir, 7 days ago : Edited doxyfile, added variables and TO-DOs to them, added @package command
+11c9b2a - Vladimir, 7 days ago : Edited man.tex
+713fa68 - Vladimir, 7 days ago : Edited math_lib
+2481e27 - Vladimir, 7 days ago : Edited subtraction name
+1b26e47 - Vladimir, 7 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+5eee111 - Vladimir, 7 days ago : Code review, fixed documentation
+f8b82fe - MatejS99, 7 days ago : Merge remote-tracking branch 'origin/main'
+46a2152 - MatejS99, 7 days ago : math error
+ddccbc8 - Vladimir, 7 days ago : Fixed merging errors
+7377086 - Vladimir, 7 days ago : Code review main.py
+4a9eead - Filipes, 7 days ago : fixed syntactic mistakes in math_lib.py
+50d5b42 - Filipes, 7 days ago : fixed syntactic mistakes in profiling.py
+9d11fac - Filipes, 7 days ago : Merge remote-tracking branch 'origin/main'
+a0897b3 - Filipes, 7 days ago : fixed syntactic mistakes
+581ac57 - Vladimir, 7 days ago : Renamed substraction
+696ec08 - Vladimir, 7 days ago : Deleted packages
+97d1572 - Vladimir, 7 days ago : Deleted TO-DO's
+4d82284 - Vladimir, 7 days ago : Checked profiler
+97271cf - Vladimir, 7 days ago : Deleted dsd.py and dsds
+3156280 - Vladimir, 7 days ago : Deleted global SYNTAX_ERROR
+0c57082 - MatejS99, 7 days ago : some changes
+4cef5ad - Vladimir, 7 days ago : Added to-dos in README
+3be4276 - Vladimir, 7 days ago : Added manual.pdf, commented imports to avoid circular importing Finished some to-doe
+c48a54a - MatejS99, 7 days ago : ans again
+5be7f7a - Vladimir, 7 days ago : What is dsd.py ?
+61f82db - Vladimir, 7 days ago : Added TO-DO
+5877b3d - Vladimir, 7 days ago : Edited comment
+763eab5 - Vladimir, 7 days ago : Anulated ID of operation after = is pressed
+26ac9f5 - MatejS99, 7 days ago : ans again
+4809783 - MatejS99, 7 days ago : ans
+c17dc8a - Vladimir, 7 days ago : Setting ans
+1b3f43f - Vladimir, 7 days ago : Edited merge errors
+5a81ddb - Vladimir, 7 days ago : Added macro syntax error
+9b46bda - MatejS99, 7 days ago : some rep
+468fbed - Vladimir, 7 days ago : Edited number buttons pushing and syntax error
+f5d29e5 - MatejS99, 7 days ago : result 0
+66e7ceb - MatejS99, 7 days ago : Merge remote-tracking branch 'origin/main'
+a38b87c - MatejS99, 7 days ago : result 0
+f2311a0 - Vladimir, 7 days ago : Deleted empty line
+4a937dc - Vladimir, 8 days ago : Delted src/.idea from repo
+0571526 - Vladimir, 8 days ago : Deleted .idea venv and .pytest_cache from repo
+0ad4afb - Vladimir, 8 days ago : Edited .gitignore
+e92fc80 - Vladimir, 8 days ago : Delete # before import sentence
+8f94388 - Vladimir, 8 days ago : Deleted repo
+85245ab - Vladimir, 8 days ago : Added to gitignore venv + .idea
+4279a47 - Vladimir, 8 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+64608d5 - Filipes, 9 days ago : gui 1.1
+d96241e - Filipes, 9 days ago : gui 1.1
+27dde15 - Filipes, 9 days ago : gui - *.0 results are now shown as just *
+61fc7d8 - MatejS99, 9 days ago : minus fix
+c01681f - MatejS99, 9 days ago : dislaz font
+f500dfd - Filipes, 9 days ago : gui the size of buttons changed
+dd63ec9 - Vladimir, 9 days ago : Added documentation
+6c1e35b - Vladimir, 9 days ago : Added table of contents, description of sections
+ffea041 - Vladimir, 9 days ago : Added captions
+ad1a2b5 - Vladimir, 9 days ago : Added documentation to image=PhotoImage
+f4787ee - Vladimir, 9 days ago : Added resized buttons with images, still not complete
+72042ab - Vladimir, 10 days ago : Buttons resized now they only need label :D
+2bac2e6 - Vladimir, 10 days ago : Added todo
+4436891 - Vladimir, 10 days ago : Added comments to vars width and height
+48a17b2 - Vladimir, 10 days ago : Added images to buttons (need to rsize each button)
+37033ad - Vladimir, 10 days ago : Added basics of image, need to finish
+a7e95e0 - Vladimir, 10 days ago : Added factorial abd power and root images
+f438134 - Vladimir, 10 days ago : TKinter can work with .gif file so her you go :)
+c73815e - Vladimir, 10 days ago : Mergeing erros correction
+7062f02 - Vladimir, 10 days ago : Edited size of images plus try to import the to calc
+77b8021 - Filipes, 11 days ago : no problems connected with comments reported now
+8091764 - Filipes, 11 days ago : substraction fixed
+770b9c0 - Filipes, 11 days ago : Merge remote-tracking branch 'origin/main'
+713029a - Filipes, 11 days ago : added comments to calc.py - tbd later
+733870f - Vladimir, 11 days ago : Added newpages to manual
+217c15c - Vladimir, 11 days ago : Added memory operations plus added pictures of buttons
+660cf03 - Vladimir, 11 days ago : Added Clea_display pic
+ef96207 - Vladimir, 11 days ago : Added dscrition of main
+87de7a1 - Vladimir, 11 days ago : Added button pictures
+f7db0fd - Vladimir, 11 days ago : Deleted package
+3d47368 - Vladimir, 11 days ago : Added package and todo def of internal varriables
+d72b43b - Vladimir, 11 days ago : Added packages
+26f2264 - Vladimir, 11 days ago : Documentation of memory_operations
+1fa73a2 - Vladimir, 11 days ago : Deleted test_strin
+21ccfcb - Vladimir, 11 days ago : Deleted test string
+1440207 - Vladimir, 11 days ago : Deleted test for mem op.
+12a7b64 - Vladimir, 11 days ago : Deleted test for mem op.
+884a739 - Vladimir, 11 days ago : Rename subtaction to substraction
+7836414 - Vladimir, 11 days ago : Substaction renamed to substraction
+9b9d98c - MatejS99, 11 days ago : gui Syntax error, and other
+dd18bfd - Vladimir, 11 days ago : Deleted empty rows
+02758d1 - Vladimir, 11 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+3068787 - Vladimir, 11 days ago : Added memory operations
+758969a - MatejS99, 11 days ago : gui ans, and other
+2cb3cdd - Vladimir, 11 days ago : Added getters, and setters
+3ff7f38 - Vladimir, 11 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net Connect
+af26747 - Vladimir, 11 days ago : Minor changes
+20a78e1 - Vladimir, 11 days ago : Created instanc of calculator
+d8f7df3 - MatejS99, 11 days ago : gui float rep
+3524946 - MatejS99, 11 days ago : Merge remote-tracking branch 'origin/main'
+bfe33b5 - MatejS99, 11 days ago : gui float rep
+5978ae3 - fajcek, 11 days ago : pridani shrnuti profilingu
+cdb37ad - Vladimir, 11 days ago : Added subsections
+cb1a163 - Vladimir, 11 days ago : Added sections and sabsections
+58b9c1d - Vladimir, 11 days ago : Added skelets of sections
+faace36 - MatejS99, 11 days ago : manula
+8e645ab - MatejS99, 11 days ago : Merge remote-tracking branch 'origin/main'
+fd19395 - MatejS99, 11 days ago : manula
+8da7259 - Vladimir, 11 days ago : Moved readme to ..
+573af06 - Vladimir, 11 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+f5e3efd - Vladimir, 11 days ago : Skelet for test
+0a9171b - Vladimir, 11 days ago : Added skelets for another tests
+47118f4 - Vladimir, 11 days ago : Added path to README
+018a336 - Vladimir, 11 days ago : English version of readme.md
+bc315b4 - Vladimir, 11 days ago : Deleted Redme.md, will be replacd with english version
+c2ff44b - Vladimir, 11 days ago : Deleted pack and coments for other sections
+2669611 - Vladimir, 11 days ago : Deleted empty rows, dont mind
+8851926 - MatejS99, 11 days ago : gui input
 694141d - Vladimir, 11 days ago : Added skelet for documentation for you guys :)
-df2b761 - Vladimir, 12 days ago : Edited @brief
-fe1cea6 - Vladimir, 12 days ago : Remove package section
-5b1d814 - Vladimir, 12 days ago : Added file to description
-4222317 - Vladimir, 12 days ago : Added sections into readme.md
-820587d - Vladimir, 12 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-39f594e - Vladimir, 12 days ago : Added GENERATE_TREEVIEW plus edited path to documents
-f431292 - Vladimir, 12 days ago : Added Readme for doxygen - english ver.
-e82b9b4 - MatejS99, 13 days ago : gui input
-580f47d - Vladimir, 13 days ago : Added documentation for profiling.py
-4341626 - Vladimir, 13 days ago : Changed exception to value error
-e44173b - Vladimir, 13 days ago : In factorial teste, divide changed to factorial
-6c41f45 - Vladimir, 13 days ago : Rename all x,y 's to name of operators (Guys ??)
-ec84d20 - Vladimir, 13 days ago : Created documentation of test_math_lib.py
-7f43658 - Vladimir, 13 days ago : Added skelet for test_math_lib
-365bd4a - Vladimir, 13 days ago : Skelet of comments in profilling
-1b9eeba - Vladimir, 13 days ago : Aded pycache to .gitignore
-3b240a3 - Vladimir, 13 days ago : Added Readme.md as main page
-270302c - Vladimir, 13 days ago : Added multiple paths to sorce codes
-2f168cd - Vladimir, 13 days ago : Edited logo and renamed
-e25dc4c - Vladimir, 13 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net Undeleted files
-423cf55 - Vladimir284, 13 days ago : Deleted man directory
-5db6c80 - Vladimir284, 13 days ago : Deleted latex directory
-0a7f66e - Vladimir284, 13 days ago : Deleted html directory
-9c7ec78 - Vladimir, 13 days ago : Added comments for doxygen in module memory_operation.py
-5e29655 - Vladimir, 13 days ago : Finished comments for doxygen in module math_lib.py
-efcc984 - Vladimir, 13 days ago : Added to gitignore doxygen documentation
-60db5c6 - Vladimir, 13 days ago : Edited makefile, commented slean section + changed dir. of documentation
-059732e - Vladimir, 13 days ago : Edited Doxyfile, added javadoc comments support
+df2b761 - Vladimir, 13 days ago : Edited @brief
+fe1cea6 - Vladimir, 13 days ago : Remove package section
+5b1d814 - Vladimir, 13 days ago : Added file to description
+4222317 - Vladimir, 13 days ago : Added sections into readme.md
+820587d - Vladimir, 13 days ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+39f594e - Vladimir, 13 days ago : Added GENERATE_TREEVIEW plus edited path to documents
+f431292 - Vladimir, 13 days ago : Added Readme for doxygen - english ver.
+e82b9b4 - MatejS99, 2 weeks ago : gui input
+580f47d - Vladimir, 2 weeks ago : Added documentation for profiling.py
+4341626 - Vladimir, 2 weeks ago : Changed exception to value error
+e44173b - Vladimir, 2 weeks ago : In factorial teste, divide changed to factorial
+6c41f45 - Vladimir, 2 weeks ago : Rename all x,y 's to name of operators (Guys ??)
+ec84d20 - Vladimir, 2 weeks ago : Created documentation of test_math_lib.py
+7f43658 - Vladimir, 2 weeks ago : Added skelet for test_math_lib
+365bd4a - Vladimir, 2 weeks ago : Skelet of comments in profilling
+1b9eeba - Vladimir, 2 weeks ago : Aded pycache to .gitignore
+3b240a3 - Vladimir, 2 weeks ago : Added Readme.md as main page
+270302c - Vladimir, 2 weeks ago : Added multiple paths to sorce codes
+2f168cd - Vladimir, 2 weeks ago : Edited logo and renamed
+e25dc4c - Vladimir, 2 weeks ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net Undeleted files
+423cf55 - Vladimir284, 2 weeks ago : Deleted man directory
+5db6c80 - Vladimir284, 2 weeks ago : Deleted latex directory
+0a7f66e - Vladimir284, 2 weeks ago : Deleted html directory
+9c7ec78 - Vladimir, 2 weeks ago : Added comments for doxygen in module memory_operation.py
+5e29655 - Vladimir, 2 weeks ago : Finished comments for doxygen in module math_lib.py
+efcc984 - Vladimir, 2 weeks ago : Added to gitignore doxygen documentation
+60db5c6 - Vladimir, 2 weeks ago : Edited makefile, commented slean section + changed dir. of documentation
+059732e - Vladimir, 2 weeks ago : Edited Doxyfile, added javadoc comments support
 21fcbed - Vladimir, 2 weeks ago : Edited logo path for doxyfile
 af94a5b - Vladimir, 2 weeks ago : Added pdf made from *.tex files
 c02b805 - Vladimir_Ubuntu, 2 weeks ago : Added new doxygen documentation
@@ -203,15 +205,15 @@ db0d84a - Vladimir, 2 weeks ago : Added data.txt since there was none
 d12c510 - Vladimir, 2 weeks ago : Deleted template by @ivs
 7a6e896 - MatejS99, 2 weeks ago : profilling and some minor changes
 23b9eab - Vladimir, 2 weeks ago : Deleted windows from develop
-e088563 - Vladimir, 2 weeks ago : Added Makefile template
-d70976d - Vladimir, 2 weeks ago : Removed .DS_Store
-96e6d6b - Vladimir, 2 weeks ago : Removed math_lib.pyc
-9bc1274 - Vladimir, 2 weeks ago : Deleted .idea file
-e1b352a - Vladimir, 2 weeks ago : Added multiple screens of debug
-3012833 - Vladimir, 2 weeks ago : My bad, debug should be from mathlib
-234aafd - Vladimir, 2 weeks ago : Added screnshot of debugging
-7be9784 - Vladimir284, 2 weeks ago : Deleted TO-DO in /mockup
-70265c5 - Vladimir, 2 weeks ago : Added mockup of advanced calculator
+e088563 - Vladimir, 3 weeks ago : Added Makefile template
+d70976d - Vladimir, 3 weeks ago : Removed .DS_Store
+96e6d6b - Vladimir, 3 weeks ago : Removed math_lib.pyc
+9bc1274 - Vladimir, 3 weeks ago : Deleted .idea file
+e1b352a - Vladimir, 3 weeks ago : Added multiple screens of debug
+3012833 - Vladimir, 3 weeks ago : My bad, debug should be from mathlib
+234aafd - Vladimir, 3 weeks ago : Added screnshot of debugging
+7be9784 - Vladimir284, 3 weeks ago : Deleted TO-DO in /mockup
+70265c5 - Vladimir, 3 weeks ago : Added mockup of advanced calculator
 d32d2ea - MatejS99, 3 weeks ago : gui, if you are nice to it, works
 4ca85bb - MatejS99, 3 weeks ago : gui, if you are nice to it, works
 ae6c22e - Filipes, 3 weeks ago : gui 2.1
@@ -234,11 +236,11 @@ b09fac5 - Vladimir, 3 weeks ago : Deleted TO-DO
 6108cb8 - Vladimir, 3 weeks ago : Edited commnents in + tmp deleted Operations
 b82db83 - Vladimir, 3 weeks ago : Deleted ANS function since it was not needed
 df092d5 - Vladimir, 3 weeks ago : Edited comments for enumeration
-b9d12bd - Vladimir, 3 weeks ago : Pridane komentare k funkciam + memory_Recall -> memort_recall
-af89f20 - Vladimir, 3 weeks ago : Pridane enumeracie s komentarmi
-b73d740 - Vladimir, 3 weeks ago : Premenovane funckie divide a plus na division a summary
-dada31d - Vladimir, 3 weeks ago : Poradie upravene podla UML zlava do prava + pridane kostry funkcii fact a *
-186834c - Vladimir, 3 weeks ago : Implementovana kostra modulu memory_operation
+b9d12bd - Vladimir, 4 weeks ago : Pridane komentare k funkciam + memory_Recall -> memort_recall
+af89f20 - Vladimir, 4 weeks ago : Pridane enumeracie s komentarmi
+b73d740 - Vladimir, 4 weeks ago : Premenovane funckie divide a plus na division a summary
+dada31d - Vladimir, 4 weeks ago : Poradie upravene podla UML zlava do prava + pridane kostry funkcii fact a *
+186834c - Vladimir, 4 weeks ago : Implementovana kostra modulu memory_operation
 4fb8852 - MatejS99, 4 weeks ago : gui keyboard actions
 b0b1410 - MatejS99, 4 weeks ago : gui buttons are displaying
 f22a813 - MatejS99, 4 weeks ago : gui add for loop
@@ -247,19 +249,19 @@ f22a813 - MatejS99, 4 weeks ago : gui add for loop
 386591c - Filipes, 4 weeks ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
 fdaa305 - MatejS99, 4 weeks ago : absolute value test repair
 b6c7932 - MatejS99, 4 weeks ago : new method divide and absolute_value and their tests
-10865af - Vladimir, 4 weeks ago : Vytvorena trieda calculator podla UML navrhu
-892efb5 - Vladimir, 4 weeks ago : Odstranene self z funkcii pus, nthroot
-0859ddc - Vladimir, 4 weeks ago : Pridane testy pre plus a odmocninu
-1ba697e - Vladimir, 4 weeks ago : Pridane funkcie plus a odmocnina
-a7bb30b - Vladimir284, 4 weeks ago : Update Readme  - pridane sekcie + popis
-37b3f70 - Vladimir, 4 weeks ago : Pridany template s prazndymi subormi
-025a5b3 - Filipes, 4 weeks ago : Pridavam mockup dle @IVS
-7bda319 - Vladimir, 4 weeks ago : Pridany template podla @IVS
-e43c3db - Vladimir284, 4 weeks ago : Delete .DS_Store
-9873415 - fajcek, 4 weeks ago : Delete Calc directory
-9f2b721 - Vladimir284, 4 weeks ago : Upraveny readme - pridane vyvojove prostredie
+10865af - Vladimir, 5 weeks ago : Vytvorena trieda calculator podla UML navrhu
+892efb5 - Vladimir, 5 weeks ago : Odstranene self z funkcii pus, nthroot
+0859ddc - Vladimir, 5 weeks ago : Pridane testy pre plus a odmocninu
+1ba697e - Vladimir, 5 weeks ago : Pridane funkcie plus a odmocnina
+a7bb30b - Vladimir284, 5 weeks ago : Update Readme  - pridane sekcie + popis
+37b3f70 - Vladimir, 5 weeks ago : Pridany template s prazndymi subormi
+025a5b3 - Filipes, 5 weeks ago : Pridavam mockup dle @IVS
+7bda319 - Vladimir, 5 weeks ago : Pridany template podla @IVS
+e43c3db - Vladimir284, 5 weeks ago : Delete .DS_Store
+9873415 - fajcek, 5 weeks ago : Delete Calc directory
+9f2b721 - Vladimir284, 5 weeks ago : Upraveny readme - pridane vyvojove prostredie
 1b3592f - Vladimir, 5 weeks ago : Pridana trieda Calculator podla grafu plan.png
 c0d4aaa - Vladimir, 5 weeks ago : Vymazane telo main.py generovane PyCharm
-800f57f - Vladimir, 5 weeks ago : Pridany projekt generovany PyCharm
-dcbb0a3 - Vladimir, 5 weeks ago : Pridany autori
+800f57f - Vladimir, 6 weeks ago : Pridany projekt generovany PyCharm
+dcbb0a3 - Vladimir, 6 weeks ago : Pridany autori
 2f2922a - Vladimir284, 6 weeks ago : Initial commit
