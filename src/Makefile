@@ -4,20 +4,23 @@ all: run
 
 # (zabalí projekt tak, aby mohl být odevzdán)
 pack: history pack_folder remove_packed_folder
-	# TO-DO Team work - brainstorming
 
 pack_folder: remove_packed_folder doc
+	mkdir install
+	cp -R ../doc doc
+	rm doc/Doxyfile
+	rm doc/intr_net_logo.png
 	mkdir ../../xtichy31_xsauer03_xpolas41_xmecia00
-	mkdir ../../xtichy31_xsauer03_xpolas41_xmecia00/install
-	cp -R ../doc ../../xtichy31_xsauer03_xpolas41_xmecia00
-	rm ../../xtichy31_xsauer03_xpolas41_xmecia00/doc/Doxyfile
-	rm ../../xtichy31_xsauer03_xpolas41_xmecia00/doc/intr_net_logo.png
-	cp -R ../../IVS-Projekt-2_Intr-net ../../xtichy31_xsauer03_xpolas41_xmecia00
-	zip ../../xtichy31_xsauer03_xpolas41_xmecia00.zip ../../xtichy31_xsauer03_xpolas41_xmecia00
-	rm -rf ../../xtichy31_xsauer03_xpolas41_xmecia00
+	cp -R ../../IVS-Projekt-2_Intr-net ../../xtichy31_xsauer03_xpolas41_xmecia00/IVS-Projekt-2_intr-net
+	mv ../../xtichy31_xsauer03_xpolas41_xmecia00 .
+	mv doc xtichy31_xsauer03_xpolas41_xmecia00
+	mv install xtichy31_xsauer03_xpolas41_xmecia00
+	zip -r xtichy31_xsauer03_xpolas41_xmecia00.zip xtichy31_xsauer03_xpolas41_xmecia00
+	mv xtichy31_xsauer03_xpolas41_xmecia00.zip ..
+	rm -rf xtichy31_xsauer03_xpolas41_xmecia00
 
 remove_packed_folder:
-	rm -rf ../../xtichy31_xsauer03_xpolas41_xmecia00.zip
+	rm -rf xtichy31_xsauer03_xpolas41_xmecia00
 
 install_windowed: uninstall
 	pyinstaller -n Calculator -i calc.icns -w -F --collect-all buttons_images calc.py
