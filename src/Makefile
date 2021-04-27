@@ -3,7 +3,7 @@
 all: run
 
 # (zabalí projekt tak, aby mohl být odevzdán)
-pack: history pack_folder remove_packed_folder
+pack: history pack_folder
 
 pack_folder: remove_packed_folder doc
 	mkdir install
@@ -16,7 +16,7 @@ pack_folder: remove_packed_folder doc
 	mv doc xtichy31_xsauer03_xpolas41_xmecia00
 	mv install xtichy31_xsauer03_xpolas41_xmecia00
 	zip -r xtichy31_xsauer03_xpolas41_xmecia00.zip xtichy31_xsauer03_xpolas41_xmecia00
-	mv xtichy31_xsauer03_xpolas41_xmecia00.zip ..
+	mv xtichy31_xsauer03_xpolas41_xmecia00.zip ../..
 	rm -rf xtichy31_xsauer03_xpolas41_xmecia00
 
 remove_packed_folder:
@@ -25,14 +25,11 @@ remove_packed_folder:
 install_windowed: uninstall
 	pyinstaller -n Calculator -i calc.icns -w -F --collect-all buttons_images calc.py
 	cp -R buttons_images/ dist/buttons_images
-	cp -R buttons_images/ dist/Calculator.app/Contents/MacOS/buttons_images
 
 uninstall:
 	rm -rf dist
 	rm -rf build
 	rm -rf Calculator.spec
-
-clean: remove_documentation uninstall
 
 history:
 	git log --pretty=format:"%h - %an, %ar : %s" --all > ../history.txt
@@ -50,8 +47,9 @@ run:
 profile:
 	python3 profiling.py < data.txt
 
+clean: remove_documentation uninstall
+
 remove_documentation:
 	rm -rf ../doc/latex
 	rm -rf ../doc/html
 	rm -rf ../doc/man
-
