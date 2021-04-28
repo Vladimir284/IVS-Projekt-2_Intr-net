@@ -1,0 +1,4 @@
+Václav Polaštík (xpolas41) - 0      (Ukončenie projektu vo fáze písania testov pr mat. knižnicu )
+Matěj Šauer     (xsauer03) - 120    (Dokumentácia funkcí, Proffiling, Testy, Mat. knižnica, Kostra GUI, Prepojenie GUI s mat. knižnicou, Manuál)
+Filip Tichý     (xtichy31) - 120    (Dokumentácia funkcí, Proffiling, Testy, Mat. knižnica, Inštalačka, Prepojenie GUI s mat. knižnicou, )
+Vladimír Mečiar (xmecia00) - 160    (Dokumentácia funkcí, Proffiling, Testy, Mat. knižnica, Manuál, Doxyfile, Makefile, Udržiavanie repozitára, Grafický dizajn)

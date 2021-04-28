@@ -1,0 +1,2 @@
+Pri implementácii sme sa odchýlili od UML návrhu. Odchod člena projekt neoneskoril, stanovené termíny sme dodržiavali.
+Jediné oneskorenie bolo pri vytvorení inštalácie, kvôli ďaľším povinnostiam do školy.
