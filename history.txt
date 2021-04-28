@@ -1,13 +1,19 @@
-265f4f5 - Vladimir, 14 hours ago : Edited command for crating windwed exe file and deleted install_windows target
-de41099 - Vladimir, 14 hours ago : Added history from git
-b9de0e8 - Vladimir, 14 hours ago : Deleted build file
-861e5ca - Vladimir, 14 hours ago : Removed tex file for manual and images for manual
-07e1309 - Vladimir, 14 hours ago : Added final manaul
-12acc03 - Vladimir, 16 hours ago : Undo
-f039fac - Vladimir, 22 hours ago : Commented from gitignor executable builded files (for chcking on windows)
-c03b9f0 - Vladimir, 22 hours ago : Development section rewriten on TBD
-de94c01 - Vladimir, 22 hours ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
-a11ea27 - Vladimir, 22 hours ago : Added install targt (for bulding executable) for windows and for mac separately
+34d5411 - Vladimir, 49 seconds ago : Edited pack target. Zip file will be now move to file where project is stored
+75b7dc4 - Vladimir, 2 hours ago : Calculator spec was deleted since platform has to generate it for itself
+a59cd9f - Vladimir, 2 hours ago : Edited pack target, now zip file ready to be handed out is complete
+1a3d2f2 - Vladimir, 2 hours ago : Moved text on image for button 3
+9691e6c - Vladimir, 2 hours ago : Added output of all comits fro git
+051a328 - Vladimir, 2 hours ago : Added zip file to gitignore
+265f4f5 - Vladimir, 16 hours ago : Edited command for crating windwed exe file and deleted install_windows target
+de41099 - Vladimir, 16 hours ago : Added history from git
+b9de0e8 - Vladimir, 16 hours ago : Deleted build file
+861e5ca - Vladimir, 16 hours ago : Removed tex file for manual and images for manual
+07e1309 - Vladimir, 16 hours ago : Added final manaul
+12acc03 - Vladimir, 18 hours ago : Undo
+f039fac - Vladimir, 24 hours ago : Commented from gitignor executable builded files (for chcking on windows)
+c03b9f0 - Vladimir, 24 hours ago : Development section rewriten on TBD
+de94c01 - Vladimir, 24 hours ago : Merge branch 'main' of https://github.com/Vladimir284/IVS-Projekt-2_Intr-net
+a11ea27 - Vladimir, 24 hours ago : Added install targt (for bulding executable) for windows and for mac separately
 af4bd51 - MatejS99, 2 days ago : manual
 b05d43c - MatejS99, 2 days ago : Merge remote-tracking branch 'origin/main'
 e67b983 - Vladimir, 2 days ago : Edited pyinstaller - now creates one file
