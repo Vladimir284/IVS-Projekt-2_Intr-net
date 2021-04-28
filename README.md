@@ -1,19 +1,19 @@
-# IVS-Projekt-2_Intr-net
+# IVS-Projekt-2_Intr#net
 
 ## Development Platforms
 
-       TBD
+       Windows 64-bit
 
 ## Team
 
-       Intr_net
+       Intr#net
 
 ## List of authors
 
     Vladimír Mečiar xmecia00
     Filip Tichý xtichy31
     Matěj Šauer xsauer03
-    (Václav Polaštík xpolas41)
+    ##(Václav Polaštík xpolas41)##
 
 ## Licence
 
@@ -23,14 +23,12 @@
 
 ## Instalation
 
-```bash
-sudo apt-get install TheCalculator
-```
+For instalation, download folder install.
+After folder is downloaded,  open calculator_setup.exe in downloaded folder. 
+Then follow the instruction that will be showed to you by the installer.
+
 
 ## Deletion
 
-    TO-DO Finish
-
-```bash
-sudo apt-get uninstall TheCalculator
-```
+For deletion of Calculator, go to directory, where the application was downloaded and launch unins000.
+Then, follow the instructions  .
