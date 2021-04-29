@@ -170,7 +170,7 @@ def operation(id_op):
 ##
 # Shows the manual for the user
 def show_hint():
-    webbrowser.open_new('../man.pdf')
+    webbrowser.open_new('man.pdf')
 
 
 ##
