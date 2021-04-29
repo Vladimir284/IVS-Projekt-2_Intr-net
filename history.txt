@@ -1,4 +1,5 @@
-b411249 - Vladimir, 7 seconds ago : Renewed installer
+32af5b1 - Vladimir, 3 minutes ago : Updated history
+b411249 - Vladimir, 3 minutes ago : Renewed installer
 0010be5 - Vladimir, 2 hours ago : Removed history.txt
 eb655cf - Vladimir, 2 hours ago : Modified history.txt
 18f7f6a - Vladimir, 2 hours ago : Finished target to create zip file
