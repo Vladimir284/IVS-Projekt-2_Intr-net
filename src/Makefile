@@ -5,7 +5,7 @@ all: run
 pack: history pack_folder
 
 pack_folder: remove_packed_folder doc
-	mkdir install # TO-DO copy install folder with installator for windows with uninstaller
+	cp -R ../install .
 	cp -R ../doc doc
 	rm doc/Doxyfile
 	rm doc/intr_net_logo.png
